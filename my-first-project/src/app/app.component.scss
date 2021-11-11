@@ -1,0 +1,12 @@
+.main{
+  max-width: 900px;
+  margin: auto;
+  .articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .card{
+      flex-basis: calc(33.33% - 12px);
+    }
+  }
+}
