@@ -34,7 +34,8 @@ export class CardComponent implements OnInit {
    */
   @Input() buttonLabel = 'Button';
   @Input() cardClasses: any;
-  @Input() title: any;
+  @Input() title = 'Card Title';
+  @Input() showImg = true;
 
   /**
    * Optional click handler
