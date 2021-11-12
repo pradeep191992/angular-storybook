@@ -7,10 +7,8 @@
     </nav>
   </header>
   <section>
-    <article class="articles">
-      <app-card></app-card>
-      <app-card></app-card>
-      <app-card></app-card>
+    <article class="flex flex-wrap justify-between">
+      <app-card class="sm:w-[calc(50%-12px)] lg:w-[calc(33.33%-12px)]" *ngFor="let item of cardArray"></app-card>
     </article>
   </section>
 </main>

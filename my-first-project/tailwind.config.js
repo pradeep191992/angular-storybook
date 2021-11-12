@@ -3,6 +3,7 @@ module.exports = {
     './src/**/*.html',
     './src/**/*.js',
   ],
+  // mode: 'jit',
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
@@ -11,10 +12,6 @@ module.exports = {
       '300': '300px',
       '400': '400px',
       '500': '500px',
-      '1/4': '25%',
-      '1/2': '50%',
-      '3/4': '75%',
-      'full': '100%',
      }
   },
   variants: {

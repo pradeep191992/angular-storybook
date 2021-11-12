@@ -9,7 +9,7 @@
     "components": [
         {
             "name": "AppComponent",
-            "id": "component-AppComponent-634e3fd164a1eff3a31bde14242f61f7",
+            "id": "component-AppComponent-0844d3bed998a94df189e7aabc727fbb",
             "file": "src/app/app.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -29,6 +29,16 @@
             "outputsClass": [],
             "propertiesClass": [
                 {
+                    "name": "cardArray",
+                    "defaultValue": "['','','',]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 10
+                },
+                {
                     "name": "title",
                     "defaultValue": "'my-first-project'",
                     "deprecated": false,
@@ -47,16 +57,16 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.scss']\n})\nexport class AppComponent {\n  title = 'my-first-project';\n}\n",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.scss']\n})\nexport class AppComponent {\n  title = 'my-first-project';\n  cardArray = ['','','',];\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".main{\n  max-width: 900px;\n  margin: auto;\n  .articles{\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: space-between;\n    .card{\n      flex-basis: calc(33.33% - 12px);\n    }\n  }\n}",
+                    "data": "",
                     "styleUrl": "./app.component.scss"
                 }
             ],
             "stylesData": "",
-            "templateData": "\n<main class=\"main\">\n  <header>\n    <nav>\n      <h1>Header</h1>\n      <p>Header Content</p>\n    </nav>\n  </header>\n  <section>\n    <article class=\"articles\">\n      <app-card class=\"card\"></app-card>\n      <app-card class=\"card\"></app-card>\n      <app-card class=\"card\"></app-card>\n    </article>\n  </section>\n</main>\n\n<router-outlet></router-outlet>\n"
+            "templateData": "\n<main class=\"main max-w-7xl px-4\">\n  <header>\n    <nav>\n      <h1>Header</h1>\n      <p>Header Content</p>\n    </nav>\n  </header>\n  <section>\n    <article class=\"flex flex-wrap justify-between\">\n      <app-card class=\"sm:w-[calc(50%-12px)] lg:w-[calc(33.33%-12px)]\" *ngFor=\"let item of cardArray\"></app-card>\n    </article>\n  </section>\n</main>\n\n<router-outlet></router-outlet>\n"
         },
         {
             "name": "ButtonComponent",
@@ -180,7 +190,7 @@
         },
         {
             "name": "CardComponent",
-            "id": "component-CardComponent-dc7d89e0698ec80ba096e596f12c98d6",
+            "id": "component-CardComponent-9fbd33964c8aac2a2ed58d513ca0efcd",
             "file": "src/app/component/card/card.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -215,6 +225,14 @@
                     "type": "any"
                 },
                 {
+                    "name": "showImg",
+                    "defaultValue": "true",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 38,
+                    "type": "boolean"
+                },
+                {
                     "name": "title",
                     "defaultValue": "'Card Title'",
                     "deprecated": false,
@@ -244,7 +262,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-card',\n  templateUrl: './card.component.html',\n  styleUrls: ['./card.component.scss']\n})\nexport class CardComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n  // @Input()\n  // primary = false;\n\n  /**\n   * What background color to use\n   */\n  // @Input()\n  // backgroundColor?: string;\n\n  // /**\n  //  * How large should the button be?\n  //  */\n  // @Input()\n  // size: 'small' | 'medium' | 'large' = 'medium';\n\n  /**\n   * Button contents\n   *\n   * @required\n   */\n  @Input() buttonLabel = 'Button';\n  @Input() cardClasses: any;\n  @Input() title = 'Card Title';\n\n  /**\n   * Optional click handler\n   */\n  // @Output()\n  // onClick = new EventEmitter<Event>();\n\n  // public get classes(): string[] {\n  //   const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';\n\n  //   return ['storybook-button', `storybook-button--${this.size}`, mode];\n  // }\n\n}\n",
+            "sourceCode": "import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-card',\n  templateUrl: './card.component.html',\n  styleUrls: ['./card.component.scss']\n})\nexport class CardComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n  // @Input()\n  // primary = false;\n\n  /**\n   * What background color to use\n   */\n  // @Input()\n  // backgroundColor?: string;\n\n  // /**\n  //  * How large should the button be?\n  //  */\n  // @Input()\n  // size: 'small' | 'medium' | 'large' = 'medium';\n\n  /**\n   * Button contents\n   *\n   * @required\n   */\n  @Input() buttonLabel = 'Button';\n  @Input() cardClasses: any;\n  @Input() title = 'Card Title';\n  @Input() showImg = true;\n\n  /**\n   * Optional click handler\n   */\n  // @Output()\n  // onClick = new EventEmitter<Event>();\n\n  // public get classes(): string[] {\n  //   const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';\n\n  //   return ['storybook-button', `storybook-button--${this.size}`, mode];\n  // }\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -264,7 +282,7 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"card\" [ngClass]=\"cardClasses\">\n  <figure class=\"card-fig\">\n    <img src=\"https://d2awz7twruaixb.cloudfront.net/assets/img/home-ipad.webp\" alt=\"\" class=\"card-fig-img\">\n  </figure>\n  <div class=\"card-content\">\n    <h2 class=\"card-title\">{{title}}</h2>\n    <p class=\"card-para\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ab ullam neque esse ex illo eligendi vitae libero amet, cupiditate minus incidunt facere, eveniet corrupti quidem harum voluptatum enim.</p>\n    <button class=\"btn card-btn\">{{buttonLabel}}</button>\n    <button\n  class=\"py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-red-400\">Hello</button>\n  </div>\n</div>"
+            "templateData": "<div class=\"card rounded overflow-hidden shadow-lg mb-8 w\" [ngClass]=\"cardClasses\">\n  <figure class=\"card-fig text-center sm:min-w-300 lg:min-w-400 xl:min-w-500\" *ngIf=\"showImg\">\n    <img src=\"https://d2awz7twruaixb.cloudfront.net/assets/img/home-ipad.webp\" alt=\"\" class=\"card-fig-img\">\n  </figure>\n  <div class=\"card-content p-3 sm:p-6\">\n    <h2 class=\"card-title text-2xl sm:text-3xl\">{{title}}</h2>\n    <p class=\"card-para py-3 text-sm\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ab ullam neque esse ex illo eligendi vitae libero amet, cupiditate minus incidunt facere, eveniet corrupti quidem harum voluptatum enim.</p>\n    <button class=\"py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-red-400\">{{buttonLabel}}</button>\n  </div>\n</div>"
         },
         {
             "name": "HeaderComponent",
@@ -503,26 +521,6 @@
     "miscellaneous": {
         "variables": [
             {
-                "name": "CenterImg",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Card.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "CircleImg",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Card.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
                 "name": "context",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -710,33 +708,44 @@
                 "deprecationMessage": "",
                 "type": "Story<Page>",
                 "defaultValue": "(args: Page) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "WithOutImage",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
             }
         ],
         "functions": [],
         "typealiases": [],
         "enumerations": [],
         "groupedVariables": {
+            "src/test.ts": [
+                {
+                    "name": "context",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+                },
+                {
+                    "name": "require",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type"
+                }
+            ],
             "src/stories/Card.stories.ts": [
-                {
-                    "name": "CenterImg",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Card.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "CircleImg",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Card.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
                 {
                     "name": "Default",
                     "ctype": "miscellaneous",
@@ -776,27 +785,16 @@
                     "deprecationMessage": "",
                     "type": "Story<CardComponent>",
                     "defaultValue": "(args: CardComponent) => ({\n  props: args,\n})"
-                }
-            ],
-            "src/test.ts": [
+                },
                 {
-                    "name": "context",
+                    "name": "WithOutImage",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/test.ts",
+                    "file": "src/stories/Card.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
-                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
-                },
-                {
-                    "name": "require",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/test.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "literal type"
+                    "defaultValue": "Template.bind({})"
                 }
             ],
             "src/environments/environment.prod.ts": [
@@ -968,7 +966,7 @@
                 "linktype": "component",
                 "name": "AppComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/2",
+                "coverageCount": "0/3",
                 "status": "low"
             },
             {
@@ -976,8 +974,8 @@
                 "type": "component",
                 "linktype": "component",
                 "name": "CardComponent",
-                "coveragePercent": 16,
-                "coverageCount": "1/6",
+                "coveragePercent": 14,
+                "coverageCount": "1/7",
                 "status": "low"
             },
             {
@@ -1055,26 +1053,6 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "CenterImg",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Card.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "CircleImg",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Card.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
                 "name": "Default",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
@@ -1106,6 +1084,16 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "WithOutImage",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

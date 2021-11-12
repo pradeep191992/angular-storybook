@@ -23,12 +23,12 @@ Default.args = {
   buttonLabel: 'Click Me',
 };
 
-// export const CenterImg = Template.bind({});
-// CenterImg.args = {
-//   title: 'Image Centerly Aligned',
-//   cardClasses: 'center-img',
-//   buttonLabel: 'Click Me',
-// };
+export const ImagewithOpacity = Template.bind({});
+ImagewithOpacity.args = {
+  title: 'Image Centerly Aligned',
+  cardClasses: 'opacity-5 sm:flex sm:w-full sm:items-center',
+  buttonLabel: 'Click Me',
+};
 
 export const leftImg = Template.bind({});
 leftImg.args = {
