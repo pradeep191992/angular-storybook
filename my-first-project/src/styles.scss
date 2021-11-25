@@ -1,4 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss/base";
 @import "tailwindcss/components";
+@layer components {
+    .btn{
+        @apply py-2 px-4 text-sm rounded-2xl shadow-md;
+    }
+    .primary-btn {
+      @apply bg-red-400 text-white hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75;
+    }
+    .secondary-btn{
+        @apply border border-solid border-red-400 hover:border-red-500 hover:bg-gray-100;
+    }
+    .small-btn{
+        @apply py-1 px-3 text-xs border border-solid border-red-400 hover:border-red-500 hover:bg-gray-100;
+    }
+    .large-btn{
+        @apply text-lg border border-solid border-red-400 hover:border-red-500 hover:bg-gray-100;
+    }
+    .xlarge-btn{
+        @apply text-2xl border border-solid border-red-400 hover:border-red-500 hover:bg-gray-100;
+    }
+  }
 @import "tailwindcss/utilities";

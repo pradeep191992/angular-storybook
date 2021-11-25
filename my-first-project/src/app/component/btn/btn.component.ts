@@ -1,23 +1,21 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'storybook-button',
-  template: ` <button
-    type="button"
-    (click)="onClick.emit($event)"
-    [ngClass]="classes"
-    [ngStyle]="{ 'background-color': backgroundColor }"
-  >
-    {{ label }}
-  </button>`,
-  styleUrls: ['./button.css'],
+  selector: 'app-btn',
+  templateUrl: './btn.component.html',
+  styleUrls: ['./btn.component.scss']
 })
-export default class Button1Component {
-  /**
-   * Is this the principal call to action on the page?
-   */
+export class BtnComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
   @Input()
   primary = false;
+
+  @Input() className:any;
 
   /**
    * What background color to use
@@ -29,7 +27,7 @@ export default class Button1Component {
    * How large should the button be?
    */
   @Input()
-  size: 'small' | 'medium' | 'large' = 'medium';
+  size: 'small' | 'medium' | 'large' | 'xlarge' = 'large';
 
   /**
    * Button contents
@@ -39,9 +37,6 @@ export default class Button1Component {
   @Input()
   label = 'Button';
 
-  /**
-   * Optional click handler
-   */
   @Output()
   onClick = new EventEmitter<Event>();
 

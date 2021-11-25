@@ -4,7 +4,7 @@ import { Story, Meta } from '@storybook/angular/types-6-0';
 
 // More on default export: https://storybook.js.org/docs/angular/writing-stories/introduction#default-export
 export default {
-  title: 'Common Card/Card',
+  title: 'Common/Card',
   component: CardComponent,
   // More on argTypes: https://storybook.js.org/docs/angular/api/argtypes
   // argTypes: {
@@ -26,7 +26,7 @@ Default.args = {
 export const ImagewithOpacity = Template.bind({});
 ImagewithOpacity.args = {
   title: 'Image Centerly Aligned',
-  cardClasses: 'opacity-5 sm:flex sm:w-full sm:items-center',
+  cardClasses: 'opacity-20 sm:flex sm:w-full sm:items-center',
   buttonLabel: 'Click Me',
 };
 
