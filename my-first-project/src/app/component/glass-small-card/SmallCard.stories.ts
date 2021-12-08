@@ -24,27 +24,3 @@ FirstVarient.args = {
   third: true,
   fourth: false,
 };
-
-// export const SecondVarient = Template.bind({});
-// SecondVarient.args = {
-//   first: false,
-//   second: true,
-//   third: true,
-//   fourth: false,
-// };
-// export const ThirdVarient = Template.bind({});
-// ThirdVarient.args = {
-//   first: true,
-//   second: false,
-//   third: false,
-//   fourth: true,
-// };
-
-// export const FourthVarient = Template.bind({});
-// FourthVarient.args = {
-//   first: false,
-//   second: true,
-//   third: false,
-//   fourth: true,
-// };
-
