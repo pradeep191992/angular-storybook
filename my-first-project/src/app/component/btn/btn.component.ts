@@ -41,8 +41,9 @@ export class BtnComponent implements OnInit {
   onClick = new EventEmitter<Event>();
 
   public get classes(): string[] {
-    const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+    const mode = this.primary ? 'primary-btn' : 'secondary-btn';
 
-    return ['storybook-button', `storybook-button--${this.size}`, mode];
+    console.log(this.size)
+    return ['btn', `btn-${this.size}`, mode];
   }
 }

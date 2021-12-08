@@ -1,0 +1,27 @@
+<div class="glass-card flex items-center p-6 shadow-glassM bg-glass-95 rounded-lg backdrop-blur-3xl">
+    <span class="icon rounded shadow-btnS h-10 w-10 flex-center mr-4 text-blue-600">I</span>
+    <div class="name mr-auto">
+        <span class="text-xs">09-14-2021 - 7:33 am CST</span>
+        <p class="text-base">ESP Stopped (Artificial Lift)</p>
+        <span class="text-xs">Reported by: Lift IQ</span>
+    </div>
+    <span class="text-xs" *ngIf="first">Unresolved</span>
+    <div class="progress-text ml-auto w-32 text-center" *ngIf="second">
+        <p class="progress flex-center mb-2">
+            <span class="block w-[22px] h-1 bg-blue-500 rounded-tl-[2px] rounded-bl-[2px] mr-[2px]"></span>
+            <span class="block w-[22px] h-[6px] bg-blue-600 mr-[2px]"></span>
+            <span class="block w-[22px] h-1 bg-gray-300 mr-[2px]"></span>
+            <span class="block w-[22px] h-1 bg-gray-300 mr-[2px]"></span>
+            <span class="block w-[22px] h-1 bg-gray-300 rounded-tr-[2px] rounded-br-[2px]"></span>
+        </p>
+        <p class="text-xs">Crew Confirmed</p>
+    </div>
+    <div class="ctas ml-auto" *ngIf="third">
+        <button class="btn ring-1 ring-blue-500 mr-4 text-xs">Troubleshoot</button>
+        <button class="btn bg-blue-500 text-white text-xs">Order Service</button>
+    </div>
+    <div class="report ml-auto flex items-center" *ngIf="fourth">
+        <span class="text-sm border-b border-solid mr-4">View Report <br/>& Proposal</span>
+        <span class="three-dot rotate-90 text-2xl">...</span>
+    </div>
+</div>

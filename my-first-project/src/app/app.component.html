@@ -1,14 +1,33 @@
 
-<main class="main max-w-7xl px-4">
+<main class="main max-w-7xl m-auto px-4 font-serif">
   <header>
     <nav>
-      <h1>Header</h1>
+      <h1>Logo</h1>
       <p>Header Content</p>
     </nav>
   </header>
   <section>
     <article class="flex flex-wrap justify-between">
-      <app-card class="sm:w-[calc(50%-12px)] lg:w-[calc(33.33%-12px)]" *ngFor="let item of cardArray"></app-card>
+      <app-card class="sm:w-[calc(50%-15px)] lg:w-[calc(33.33%-15px)]" *ngFor="let item of cardArray"></app-card>
+    </article>
+    <article class="flex flex-wrap justify-between bg-blue-900 p-10">
+      <app-option-picker class="sm:w-[calc(100%-15px)]"></app-option-picker>
+    </article>
+    <article class="flex flex-wrap justify-between bg-blue-900 p-10">
+      <app-team-badge class="sm:w-[calc(100%-15px)]"></app-team-badge>
+    </article>
+    <article class="flex flex-wrap justify-between bg-blue-900 p-10">
+      <app-troubleshoot-card class="sm:w-[calc(100%-15px)]"></app-troubleshoot-card>
+    </article>
+    <article class="flex flex-wrap justify-between bg-blue-900 p-10">
+      <app-search-bar class="sm:w-[calc(100%-15px)]"></app-search-bar>
+    </article>
+    <article class="flex flex-wrap justify-between bg-blue-900 p-10">
+      <app-glass-big-card class="sm:w-[calc(100%-15px)]"></app-glass-big-card>
+    </article>
+
+    <article class="flex flex-wrap justify-between bg-blue-900 p-10">
+      <app-glass-small-card class="sm:w-[calc(100%-15px)]"></app-glass-small-card>
     </article>
   </section>
 </main>

@@ -1,11 +1,12 @@
-<div class="card rounded-xl overflow-hidden shadow-lg mb-8" [ngClass]="cardClasses">
+<div class="card rounded-xl overflow-hidden shadow-modal mb-8" [ngClass]="cardClasses">
+  {{cardClasses}}
   <figure class="card-fig text-center sm:min-w-300 lg:min-w-400 xl:min-w-500" *ngIf="showImg">
     <img src="https://d2awz7twruaixb.cloudfront.net/assets/img/home-ipad.webp" alt="" class="card-fig-img">
   </figure>
   <div class="card-content p-3 sm:p-6">
     <h2 class="card-title text-2xl sm:text-3xl">{{title}}</h2>
     <p class="card-para py-3 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ab ullam neque esse ex illo eligendi vitae libero amet, cupiditate minus incidunt facere, eveniet corrupti quidem harum voluptatum enim.</p>
-    <button class="py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-red-400">{{buttonLabel}}</button>
+    <button class="py-2 px-4 border border-transparent shadow-btn hover:shadow-btnHvr text-sm font-medium rounded-md text-white bg-red-400">{{buttonLabel}}</button>
     <app-btn></app-btn>
   </div>
 </div>

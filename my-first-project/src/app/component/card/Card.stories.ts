@@ -1,10 +1,10 @@
-import { CardComponent } from './../app/component/card/card.component';
+import { CardComponent } from './card.component';
 // also exported from '@storybook/angular' if you can deal with breaking changes in 6.1
 import { Story, Meta } from '@storybook/angular/types-6-0';
 
 // More on default export: https://storybook.js.org/docs/angular/writing-stories/introduction#default-export
 export default {
-  title: 'Common/Card',
+  title: 'Common/cards/Card',
   component: CardComponent,
   // More on argTypes: https://storybook.js.org/docs/angular/api/argtypes
   // argTypes: {
