@@ -12,38 +12,34 @@ export class BtnComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  @Input()
-  primary = false;
+  @Input() primary = false;
+
+  @Input() disabled = false;
 
   @Input() className:any;
 
   /**
    * What background color to use
    */
-  @Input()
-  backgroundColor?: string;
+  @Input() backgroundColor?: string;
 
   /**
    * How large should the button be?
    */
-  @Input()
-  size: 'small' | 'medium' | 'large' | 'xlarge' = 'large';
+  @Input() size: 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge' = 'medium';
 
   /**
    * Button contents
    *
    * @required
    */
-  @Input()
-  label = 'Button';
+  @Input() label = 'Button Text';
 
-  @Output()
-  onClick = new EventEmitter<Event>();
+  @Output() onClick = new EventEmitter<Event>();
 
   public get classes(): string[] {
-    const mode = this.primary ? 'primary-btn' : 'secondary-btn';
-
-    console.log(this.size)
-    return ['btn', `btn-${this.size}`, mode];
+    const defaultClasses: any = this.primary ? 'primary-btn' : 'secondary-btn';
+    const disabledClass: any = this.disabled ? 'btn-disabled' : '';
+    return ['btn', `btn-${this.size}`, defaultClasses, disabledClass];
   }
 }

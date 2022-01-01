@@ -17,8 +17,8 @@
         <p class="text-xs">Crew Confirmed</p>
     </div>
     <div class="ctas ml-auto" *ngIf="third">
-        <button class="btn ring-1 ring-blue-500 mr-4 text-xs">Troubleshoot</button>
-        <button class="btn bg-blue-500 text-white text-xs">Order Service</button>
+        <app-btn class="mb-4 mr-4" [primary]="false" [size]="'small'"></app-btn>
+        <app-btn class=" mb-4" [primary]="true" [size]="'small'"></app-btn>
     </div>
     <div class="report ml-auto flex items-center" *ngIf="fourth">
         <span class="text-sm border-b border-solid mr-4">View Report <br/>& Proposal</span>

@@ -41,6 +41,7 @@ module.exports = {
       backgroundImage: {
         'linear-glass85': 'linear-gradient(89.52deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.255) 100%)',
         'linear-glass15': 'linear-gradient(45deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.0375) 100%)',
+        'signin-modal': 'linear-gradient(85.1deg, rgba(179, 179, 179, 0.15) 0%, rgba(255, 255, 255, 0.0375) 100%)',
        }
     },
   },

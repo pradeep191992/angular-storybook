@@ -2,7 +2,7 @@ import { BtnComponent } from './btn.component';
 import { Story, Meta } from '@storybook/angular/types-6-0';
 
 export default {
-  title: 'Common/Button',
+  title: 'Common/Button / Only Text',
   component: BtnComponent,
   argTypes: {
     backgroundColor: { control: 'color' },
@@ -22,10 +22,24 @@ Primary.args = {
   className: 'primary-btn',
 };
 
+export const Disabled = Template.bind({});
+Disabled.args = {
+  disabled: true,
+  label: 'Disabled Button',
+  className: 'btn-disabled',
+};
+
 export const Secondary = Template.bind({});
 Secondary.args = {
   label: 'Secondary Button',
   className: 'secondary-btn',
+};
+
+export const XSmall = Template.bind({});
+XSmall.args = {
+  size: 'xsmall',
+  label: 'XSmall Button',
+  className: 'xsmall-btn',
 };
 
 export const Small = Template.bind({});
@@ -33,6 +47,13 @@ Small.args = {
   size: 'small',
   label: 'Small Button',
   className: 'small-btn',
+};
+
+export const Medium = Template.bind({});
+Medium.args = {
+  size: 'medium',
+  label: 'Medium Button',
+  className: 'medium-btn',
 };
 
 export const Large = Template.bind({});

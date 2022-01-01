@@ -4,12 +4,31 @@
     <nav>
       <h1>Logo</h1>
       <p>Header Content</p>
+      <a [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a> 
     </nav>
   </header>
-  <section>
+  <!-- <section>
     <article class="flex flex-wrap justify-between">
       <app-card class="sm:w-[calc(50%-15px)] lg:w-[calc(33.33%-15px)]" *ngFor="let item of cardArray"></app-card>
     </article>
+
+    <article class="flex justify-between p-10">
+      <div class="btn-group flex items-center justify-center flex-wrap flex-col">
+        <app-btn class=" mb-4" [primary]="true" [size]="'xsmall'"></app-btn>
+        <app-btn class=" mb-4" [primary]="true" [size]="'small'"></app-btn>
+        <app-btn class=" mb-4" [primary]="true" [size]="'medium'"></app-btn>
+        <app-btn class=" mb-4" [primary]="true" [size]="'large'"></app-btn>
+        <app-btn class=" mb-4" [primary]="true" [size]="'xlarge'" [disabled]="true"></app-btn>
+      </div>
+      <div class="btn-group flex items-center justify-center flex-wrap flex-col">
+        <app-btn class=" mb-4" [primary]="false" [size]="'xsmall'"></app-btn>
+        <app-btn class=" mb-4" [primary]="false" [size]="'small'"></app-btn>
+        <app-btn class=" mb-4" [primary]="false" [size]="'medium'"></app-btn>
+        <app-btn class=" mb-4" [primary]="false" [size]="'large'"></app-btn>
+        <app-btn class=" mb-4" [primary]="false" [size]="'xlarge'"></app-btn>
+      </div>
+    </article>
+
     <article class="flex flex-wrap justify-between bg-blue-900 p-10">
       <app-search-bar class="sm:w-[calc(100%-15px)]"></app-search-bar>
     </article>
@@ -29,7 +48,7 @@
     <article class="flex flex-wrap justify-between bg-blue-900 p-10">
       <app-glass-small-card class="sm:w-[calc(100%-15px)]"></app-glass-small-card>
     </article>
-  </section>
+  </section> -->
 </main>
 
 <router-outlet></router-outlet>
