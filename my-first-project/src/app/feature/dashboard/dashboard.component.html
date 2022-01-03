@@ -1,0 +1,24 @@
+<div class="main">
+  <picture class="fixed w-full h-full left-0 top-0 z-0">
+    <source media="(max-width:650px)" srcset="/assets/img/mobile-login.jpg">
+    <source media="(min-width:651px)" srcset="/assets/img/desktop-login.jpg">
+    <img class="absolute w-full h-full left-0 top-0 object-cover object-center" src="/assets/img/desktop-login.jpg"
+      alt="Flowers">
+  </picture>
+  <div class="relative grid gap-4 p-6 grid-cols-[464px,1fr] grid-rows-[220px,1fr] z-10 h-screen">
+    <app-sidebar class="sidebar shadow-glassM bg-glass-85 backdrop-blur-3xl rounded-2xl p-4 h-full row-span-2 sticky top-16"></app-sidebar>
+    <div class="header shadow-glassM bg-signin-modal p-6 backdrop-blur-3xl rounded-2xl col-start-2">
+      <div class="topbar flex items-center justify-between text-white text-shadow">
+        <div class="left">
+          <h1 class=" text-xl font-bold mb-1">Field Production - Actual vs. Potential</h1>
+          <p class="text-xs">Powered by LiftIQ</p>
+        </div>
+        <div class="right flex-center">
+          <h2 class=" text-3xl font-normal">15%</h2>
+          <p class="text-xs self-end ml-1">Current Difference</p>
+        </div>
+      </div>
+    </div>
+    <app-list class="dashboard shadow-glassM bg-signin-modal p-6 backdrop-blur-3xl rounded-2xl row-start-2 col-start-2"></app-list>
+  </div>
+</div>

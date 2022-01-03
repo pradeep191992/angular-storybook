@@ -7,6 +7,11 @@ const routes: Routes = [
     pathMatch: 'full',
     loadChildren: () => import('./feature/home/home.module').then(m => m.HomeModule),
   },
+  {
+    path: 'dashboard',
+    pathMatch: 'full',
+    loadChildren: () => import('./feature/dashboard/dashboard.module').then(m => m.DashboardModule),
+  },
 ];
 
 @NgModule({

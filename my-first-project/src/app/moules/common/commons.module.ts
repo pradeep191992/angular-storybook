@@ -1,3 +1,5 @@
+import { RouterModule } from '@angular/router';
+import { SvgIconModule } from './../svg-icon/svg-icon.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardComponent } from './component/card/card.component';
@@ -8,6 +10,7 @@ import { TroubleshootCardComponent } from './component/troubleshoot-card/trouble
 import { TeamBadgeComponent } from './component/team-badge/team-badge.component';
 import { OptionPickerComponent } from './component/option-picker/option-picker.component';
 import { SearchBarComponent } from './component/search-bar/search-bar.component';
+import { NavbarComponent } from './component/navbar/navbar.component';
 
 
 
@@ -20,10 +23,13 @@ import { SearchBarComponent } from './component/search-bar/search-bar.component'
     TroubleshootCardComponent,
     TeamBadgeComponent,
     OptionPickerComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    NavbarComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SvgIconModule,
+    RouterModule,
   ],
   exports: [
     CardComponent,
@@ -33,7 +39,8 @@ import { SearchBarComponent } from './component/search-bar/search-bar.component'
     TroubleshootCardComponent,
     TeamBadgeComponent,
     OptionPickerComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    NavbarComponent
   ]
 })
 export class CommonsModule { }

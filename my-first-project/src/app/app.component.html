@@ -1,5 +1,20 @@
+<header class="fixed top-0 z-20 left-0 w-full h-16 bg-white shadow-modal p-6">
+  <nav class="flex-center justify-between h-full">
+    <a [routerLink]="['/']" routerLinkActive="router-link-active" class="block">
+      <img src="/assets/img/logo-black.svg" alt="" class="block">
+    </a>
+    <div class="flex-center">
+      <app-navbar></app-navbar>
+      <p class="flex-center text-xs text-blue-500 px-3 ring-1 h-6 rounded-full">
+        <app-svg-icon class="mr-1 leading-[1]" [iconHashTag]="'#bell_icon'"></app-svg-icon>
+        <span class="text-gray-600">0</span>
+      </p>
 
-<main class="main max-w-7xl m-auto px-4 font-serif">
+    </div>
+  </nav>
+</header>
+<div class="pt-16"></div>
+<!-- <main class="main max-w-7xl m-auto px-4 font-serif">
   <header>
     <nav>
       <h1>Logo</h1>
@@ -7,7 +22,7 @@
       <a [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a> 
     </nav>
   </header>
-  <!-- <section>
+  <section>
     <article class="flex flex-wrap justify-between">
       <app-card class="sm:w-[calc(50%-15px)] lg:w-[calc(33.33%-15px)]" *ngFor="let item of cardArray"></app-card>
     </article>
@@ -48,7 +63,7 @@
     <article class="flex flex-wrap justify-between bg-blue-900 p-10">
       <app-glass-small-card class="sm:w-[calc(100%-15px)]"></app-glass-small-card>
     </article>
-  </section> -->
-</main>
+  </section>
+</main> -->
 
 <router-outlet></router-outlet>

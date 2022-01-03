@@ -1,13 +1,14 @@
 <div class="glass-card flex items-center p-6 bg-glass-75 rounded-lg backdrop-blur-3xl">
-    <span class="icon rounded shadow-btnS h-10 w-10 flex-center mr-4 text-white bg-yellow-500">I</span>
-    <span class="icon rounded shadow-btnS h-10 w-10 flex-center mr-4 bg-gray-300">I</span>
+    <span *ngIf="first"
+        class="icon rounded shadow-btnS h-10 w-10 flex-center mr-4 text-white bg-yellow-500">I</span>
+    <span *ngIf="second" class="icon rounded shadow-btnS h-10 w-10 flex-center mr-4 bg-gray-300">I</span>
     <div class="name mr-auto">
         <p class="text-base">Boba Fett Well</p>
         <span class="block text-xs">ESP Stopped 9/14/21, +1 more</span>
-        <span class="block text-xs">ESP Stopped 9/14/21, +1 more</span>
+        <span *ngIf="fourth" class="block text-xs">ESP Stopped 9/14/21, +1 more</span>
     </div>
-    <span class="text-xs">Unresolved</span>
-    <div class="progress-text ml-auto w-32 text-center">
+    <span *ngIf="third" class="text-xs">Unresolved</span>
+    <div *ngIf="fourth" class="progress-text ml-auto w-32 text-center">
         <p class="progress flex-center mb-2">
             <span class="block w-[22px] h-1 bg-blue-500 rounded-tl-[2px] rounded-bl-[2px] mr-[2px]"></span>
             <span class="block w-[22px] h-[6px] bg-blue-600 mr-[2px]"></span>

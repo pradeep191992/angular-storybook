@@ -1,3 +1,4 @@
+import { SvgIconModule } from './../../moules/svg-icon/svg-icon.module';
 import { CommonsModule } from './../../moules/common/commons.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -16,6 +17,7 @@ import { InputComponent } from './input/input.component';
     CommonModule,
     HomeRoutingModule,
     CommonsModule,
+    SvgIconModule,
   ]
 })
 export class HomeModule { }

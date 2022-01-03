@@ -1,0 +1,38 @@
+<ul class="flex-center">
+    <li class="mr-2">
+      <a [routerLink]="['/home']" routerLinkActive="router-link-active" 
+      class="flex-center flex-col sm:flex-row px-2 text-xs sm:text-sm text-gray-500 hover:text-blue-500 active:font-bold">
+        <app-svg-icon class="sm:mr-2 mb-2 sm:mb-0 leading-[1] text-[20px] relative top-[-2px]" [iconHashTag]="'#home_icon'"></app-svg-icon>
+        <span>Home</span>
+      </a>
+    </li>
+    <li class="mr-2">
+      <a [routerLink]="['/home']" routerLinkActive="router-link-active" 
+      class="flex-center flex-col sm:flex-row px-2 text-xs sm:text-sm text-gray-500 hover:text-blue-500 active:font-bold">
+        <app-svg-icon class="sm:mr-2 mb-2 sm:mb-0 text-base leading-[1]" [iconHashTag]="'#map_icon'"></app-svg-icon>
+        <span>Map</span>
+      </a>
+    </li>
+    <li class="mr-2">
+      <a [routerLink]="['/dashboard']" routerLinkActive="router-link-active" 
+      class="flex-center flex-col sm:flex-row px-2 text-xs sm:text-sm text-gray-500 hover:text-blue-500 active:font-bold">
+        <app-svg-icon class="sm:mr-2 mb-2 sm:mb-0 text-base leading-[1]" [iconHashTag]="'#equipment_icon'"></app-svg-icon>
+        <span>Equipment</span>
+      </a>
+    </li>
+    <li class="mr-2">
+      <a [routerLink]="['/dashboard']" routerLinkActive="router-link-active" 
+      class="flex-center flex-col sm:flex-row px-2 text-xs sm:text-sm text-gray-500 hover:text-blue-500 active:font-bold">
+        <app-svg-icon class="sm:mr-2 mb-2 sm:mb-0 text-base leading-[1]" [iconHashTag]="'#support_icon'"></app-svg-icon>
+        <span>Support</span>
+      </a>
+    </li>
+    <li class="mr-2">
+      <a [routerLink]="['/dashboard']" routerLinkActive="router-link-active" 
+      class="flex-center flex-col sm:flex-row px-2 text-xs sm:text-sm text-gray-500 hover:text-blue-500 active:font-bold">
+        <span class="block h-6 w-6 mb-2 sm:mb-0 sm:mr-2 rounded-full bg-blue-500 ring-white ring-1"></span>
+        <span>Alan Johnson</span>
+        <app-svg-icon class="sm:ml-2 text-xs hidden sm:block text-black leading-[1]" [iconHashTag]="'#dropdown_icon'"></app-svg-icon>
+      </a>
+    </li>
+  </ul>
