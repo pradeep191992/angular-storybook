@@ -10,15 +10,14 @@
 </div>
 <div class="card-list">
     <p class=" text-lg text-white font-bold text-shadow mb-4">Today</p>
-    <app-glass-big-card class="block mb-6"></app-glass-big-card>
-    <app-glass-big-card class="block mb-6"></app-glass-big-card>
-    <app-glass-big-card class="block mb-6"></app-glass-big-card>
+    <app-glass-big-card class="block mb-6" *ngFor="let item of cardArray"></app-glass-big-card>
 </div>
 <div class="card-list">
     <p class=" text-lg text-white font-bold text-shadow mb-4">Tomorrow</p>
+    <app-glass-big-card class="block mb-6" *ngFor="let item of cardArray"></app-glass-big-card>
     <app-glass-big-card class="block mb-6"></app-glass-big-card>
     <app-glass-big-card class="block mb-6"></app-glass-big-card>
     <app-glass-big-card class="block mb-6"></app-glass-big-card>
     <app-glass-big-card class="block mb-6"></app-glass-big-card>
-    <app-glass-big-card class="block mb-6"></app-glass-big-card>
+    <app-glass-big-card class="block mb-6" ></app-glass-big-card>
 </div>

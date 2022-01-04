@@ -1,10 +1,17 @@
 import { SearchBarComponent } from './search-bar.component';
 
 import { Story, Meta } from '@storybook/angular/types-6-0';
+import { moduleMetadata } from '@storybook/angular';
+import { SvgIconComponent } from 'src/app/moules/svg-icon/svg-icon.component';
 
 export default {
   title: 'Common/Search Bar',
   component: SearchBarComponent,
+  decorators: [
+    moduleMetadata({
+      declarations: [SvgIconComponent],
+    }),
+  ],
   argTypes: {
     // backgroundColor: { control: 'color' },
     propertyB: {

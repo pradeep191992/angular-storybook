@@ -1,10 +1,17 @@
 
+import { moduleMetadata } from '@storybook/angular';
 import { Story, Meta } from '@storybook/angular/types-6-0';
+import { SvgIconComponent } from 'src/app/moules/svg-icon/svg-icon.component';
 import { GlassBigCardComponent } from './glass-big-card.component';
 
 export default {
   title: 'Common/Cards/Big Card',
   component: GlassBigCardComponent,
+  decorators: [
+    moduleMetadata({
+      declarations: [SvgIconComponent],
+    }),
+  ],
   argTypes: {
     // backgroundColor: { control: 'color' },
     propertyB: {

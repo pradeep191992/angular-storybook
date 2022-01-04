@@ -10,7 +10,8 @@ export class InputComponent implements OnInit {
   @Input() label: any;
   @Input() active: any;
   @Input() type: any;
-  passwordIcon = 'showpass_icon';
+  @Input() primary: any;
+  passwordIcon = '#showpass_icon';
   constructor() { }
 
   ngOnInit(): void {
@@ -19,10 +20,10 @@ export class InputComponent implements OnInit {
   showPassword() {
     if (this.type === 'password') {
       this.type = 'text';
-      this.passwordIcon = 'hidepass_icon';
+      this.passwordIcon = '#hidepass_icon';
     } else{
       this.type = 'password';
-      this.passwordIcon = 'showpass_icon';
+      this.passwordIcon = '#showpass_icon';
     }
   }
 

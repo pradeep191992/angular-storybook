@@ -66,7 +66,7 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<header class=\"fixed top-0 z-20 left-0 w-full h-16 bg-white shadow-modal p-3 sm:p-6\">\n  <nav class=\"flex-center justify-between h-full\">\n    <a [routerLink]=\"['/']\" routerLinkActive=\"router-link-active\" class=\"hidden sm:block\">\n      <img src=\"/assets/img/logo-black.svg\" alt=\"\" class=\"block\">\n    </a>\n    <div class=\"flex-center\">\n      <app-navbar></app-navbar>\n      <p class=\"flex-center text-xs text-blue-500 px-3 ring-1 h-6 rounded-full hidden sm:block\">\n        <app-svg-icon class=\"mr-1 leading-[1]\" [iconHashTag]=\"'#bell_icon'\"></app-svg-icon>\n        <span class=\"text-gray-600\">0</span>\n      </p>\n\n    </div>\n  </nav>\n</header>\n<div class=\"pt-16\"></div>\n<main class=\"main max-w-7xl m-auto px-4 font-arial\">\n  <section>\n    <!-- <article class=\"flex flex-wrap justify-between\">\n      <app-card class=\"sm:w-[calc(50%-15px)] lg:w-[calc(33.33%-15px)]\" *ngFor=\"let item of cardArray\"></app-card>\n    </article> \n    \n    <article class=\"flex justify-between p-10\">\n      <div class=\"btn-group flex items-center justify-center flex-wrap flex-col\">\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'xsmall'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'small'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'medium'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'large'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'xlarge'\" [disabled]=\"true\"></app-btn>\n      </div>\n      <div class=\"btn-group flex items-center justify-center flex-wrap flex-col\">\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'xsmall'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'small'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'medium'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'large'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'xlarge'\"></app-btn>\n      </div>\n    </article> \n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-search-bar class=\"sm:w-[calc(100%-15px)]\"></app-search-bar>\n    </article>\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-option-picker class=\"sm:w-[calc(100%-15px)]\"></app-option-picker>\n    </article>\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-team-badge class=\"sm:w-[calc(100%-15px)]\"></app-team-badge>\n    </article>\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-troubleshoot-card class=\"sm:w-[calc(100%-15px)]\"></app-troubleshoot-card>\n    </article>\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-glass-big-card class=\"sm:w-[calc(100%-15px)]\"></app-glass-big-card>\n    </article>\n\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-glass-small-card class=\"sm:w-[calc(100%-15px)]\"></app-glass-small-card>\n    </article>-->\n    <div class=\"h-32 w-32 red text-6xl text-orange-600\">\n      <h2>Header</h2>\n\n    </div>\n      <app-btn class=\"mb-4 mr-4\" [primary]=\"false\" [size]=\"'small'\"></app-btn>\n  </section>\n</main>\n\n<router-outlet></router-outlet>\n"
+            "templateData": "<header class=\"fixed top-0 z-20 left-0 w-full h-16 bg-white shadow-modal p-3 sm:p-6\">\n  <nav class=\"flex-center justify-between h-full\">\n    <a [routerLink]=\"['/']\" routerLinkActive=\"router-link-active\" class=\"hidden sm:block\">\n      <img src=\"/assets/img/logo-black.svg\" alt=\"\" class=\"block\">\n    </a>\n    <div class=\"flex-center\">\n      <app-navbar></app-navbar>\n      <p class=\"flex-center text-xs text-blue-500 px-3 ring-1 h-6 rounded-full hidden sm:flex\">\n        <app-svg-icon class=\"mr-1 leading-[1]\" [iconHashTag]=\"'#bell_icon'\"></app-svg-icon>\n        <span class=\"text-gray-600\">0</span>\n      </p>\n\n    </div>\n  </nav>\n</header>\n<div class=\"pt-16\"></div>\n<main class=\"main max-w-7xl m-auto px-4 font-arial\">\n  <section>\n    <!-- <article class=\"flex flex-wrap justify-between\">\n      <app-card class=\"sm:w-[calc(50%-15px)] lg:w-[calc(33.33%-15px)]\" *ngFor=\"let item of cardArray\"></app-card>\n    </article> \n    \n    <article class=\"flex justify-between p-10\">\n      <div class=\"btn-group flex items-center justify-center flex-wrap flex-col\">\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'xsmall'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'small'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'medium'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'large'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'xlarge'\" [disabled]=\"true\"></app-btn>\n      </div>\n      <div class=\"btn-group flex items-center justify-center flex-wrap flex-col\">\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'xsmall'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'small'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'medium'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'large'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'xlarge'\"></app-btn>\n      </div>\n    </article> \n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-search-bar class=\"sm:w-[calc(100%-15px)]\"></app-search-bar>\n    </article>\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-option-picker class=\"sm:w-[calc(100%-15px)]\"></app-option-picker>\n    </article>\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-team-badge class=\"sm:w-[calc(100%-15px)]\"></app-team-badge>\n    </article>\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-troubleshoot-card class=\"sm:w-[calc(100%-15px)]\"></app-troubleshoot-card>\n    </article>\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-glass-big-card class=\"sm:w-[calc(100%-15px)]\"></app-glass-big-card>\n    </article>\n\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-glass-small-card class=\"sm:w-[calc(100%-15px)]\"></app-glass-small-card>\n    </article>-->\n    <!-- <div class=\"h-32 w-32 red text-6xl text-orange-600\">\n      <h2>Header</h2>\n\n    </div>\n      <app-btn class=\"mb-4 mr-4\" [primary]=\"false\" [size]=\"'small'\"></app-btn> -->\n  </section>\n</main>\n\n<router-outlet></router-outlet>\n"
         },
         {
             "name": "AuthenticateFormComponent",
@@ -885,11 +885,11 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"main\">\n  <picture class=\"absolute w-full h-full left-0 top-0\">\n    <source media=\"(max-width:650px)\" srcset=\"/assets/img/mobile-login.jpg\">\n    <source media=\"(min-width:651px)\" srcset=\"/assets/img/desktop-login.jpg\">\n    <img class=\"absolute w-full h-full left-0 top-0 object-cover object-center\" src=\"/assets/img/desktop-login.jpg\"\n      alt=\"Flowers\">\n  </picture>\n  <!-- <div\n    class=\"text-white shadow-glassM bg-signin-modal absolute top-1/2 -translate-y-1/2 sm:right-40 lg:right-32 min-h-[423px] w-[calc(100%-48px)] sm:max-w-md mx-6 md:mx-0 p-8 backdrop-blur-3xl rounded-2xl border-solid border-[1px]\">\n    <img src=\"/assets/img/logo-white.svg\" alt=\"\" class=\"m-auto mb-8 sm:w-60\">\n    <app-input class=\"block relative mb-8\" [label]=\"'E-mail Address'\" [type]=\"'text'\"></app-input>\n    <app-input class=\"block relative mb-8\" [label]=\"'Password'\" [type]=\"'password'\"></app-input>\n    <div class=\"form-group flex items-center mb-8\">\n      <input type=\"checkbox\" name=\"term\" id=\"term\" class=\" bg-transparent mr-1\">\n      <label for=\"term\" class=\"text-[11px] \">I agree to <a href=\"#\">Terms</a> and <a href=\"#\">Privacy Policy</a></label>\n    </div>\n\n    <app-btn class=\"block relative w-full text-center mb-4 text-gray-600\" [primary]=\"false\" [size]=\"'medium'\"></app-btn>\n    <button class=\"text-center block w-full bg-white h-10 text-sm sm:text-xl sm:h-16 rounded-full text-gray-600 mb-4\"> Sign In</button>\n    <a href=\"#\" class=\"text-sm block text-center mb-8\">Forgot Password</a>\n    <p class=\"text-[10px] text-center\">© 2021 Schlumberger Limited. All rights reserved.</p>\n  </div> -->\n  <!-- <app-login-form></app-login-form>\n  <app-reset-form></app-reset-form> -->\n  <app-authenticate-form></app-authenticate-form>\n</div>"
+            "templateData": "<div class=\"main\">\n  <picture class=\"absolute w-full h-full left-0 top-0\">\n    <source media=\"(max-width:650px)\" srcset=\"/assets/img/mobile-login.jpg\">\n    <source media=\"(min-width:651px)\" srcset=\"/assets/img/desktop-login.jpg\">\n    <img class=\"absolute w-full h-full left-0 top-0 object-cover object-center\" src=\"/assets/img/desktop-login.jpg\"\n      alt=\"Flowers\">\n  </picture>\n  <!-- <div\n    class=\"text-white shadow-glassM bg-signin-modal absolute top-1/2 -translate-y-1/2 sm:right-40 lg:right-32 min-h-[423px] w-[calc(100%-48px)] sm:max-w-md mx-6 md:mx-0 p-8 backdrop-blur-3xl rounded-2xl border-solid border-[1px]\">\n    <img src=\"/assets/img/logo-white.svg\" alt=\"\" class=\"m-auto mb-8 sm:w-60\">\n    <app-input class=\"block relative mb-8\" [label]=\"'E-mail Address'\" [type]=\"'text'\"></app-input>\n    <app-input class=\"block relative mb-8\" [label]=\"'Password'\" [type]=\"'password'\"></app-input>\n    <div class=\"form-group flex items-center mb-8\">\n      <input type=\"checkbox\" name=\"term\" id=\"term\" class=\" bg-transparent mr-1\">\n      <label for=\"term\" class=\"text-[11px] \">I agree to <a href=\"#\">Terms</a> and <a href=\"#\">Privacy Policy</a></label>\n    </div>\n\n    <app-btn class=\"block relative w-full text-center mb-4 text-gray-600\" [primary]=\"false\" [size]=\"'medium'\"></app-btn>\n    <button class=\"text-center block w-full bg-white h-10 text-sm sm:text-xl sm:h-16 rounded-full text-gray-600 mb-4\"> Sign In</button>\n    <a href=\"#\" class=\"text-sm block text-center mb-8\">Forgot Password</a>\n    <p class=\"text-[10px] text-center\">© 2021 Schlumberger Limited. All rights reserved.</p>\n  </div> -->\n  <app-login-form></app-login-form>\n  <!-- <app-reset-form></app-reset-form> -->\n  <!-- <app-authenticate-form></app-authenticate-form> -->\n</div>"
         },
         {
             "name": "InputComponent",
-            "id": "component-InputComponent-b7a6fcd326cb2012636bb52fd4e8d3ef",
+            "id": "component-InputComponent-3fb2392317410a46d1865d3080568d8e",
             "file": "src/app/moules/common/component/input/input.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -921,6 +921,13 @@
                     "type": "any"
                 },
                 {
+                    "name": "primary",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "any"
+                },
+                {
                     "name": "type",
                     "deprecated": false,
                     "deprecationMessage": "",
@@ -932,13 +939,13 @@
             "propertiesClass": [
                 {
                     "name": "passwordIcon",
-                    "defaultValue": "'showpass_icon'",
+                    "defaultValue": "'#showpass_icon'",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "string",
                     "optional": false,
                     "description": "",
-                    "line": 13
+                    "line": 14
                 }
             ],
             "methodsClass": [
@@ -948,7 +955,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 16,
+                    "line": 17,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -958,7 +965,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 19,
+                    "line": 20,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -970,7 +977,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-input',\n  templateUrl: './input.component.html',\n  styleUrls: ['./input.component.scss']\n})\nexport class InputComponent implements OnInit {\n\n  @Input() label: any;\n  @Input() active: any;\n  @Input() type: any;\n  passwordIcon = 'showpass_icon';\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n  showPassword() {\n    if (this.type === 'password') {\n      this.type = 'text';\n      this.passwordIcon = 'hidepass_icon';\n    } else{\n      this.type = 'password';\n      this.passwordIcon = 'showpass_icon';\n    }\n  }\n\n}\n",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-input',\n  templateUrl: './input.component.html',\n  styleUrls: ['./input.component.scss']\n})\nexport class InputComponent implements OnInit {\n\n  @Input() label: any;\n  @Input() active: any;\n  @Input() type: any;\n  @Input() primary: any;\n  passwordIcon = '#showpass_icon';\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n  showPassword() {\n    if (this.type === 'password') {\n      this.type = 'text';\n      this.passwordIcon = '#hidepass_icon';\n    } else{\n      this.type = 'password';\n      this.passwordIcon = '#showpass_icon';\n    }\n  }\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -985,16 +992,16 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "args": [],
-                "line": 13
+                "line": 14
             },
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"form-group w-full relative h-8\">\n    <input required type=\"{{type}}\" name=\"input\" id=\"name\" class=\"input placeholder-white absolute bottom-0 outline-none leading-9 text-white text-sm w-full left-0 border-b-[.5px] border-white border-solid bg-transparent\">\n    <label for=\"name\" class=\" h-6 text-base valid:-top-5 text-white absolute top-0 transition-all duration-700\">{{label}}</label>\n    <app-svg-icon (click)=\"showPassword()\" class=\"hidden pass-icon text-white text-2xl absolute right-2 bottom-2 cursor-pointer\" [iconHashTag]=\"'#showpass_icon'\"></app-svg-icon>\n</div>\n<!-- <span class=\"text-xs text-white\" id=\"passwordHelp\">These passwords don’t match. <br> Please try again.</span> -->"
+            "templateData": "<div class=\"form-group w-full relative h-8\">\n    <input required type=\"{{type}}\" name=\"input\" id=\"name\" class=\"input placeholder-white absolute bottom-0 outline-none leading-9 text-white text-sm w-full left-0 border-b-[.5px] border-white border-solid bg-transparent\">\n    <label for=\"name\" class=\" h-6 text-base valid:-top-5 text-white absolute top-0 transition-all duration-700\">{{label}}</label>\n    <app-svg-icon (click)=\"showPassword()\" class=\"hidden pass-icon text-white text-2xl absolute right-2 bottom-2 cursor-pointer\" [iconHashTag]=\"passwordIcon\"></app-svg-icon>\n</div>\n<!-- <span class=\"text-xs text-white\" id=\"passwordHelp\">These passwords don’t match. <br> Please try again.</span> -->"
         },
         {
             "name": "ListComponent",
-            "id": "component-ListComponent-be052a6881939980b06fbcf6c3a7d548",
+            "id": "component-ListComponent-97a810b6e6d60f1a15041081a96723e0",
             "file": "src/app/feature/dashboard/list/list.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1012,7 +1019,18 @@
             "viewProviders": [],
             "inputsClass": [],
             "outputsClass": [],
-            "propertiesClass": [],
+            "propertiesClass": [
+                {
+                    "name": "cardArray",
+                    "defaultValue": "['','','',]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 11
+                }
+            ],
             "methodsClass": [
                 {
                     "name": "ngOnInit",
@@ -1032,7 +1050,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-list',\n  templateUrl: './list.component.html',\n  styleUrls: ['./list.component.scss']\n})\nexport class ListComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-list',\n  templateUrl: './list.component.html',\n  styleUrls: ['./list.component.scss']\n})\nexport class ListComponent implements OnInit {\n\n  constructor() { }\n  cardArray = ['','','',];\n  ngOnInit(): void {\n  }\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -1052,11 +1070,11 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"flex items-center justify-between mb-8\">\n    <app-search-bar class=\"\"></app-search-bar>\n    <app-option-picker class=\"\"></app-option-picker>\n    <app-team-badge class=\"\"></app-team-badge>\n</div>\n<div class=\"card-list\">\n    <p class=\" text-lg text-white font-bold text-shadow mb-4\">Waiting for HEK Oil’s Input</p>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n</div>\n<div class=\"card-list\">\n    <p class=\" text-lg text-white font-bold text-shadow mb-4\">Today</p>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n</div>\n<div class=\"card-list\">\n    <p class=\" text-lg text-white font-bold text-shadow mb-4\">Tomorrow</p>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n</div>"
+            "templateData": "<div class=\"flex items-center justify-between mb-8\">\n    <app-search-bar class=\"\"></app-search-bar>\n    <app-option-picker class=\"\"></app-option-picker>\n    <app-team-badge class=\"\"></app-team-badge>\n</div>\n<div class=\"card-list\">\n    <p class=\" text-lg text-white font-bold text-shadow mb-4\">Waiting for HEK Oil’s Input</p>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n</div>\n<div class=\"card-list\">\n    <p class=\" text-lg text-white font-bold text-shadow mb-4\">Today</p>\n    <app-glass-big-card class=\"block mb-6\" *ngFor=\"let item of cardArray\"></app-glass-big-card>\n</div>\n<div class=\"card-list\">\n    <p class=\" text-lg text-white font-bold text-shadow mb-4\">Tomorrow</p>\n    <app-glass-big-card class=\"block mb-6\" *ngFor=\"let item of cardArray\"></app-glass-big-card>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n    <app-glass-big-card class=\"block mb-6\" ></app-glass-big-card>\n</div>"
         },
         {
             "name": "LoginFormComponent",
-            "id": "component-LoginFormComponent-d38b39e3c3a252be63a9e35f6d7351a6",
+            "id": "component-LoginFormComponent-cad46281a74c7c773d6d5d748942961e",
             "file": "src/app/moules/common/component/login-form/login-form.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1072,7 +1090,15 @@
                 "./login-form.component.html"
             ],
             "viewProviders": [],
-            "inputsClass": [],
+            "inputsClass": [
+                {
+                    "name": "primary",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "any"
+                }
+            ],
             "outputsClass": [],
             "propertiesClass": [],
             "methodsClass": [
@@ -1082,7 +1108,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 12,
+                    "line": 13,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -1094,7 +1120,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-login-form',\n  templateUrl: './login-form.component.html',\n  styleUrls: ['./login-form.component.scss']\n})\nexport class LoginFormComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-login-form',\n  templateUrl: './login-form.component.html',\n  styleUrls: ['./login-form.component.scss']\n})\nexport class LoginFormComponent implements OnInit {\n\n  constructor() { }\n  @Input() primary: any;\n\n  ngOnInit(): void {\n  }\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -1114,7 +1140,7 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"text-white shadow-glassM bg-signin-modal absolute top-1/2 -translate-y-1/2 sm:right-40 lg:right-32 min-h-[423px] w-[calc(100%-48px)] sm:max-w-md mx-6 md:mx-0 p-8 backdrop-blur-3xl rounded-2xl border-solid border-[1px]\">\n  <img src=\"/assets/img/logo-white.svg\" alt=\"\" class=\"m-auto mb-8 sm:w-60\">\n  <app-input class=\"block relative mb-8\" [label]=\"'E-mail Address'\" [type]=\"'text'\"></app-input>\n  <app-input class=\"block relative mb-8\" [label]=\"'Password'\" [type]=\"'password'\"></app-input>\n  <app-input class=\"block relative mb-8\" [label]=\"'Confirm Password'\" [type]=\"'password'\"></app-input>\n  <div class=\"form-group flex items-center mb-8\">\n    <input type=\"checkbox\" name=\"term\" id=\"term\" class=\" bg-transparent mr-1\">\n    <label for=\"term\" class=\"text-[11px] \">I agree to <a href=\"#\">Terms</a> and <a href=\"#\">Privacy Policy</a></label>\n  </div>\n\n  <!-- <app-btn class=\"block relative w-full text-center mb-4 text-gray-600\" [primary]=\"false\" [size]=\"'medium'\"></app-btn> -->\n  <button class=\"text-center block w-full bg-white h-10 text-sm sm:text-xl sm:h-16 rounded-full text-gray-600 mb-4\"> Sign In</button>\n  <a href=\"#\" class=\"text-sm block text-center mb-8\">Forgot Password</a>\n  <p class=\"text-[10px] text-center\">© 2021 Schlumberger Limited. All rights reserved.</p>\n</div>"
+            "templateData": "<div class=\"text-white shadow-glassM bg-signin-modal absolute top-1/2 -translate-y-1/2 sm:right-40 lg:right-32 min-h-[423px] w-[calc(100%-48px)] sm:max-w-md mx-6 md:mx-0 p-8 backdrop-blur-3xl rounded-2xl border-solid border-[1px]\">\n  <img src=\"/assets/img/logo-white.svg\" alt=\"\" class=\"m-auto mb-8 sm:w-60\">\n  <app-input class=\"block relative mb-8\" [ngClass]=\"{'opacity-50': primary}\" [label]=\"'E-mail Address'\" [type]=\"'text'\"></app-input>\n  <app-input class=\"block relative mb-8\" [label]=\"'Password'\" [type]=\"'password'\"></app-input>\n  <app-input class=\"block relative mb-8\" [label]=\"'Confirm Password'\" [type]=\"'password'\"></app-input>\n  <div class=\"form-group flex items-center mb-8\">\n    <input type=\"checkbox\" name=\"term\" id=\"term\" class=\" bg-transparent mr-1\">\n    <label for=\"term\" class=\"text-[11px] \">I agree to <a href=\"#\">Terms</a> and <a href=\"#\">Privacy Policy</a></label>\n  </div>\n\n  <app-btn class=\"block relative w-full text-center mb-4 text-gray-600\" [primary]=\"false\" [size]=\"'medium'\"></app-btn>\n  <!-- <button class=\"text-center block w-full bg-white h-10 text-sm sm:text-xl sm:h-16 rounded-full text-gray-600 mb-4\"> Sign In</button> -->\n  <a href=\"#\" class=\"text-sm block text-center mb-8\">Forgot Password</a>\n  <p class=\"text-[10px] text-center\">© 2021 Schlumberger Limited. All rights reserved.</p>\n</div>"
         },
         {
             "name": "NavbarComponent",
@@ -3450,7 +3476,7 @@
                 "linktype": "component",
                 "name": "ListComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/3",
+                "coverageCount": "0/4",
                 "status": "low"
             },
             {
@@ -3782,7 +3808,7 @@
                 "linktype": "component",
                 "name": "InputComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/8",
+                "coverageCount": "0/9",
                 "status": "low"
             },
             {
@@ -3811,7 +3837,7 @@
                 "linktype": "component",
                 "name": "LoginFormComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/3",
+                "coverageCount": "0/4",
                 "status": "low"
             },
             {

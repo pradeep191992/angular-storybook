@@ -1,9 +1,16 @@
 import { NavbarComponent } from './navbar.component';
 import { Story, Meta } from '@storybook/angular/types-6-0';
+import { moduleMetadata } from '@storybook/angular';
+import { SvgIconComponent } from 'src/app/moules/svg-icon/svg-icon.component';
 
 export default {
   title: 'Common/Navbar',
   component: NavbarComponent,
+  decorators: [
+    moduleMetadata({
+      declarations: [SvgIconComponent],
+    }),
+  ],
   argTypes: {
     // backgroundColor: { control: 'color' },
     propertyB: {
