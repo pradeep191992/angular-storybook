@@ -11,6 +11,10 @@ import { TeamBadgeComponent } from './component/team-badge/team-badge.component'
 import { OptionPickerComponent } from './component/option-picker/option-picker.component';
 import { SearchBarComponent } from './component/search-bar/search-bar.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
+import { LoginFormComponent } from './component/login-form/login-form.component';
+import { ResetFormComponent } from './component/reset-form/reset-form.component';
+import { AuthenticateFormComponent } from './component/authenticate-form/authenticate-form.component';
+import { InputComponent } from './component/input/input.component';
 
 
 
@@ -24,7 +28,11 @@ import { NavbarComponent } from './component/navbar/navbar.component';
     TeamBadgeComponent,
     OptionPickerComponent,
     SearchBarComponent,
-    NavbarComponent
+    NavbarComponent,
+    LoginFormComponent,
+    ResetFormComponent,
+    AuthenticateFormComponent,
+    InputComponent,
   ],
   imports: [
     CommonModule,
@@ -40,7 +48,11 @@ import { NavbarComponent } from './component/navbar/navbar.component';
     TeamBadgeComponent,
     OptionPickerComponent,
     SearchBarComponent,
-    NavbarComponent
+    NavbarComponent,
+    LoginFormComponent,
+    ResetFormComponent,
+    AuthenticateFormComponent,
+    InputComponent,
   ]
 })
 export class CommonsModule { }

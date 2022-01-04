@@ -1,11 +1,11 @@
-<header class="fixed top-0 z-20 left-0 w-full h-16 bg-white shadow-modal p-6">
+<header class="fixed top-0 z-20 left-0 w-full h-16 bg-white shadow-modal p-3 sm:p-6">
   <nav class="flex-center justify-between h-full">
-    <a [routerLink]="['/']" routerLinkActive="router-link-active" class="block">
+    <a [routerLink]="['/']" routerLinkActive="router-link-active" class="hidden sm:block">
       <img src="/assets/img/logo-black.svg" alt="" class="block">
     </a>
     <div class="flex-center">
       <app-navbar></app-navbar>
-      <p class="flex-center text-xs text-blue-500 px-3 ring-1 h-6 rounded-full">
+      <p class="flex-center text-xs text-blue-500 px-3 ring-1 h-6 rounded-full hidden sm:block">
         <app-svg-icon class="mr-1 leading-[1]" [iconHashTag]="'#bell_icon'"></app-svg-icon>
         <span class="text-gray-600">0</span>
       </p>
@@ -14,19 +14,12 @@
   </nav>
 </header>
 <div class="pt-16"></div>
-<!-- <main class="main max-w-7xl m-auto px-4 font-serif">
-  <header>
-    <nav>
-      <h1>Logo</h1>
-      <p>Header Content</p>
-      <a [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a> 
-    </nav>
-  </header>
+<main class="main max-w-7xl m-auto px-4 font-arial">
   <section>
-    <article class="flex flex-wrap justify-between">
+    <!-- <article class="flex flex-wrap justify-between">
       <app-card class="sm:w-[calc(50%-15px)] lg:w-[calc(33.33%-15px)]" *ngFor="let item of cardArray"></app-card>
-    </article>
-
+    </article> 
+    
     <article class="flex justify-between p-10">
       <div class="btn-group flex items-center justify-center flex-wrap flex-col">
         <app-btn class=" mb-4" [primary]="true" [size]="'xsmall'"></app-btn>
@@ -42,8 +35,7 @@
         <app-btn class=" mb-4" [primary]="false" [size]="'large'"></app-btn>
         <app-btn class=" mb-4" [primary]="false" [size]="'xlarge'"></app-btn>
       </div>
-    </article>
-
+    </article> 
     <article class="flex flex-wrap justify-between bg-blue-900 p-10">
       <app-search-bar class="sm:w-[calc(100%-15px)]"></app-search-bar>
     </article>
@@ -62,8 +54,13 @@
 
     <article class="flex flex-wrap justify-between bg-blue-900 p-10">
       <app-glass-small-card class="sm:w-[calc(100%-15px)]"></app-glass-small-card>
-    </article>
+    </article>-->
+    <div class="h-32 w-32 red text-6xl text-orange-600">
+      <h2>Header</h2>
+
+    </div>
+      <app-btn class="mb-4 mr-4" [primary]="false" [size]="'small'"></app-btn>
   </section>
-</main> -->
+</main>
 
 <router-outlet></router-outlet>

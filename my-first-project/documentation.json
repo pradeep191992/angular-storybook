@@ -66,7 +66,69 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "\n<main class=\"main max-w-7xl m-auto px-4 font-serif\">\n  <header>\n    <nav>\n      <h1>Logo</h1>\n      <p>Header Content</p>\n      <a [routerLink]=\"['/home']\" routerLinkActive=\"router-link-active\">Home</a> \n    </nav>\n  </header>\n  <!-- <section>\n    <article class=\"flex flex-wrap justify-between\">\n      <app-card class=\"sm:w-[calc(50%-15px)] lg:w-[calc(33.33%-15px)]\" *ngFor=\"let item of cardArray\"></app-card>\n    </article>\n\n    <article class=\"flex justify-between p-10\">\n      <div class=\"btn-group flex items-center justify-center flex-wrap flex-col\">\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'xsmall'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'small'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'medium'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'large'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'xlarge'\" [disabled]=\"true\"></app-btn>\n      </div>\n      <div class=\"btn-group flex items-center justify-center flex-wrap flex-col\">\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'xsmall'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'small'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'medium'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'large'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'xlarge'\"></app-btn>\n      </div>\n    </article>\n\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-search-bar class=\"sm:w-[calc(100%-15px)]\"></app-search-bar>\n    </article>\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-option-picker class=\"sm:w-[calc(100%-15px)]\"></app-option-picker>\n    </article>\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-team-badge class=\"sm:w-[calc(100%-15px)]\"></app-team-badge>\n    </article>\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-troubleshoot-card class=\"sm:w-[calc(100%-15px)]\"></app-troubleshoot-card>\n    </article>\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-glass-big-card class=\"sm:w-[calc(100%-15px)]\"></app-glass-big-card>\n    </article>\n\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-glass-small-card class=\"sm:w-[calc(100%-15px)]\"></app-glass-small-card>\n    </article>\n  </section> -->\n</main>\n\n<router-outlet></router-outlet>\n"
+            "templateData": "<header class=\"fixed top-0 z-20 left-0 w-full h-16 bg-white shadow-modal p-3 sm:p-6\">\n  <nav class=\"flex-center justify-between h-full\">\n    <a [routerLink]=\"['/']\" routerLinkActive=\"router-link-active\" class=\"hidden sm:block\">\n      <img src=\"/assets/img/logo-black.svg\" alt=\"\" class=\"block\">\n    </a>\n    <div class=\"flex-center\">\n      <app-navbar></app-navbar>\n      <p class=\"flex-center text-xs text-blue-500 px-3 ring-1 h-6 rounded-full hidden sm:block\">\n        <app-svg-icon class=\"mr-1 leading-[1]\" [iconHashTag]=\"'#bell_icon'\"></app-svg-icon>\n        <span class=\"text-gray-600\">0</span>\n      </p>\n\n    </div>\n  </nav>\n</header>\n<div class=\"pt-16\"></div>\n<main class=\"main max-w-7xl m-auto px-4 font-arial\">\n  <section>\n    <!-- <article class=\"flex flex-wrap justify-between\">\n      <app-card class=\"sm:w-[calc(50%-15px)] lg:w-[calc(33.33%-15px)]\" *ngFor=\"let item of cardArray\"></app-card>\n    </article> \n    \n    <article class=\"flex justify-between p-10\">\n      <div class=\"btn-group flex items-center justify-center flex-wrap flex-col\">\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'xsmall'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'small'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'medium'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'large'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'xlarge'\" [disabled]=\"true\"></app-btn>\n      </div>\n      <div class=\"btn-group flex items-center justify-center flex-wrap flex-col\">\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'xsmall'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'small'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'medium'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'large'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'xlarge'\"></app-btn>\n      </div>\n    </article> \n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-search-bar class=\"sm:w-[calc(100%-15px)]\"></app-search-bar>\n    </article>\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-option-picker class=\"sm:w-[calc(100%-15px)]\"></app-option-picker>\n    </article>\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-team-badge class=\"sm:w-[calc(100%-15px)]\"></app-team-badge>\n    </article>\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-troubleshoot-card class=\"sm:w-[calc(100%-15px)]\"></app-troubleshoot-card>\n    </article>\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-glass-big-card class=\"sm:w-[calc(100%-15px)]\"></app-glass-big-card>\n    </article>\n\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-glass-small-card class=\"sm:w-[calc(100%-15px)]\"></app-glass-small-card>\n    </article>-->\n    <div class=\"h-32 w-32 red text-6xl text-orange-600\">\n      <h2>Header</h2>\n\n    </div>\n      <app-btn class=\"mb-4 mr-4\" [primary]=\"false\" [size]=\"'small'\"></app-btn>\n  </section>\n</main>\n\n<router-outlet></router-outlet>\n"
+        },
+        {
+            "name": "AuthenticateFormComponent",
+            "id": "component-AuthenticateFormComponent-d3196c52ac98d449d1992a9d5088aaa7",
+            "file": "src/app/moules/common/component/authenticate-form/authenticate-form.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-authenticate-form",
+            "styleUrls": [
+                "./authenticate-form.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./authenticate-form.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-authenticate-form',\n  templateUrl: './authenticate-form.component.html',\n  styleUrls: ['./authenticate-form.component.scss']\n})\nexport class AuthenticateFormComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".input {\n  padding-left: 14px;\n  padding-bottom: 8px;\n  letter-spacing: 33px;\n  border: 0;\n  background-image: linear-gradient(to left, #fff 37%, rgba(255, 255, 255, 0) 0%);\n  background-position: bottom;\n  background-size: 55px 1px;\n  background-repeat: repeat-x;\n  background-position-x: 36px;\n  width: 290px;\n}",
+                    "styleUrl": "./authenticate-form.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div\n  class=\"text-white shadow-glassM bg-signin-modal absolute top-1/2 -translate-y-1/2 sm:right-40 lg:right-32 min-h-[423px] w-[calc(100%-48px)] sm:max-w-md mx-6 md:mx-0 p-8 backdrop-blur-3xl rounded-2xl border-solid border-[1px]\">\n  <img src=\"/assets/img/logo-white.svg\" alt=\"\" class=\"m-auto mb-8 sm:w-60\">\n  <div class=\"reset-text text-white mb-10\">\n    <h2 class=\" text-2xl mb-3\">Authenticate your account</h2>\n    <p class=\" text-sm\">Please confirm your account by entering the authorization code sent to ***-****-2342</p>\n  </div>\n  <div class=\"mb-10\">\n    <input id=\"partitioned\" type=\"text\" maxlength=\"5\" placeholder=\"00000\"\n      class=\"input placeholder-white outline-none leading-9 text-white text-[40px] w-full border-b-[.5px] border-white border-solid bg-transparent\"/>\n  </div>\n  <div class=\"form-group flex items-center mb-8\">\n    <input type=\"checkbox\" name=\"term\" id=\"term\" class=\" bg-transparent mr-1\">\n    <label for=\"term\" class=\"text-[11px] \">Remember this device for 30 days</label>\n  </div>\n\n  <!-- <app-btn class=\"block relative w-full text-center mb-4 text-gray-600\" [primary]=\"false\" [size]=\"'medium'\"></app-btn> -->\n  <button class=\"text-center block w-full bg-white h-10 text-sm sm:text-xl sm:h-16 rounded-full text-gray-600 mb-4\">\n    Submit</button>\n  <a href=\"#\" class=\"text-sm block text-center\">Resend a new code</a>\n</div>\n\n\n"
         },
         {
             "name": "BtnComponent",
@@ -440,6 +502,68 @@
             "templateData": "<div class=\"card rounded-xl overflow-hidden shadow-modal mb-8\" [ngClass]=\"cardClasses\">\n  {{cardClasses}}\n  <figure class=\"card-fig text-center sm:min-w-300 lg:min-w-400 xl:min-w-500\" *ngIf=\"showImg\">\n    <img src=\"https://d2awz7twruaixb.cloudfront.net/assets/img/home-ipad.webp\" alt=\"\" class=\"card-fig-img\">\n  </figure>\n  <div class=\"card-content p-3 sm:p-6\">\n    <h2 class=\"card-title text-2xl sm:text-3xl\">{{title}}</h2>\n    <p class=\"card-para py-3 text-sm\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ab ullam neque esse ex illo eligendi vitae libero amet, cupiditate minus incidunt facere, eveniet corrupti quidem harum voluptatum enim.</p>\n    <button class=\"py-2 px-4 border border-transparent shadow-btn hover:shadow-btnHvr text-sm font-medium rounded-md text-white bg-red-400\">{{buttonLabel}}</button>\n    <app-btn></app-btn>\n  </div>\n</div>"
         },
         {
+            "name": "DashboardComponent",
+            "id": "component-DashboardComponent-c76d7d6b6cbfbeb26549e7881fd968ae",
+            "file": "src/app/feature/dashboard/dashboard.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-dashboard",
+            "styleUrls": [
+                "./dashboard.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./dashboard.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-dashboard',\n  templateUrl: './dashboard.component.html',\n  styleUrls: ['./dashboard.component.scss']\n})\nexport class DashboardComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./dashboard.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"main\">\n  <picture class=\"fixed w-full h-full left-0 top-0 z-0\">\n    <source media=\"(max-width:650px)\" srcset=\"/assets/img/mobile-login.jpg\">\n    <source media=\"(min-width:651px)\" srcset=\"/assets/img/desktop-login.jpg\">\n    <img class=\"absolute w-full h-full left-0 top-0 object-cover object-center\" src=\"/assets/img/desktop-login.jpg\"\n      alt=\"Flowers\">\n  </picture>\n  <div class=\"relative grid gap-4 p-6 grid-cols-[464px,1fr] grid-rows-[220px,1fr] z-10 h-screen\">\n    <app-sidebar class=\"sidebar shadow-glassM bg-glass-85 backdrop-blur-3xl rounded-2xl p-4 h-full row-span-2 sticky top-16\"></app-sidebar>\n    <div class=\"header shadow-glassM bg-signin-modal p-6 backdrop-blur-3xl rounded-2xl col-start-2\">\n      <div class=\"topbar flex items-center justify-between text-white text-shadow\">\n        <div class=\"left\">\n          <h1 class=\" text-xl font-bold mb-1\">Field Production - Actual vs. Potential</h1>\n          <p class=\"text-xs\">Powered by LiftIQ</p>\n        </div>\n        <div class=\"right flex-center\">\n          <h2 class=\" text-3xl font-normal\">15%</h2>\n          <p class=\"text-xs self-end ml-1\">Current Difference</p>\n        </div>\n      </div>\n    </div>\n    <app-list class=\"dashboard shadow-glassM bg-signin-modal p-6 backdrop-blur-3xl rounded-2xl row-start-2 col-start-2\"></app-list>\n  </div>\n</div>"
+        },
+        {
             "name": "GlassBigCardComponent",
             "id": "component-GlassBigCardComponent-4524a5ec96f7c57765dbcda547cb5157",
             "file": "src/app/moules/common/component/glass-big-card/glass-big-card.component.ts",
@@ -532,7 +656,7 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"glass-card flex items-center p-6 shadow-glassM bg-glass-95 rounded-lg backdrop-blur-3xl\">\n    <span class=\"icon rounded shadow-btnS h-10 w-10 flex-center mr-4 text-blue-600\">I</span>\n    <div class=\"name mr-auto\">\n        <span class=\"text-xs\">09-14-2021 - 7:33 am CST</span>\n        <p class=\"text-base\">ESP Stopped (Artificial Lift)</p>\n        <span class=\"text-xs\">Reported by: Lift IQ</span>\n    </div>\n    <span class=\"text-xs\" *ngIf=\"first\">Unresolved</span>\n    <div class=\"progress-text ml-auto w-32 text-center\" *ngIf=\"second\">\n        <p class=\"progress flex-center mb-2\">\n            <span class=\"block w-[22px] h-1 bg-blue-500 rounded-tl-[2px] rounded-bl-[2px] mr-[2px]\"></span>\n            <span class=\"block w-[22px] h-[6px] bg-blue-600 mr-[2px]\"></span>\n            <span class=\"block w-[22px] h-1 bg-gray-300 mr-[2px]\"></span>\n            <span class=\"block w-[22px] h-1 bg-gray-300 mr-[2px]\"></span>\n            <span class=\"block w-[22px] h-1 bg-gray-300 rounded-tr-[2px] rounded-br-[2px]\"></span>\n        </p>\n        <p class=\"text-xs\">Crew Confirmed</p>\n    </div>\n    <div class=\"ctas ml-auto\" *ngIf=\"third\">\n        <app-btn class=\"mb-4 mr-4\" [primary]=\"false\" [size]=\"'small'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'small'\"></app-btn>\n    </div>\n    <div class=\"report ml-auto flex items-center\" *ngIf=\"fourth\">\n        <span class=\"text-sm border-b border-solid mr-4\">View Report <br/>& Proposal</span>\n        <span class=\"three-dot rotate-90 text-2xl\">...</span>\n    </div>\n</div>"
+            "templateData": "<div class=\"glass-card flex items-center p-6 shadow-glassM bg-glass-95 rounded-lg backdrop-blur-3xl\">\n    <app-svg-icon class=\"icon rounded shadow-btnS h-10 w-10 flex-center mr-4 text-blue-600\" [iconHashTag]=\"'#search_icon'\"></app-svg-icon>\n    <div class=\"name mr-auto\">\n        <span class=\"text-xs\">09-14-2021 - 7:33 am CST</span>\n        <p class=\"text-base\">ESP Stopped (Artificial Lift)</p>\n        <span class=\"text-xs\">Reported by: Lift IQ</span>\n    </div>\n    <span class=\"text-xs\" *ngIf=\"second\">Unresolved</span>\n    <div class=\"progress-text ml-auto w-32 text-center\" *ngIf=\"first\">\n        <p class=\"progress flex-center mb-2\">\n            <span class=\"block w-[22px] h-1 bg-blue-500 rounded-tl-[2px] rounded-bl-[2px] mr-[2px]\"></span>\n            <span class=\"block w-[22px] h-1 bg-blue-500 mr-[2px]\"></span>\n            <span class=\"block w-[22px] h-[6px] bg-blue-600 mr-[2px]\"></span>\n            <span class=\"block w-[22px] h-1 bg-gray-300 mr-[2px]\"></span>\n            <span class=\"block w-[22px] h-1 bg-gray-300 rounded-tr-[2px] rounded-br-[2px]\"></span>\n        </p>\n        <p class=\"text-xs\">Crew Confirmed</p>\n    </div>\n    <div class=\"ctas ml-auto\" *ngIf=\"fourth\">\n        <app-btn class=\"mb-4 mr-4\" [primary]=\"false\" [size]=\"'small'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'small'\"></app-btn>\n    </div>\n    <div class=\"report ml-auto flex items-center\" *ngIf=\"third\">\n        <span class=\"text-sm border-b border-solid mr-4\">View Report <br/>& Proposal</span>\n        <span class=\"three-dot rotate-90 text-2xl\">...</span>\n    </div>\n</div>"
         },
         {
             "name": "GlassSmallCardComponent",
@@ -627,7 +751,7 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"glass-card flex items-center p-6 bg-glass-75 rounded-lg backdrop-blur-3xl\">\n    <span class=\"icon rounded shadow-btnS h-10 w-10 flex-center mr-4 text-white bg-yellow-500\">I</span>\n    <span class=\"icon rounded shadow-btnS h-10 w-10 flex-center mr-4 bg-gray-300\">I</span>\n    <div class=\"name mr-auto\">\n        <p class=\"text-base\">Boba Fett Well</p>\n        <span class=\"block text-xs\">ESP Stopped 9/14/21, +1 more</span>\n        <span class=\"block text-xs\">ESP Stopped 9/14/21, +1 more</span>\n    </div>\n    <span class=\"text-xs\">Unresolved</span>\n    <div class=\"progress-text ml-auto w-32 text-center\">\n        <p class=\"progress flex-center mb-2\">\n            <span class=\"block w-[22px] h-1 bg-blue-500 rounded-tl-[2px] rounded-bl-[2px] mr-[2px]\"></span>\n            <span class=\"block w-[22px] h-[6px] bg-blue-600 mr-[2px]\"></span>\n            <span class=\"block w-[22px] h-1 bg-gray-300 mr-[2px]\"></span>\n            <span class=\"block w-[22px] h-1 bg-gray-300 mr-[2px]\"></span>\n            <span class=\"block w-[22px] h-1 bg-gray-300 rounded-tr-[2px] rounded-br-[2px]\"></span>\n        </p>\n        <p class=\"text-xs\">Crew Confirmed</p>\n    </div>\n</div>\n\n\n\n<!-- <div class=\"glass-card flex items-center p-4 shadow-glassM bg-glass-95 rounded-lg backdrop-blur-3xl mt-9\">\n    <span class=\"icon rounded shadow-btnS h-10 w-10 flex-center mr-4 bg-white\">I</span>\n    <span class=\"text-lg\">Startup & Power</span>\n</div> -->\n\n\n<!-- <div class=\"glass-card flex items-center p-1 shadow-glassM bg-glass-75 rounded-full backdrop-blur-3xl mt-9 w-28\">\n    <span class=\"icon rounded-full h-8 w-8 mr-2 bg-blue-500\"></span>\n    <div class=\"w-16 px-2 py-1 flex bg-white rounded-full\">\n        <span class=\"text-sm mr-1\">2</span>\n        <div class=\"w-9 relative h-6\">\n            <span class=\"absolute block h-6 w-6 rounded-full bg-blue-500 left-3 top-0 ring-white ring-1\"></span>\n            <span class=\"absolute block h-6 w-6 rounded-full bg-blue-500 ring-white ring-1\"></span>\n        </div>\n    </div>\n</div> -->\n\n\n<!-- <div class=\"glass-card flex items-center justify-between p-1 bg-glass-75 rounded-[90px] backdrop-blur-3xl mt-9 w-[302px]\">\n    <span class=\"text-sm min-w-[90px] text-center\">Closed</span>\n    <span class=\"text-sm min-w-[105px] text-center active\">Scheduled</span>\n    <span class=\"text-sm min-w-[90px] text-center\">Planning</span>\n</div>\n\n\n<div class=\"glass-card flex items-center justify-between p-1 bg-glass-75 rounded-[90px] backdrop-blur-3xl mt-9 w-[200px]\">\n    <span class=\"text-sm min-w-[90px] text-center active\">Closed</span>\n    <span class=\"text-sm min-w-[100px] text-center\">Scheduled</span>\n    <span class=\"text-sm min-w-[90px] text-center active\">Planning</span>\n</div> -->"
+            "templateData": "<div class=\"glass-card flex items-center p-6 bg-glass-75 rounded-lg backdrop-blur-3xl\">\n    <span *ngIf=\"first\"\n        class=\"icon rounded shadow-btnS h-10 w-10 flex-center mr-4 text-white bg-yellow-500\">I</span>\n    <span *ngIf=\"second\" class=\"icon rounded shadow-btnS h-10 w-10 flex-center mr-4 bg-gray-300\">I</span>\n    <div class=\"name mr-auto\">\n        <p class=\"text-base\">Boba Fett Well</p>\n        <span class=\"block text-xs\">ESP Stopped 9/14/21, +1 more</span>\n        <span *ngIf=\"fourth\" class=\"block text-xs\">ESP Stopped 9/14/21, +1 more</span>\n    </div>\n    <span *ngIf=\"third\" class=\"text-xs\">Unresolved</span>\n    <div *ngIf=\"fourth\" class=\"progress-text ml-auto w-32 text-center\">\n        <p class=\"progress flex-center mb-2\">\n            <span class=\"block w-[22px] h-1 bg-blue-500 rounded-tl-[2px] rounded-bl-[2px] mr-[2px]\"></span>\n            <span class=\"block w-[22px] h-[6px] bg-blue-600 mr-[2px]\"></span>\n            <span class=\"block w-[22px] h-1 bg-gray-300 mr-[2px]\"></span>\n            <span class=\"block w-[22px] h-1 bg-gray-300 mr-[2px]\"></span>\n            <span class=\"block w-[22px] h-1 bg-gray-300 rounded-tr-[2px] rounded-br-[2px]\"></span>\n        </p>\n        <p class=\"text-xs\">Crew Confirmed</p>\n    </div>\n</div>\n\n\n\n<!-- <div class=\"glass-card flex items-center p-4 shadow-glassM bg-glass-95 rounded-lg backdrop-blur-3xl mt-9\">\n    <span class=\"icon rounded shadow-btnS h-10 w-10 flex-center mr-4 bg-white\">I</span>\n    <span class=\"text-lg\">Startup & Power</span>\n</div> -->\n\n\n<!-- <div class=\"glass-card flex items-center p-1 shadow-glassM bg-glass-75 rounded-full backdrop-blur-3xl mt-9 w-28\">\n    <span class=\"icon rounded-full h-8 w-8 mr-2 bg-blue-500\"></span>\n    <div class=\"w-16 px-2 py-1 flex bg-white rounded-full\">\n        <span class=\"text-sm mr-1\">2</span>\n        <div class=\"w-9 relative h-6\">\n            <span class=\"absolute block h-6 w-6 rounded-full bg-blue-500 left-3 top-0 ring-white ring-1\"></span>\n            <span class=\"absolute block h-6 w-6 rounded-full bg-blue-500 ring-white ring-1\"></span>\n        </div>\n    </div>\n</div> -->\n\n\n<!-- <div class=\"glass-card flex items-center justify-between p-1 bg-glass-75 rounded-[90px] backdrop-blur-3xl mt-9 w-[302px]\">\n    <span class=\"text-sm min-w-[90px] text-center\">Closed</span>\n    <span class=\"text-sm min-w-[105px] text-center active\">Scheduled</span>\n    <span class=\"text-sm min-w-[90px] text-center\">Planning</span>\n</div>\n\n\n<div class=\"glass-card flex items-center justify-between p-1 bg-glass-75 rounded-[90px] backdrop-blur-3xl mt-9 w-[200px]\">\n    <span class=\"text-sm min-w-[90px] text-center active\">Closed</span>\n    <span class=\"text-sm min-w-[100px] text-center\">Scheduled</span>\n    <span class=\"text-sm min-w-[90px] text-center active\">Planning</span>\n</div> -->"
         },
         {
             "name": "HeaderComponent",
@@ -761,12 +885,12 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"main\">\n  <picture class=\"absolute w-full h-full left-0 top-0\">\n    <source media=\"(max-width:650px)\" srcset=\"/assets/img/mobile-login.jpg\">\n    <source media=\"(min-width:651px)\" srcset=\"/assets/img/desktop-login.jpg\">\n    <img class=\"absolute w-full h-full left-0 top-0 object-cover object-center\" src=\"/assets/img/desktop-login.jpg\"\n      alt=\"Flowers\">\n  </picture>\n  <div\n    class=\"text-white shadow-glassM bg-signin-modal absolute top-1/2 -translate-y-1/2 sm:right-40 lg:right-32 min-h-[423px] w-[calc(100%-48px)] sm:max-w-md mx-6 md:mx-0 p-8 backdrop-blur-3xl rounded-2xl border-solid border-[1px]\">\n    <img src=\"/assets/img/logo.svg\" alt=\"\" class=\" m-auto mb-8\">\n    <app-input class=\"block relative mb-8\" [label]=\"'E-mail Address'\" [type]=\"'text'\"></app-input>\n    <app-input class=\"block relative mb-8\" [label]=\"'Password'\" [type]=\"'password'\"></app-input>\n    <div class=\"form-group flex items-center mb-8\">\n      <input type=\"checkbox\" name=\"term\" id=\"term\" class=\" bg-transparent mr-1\">\n      <label for=\"term\" class=\"text-[11px] \">I agree to <a href=\"#\">Terms</a> and <a href=\"#\">Privacy Policy</a></label>\n    </div>\n\n    <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'medium'\"></app-btn>\n    <button class=\"text-center block w-full bg-white h-10 rounded-full text-gray-600 mb-4\"> Sign In</button>\n    <a href=\"#\" class=\"text-sm block text-center mb-8\">Forgot Password</a>\n    <p class=\"text-[10px] text-center\">© 2021 Schlumberger Limited. All rights reserved.</p>\n  </div>\n</div>"
+            "templateData": "<div class=\"main\">\n  <picture class=\"absolute w-full h-full left-0 top-0\">\n    <source media=\"(max-width:650px)\" srcset=\"/assets/img/mobile-login.jpg\">\n    <source media=\"(min-width:651px)\" srcset=\"/assets/img/desktop-login.jpg\">\n    <img class=\"absolute w-full h-full left-0 top-0 object-cover object-center\" src=\"/assets/img/desktop-login.jpg\"\n      alt=\"Flowers\">\n  </picture>\n  <!-- <div\n    class=\"text-white shadow-glassM bg-signin-modal absolute top-1/2 -translate-y-1/2 sm:right-40 lg:right-32 min-h-[423px] w-[calc(100%-48px)] sm:max-w-md mx-6 md:mx-0 p-8 backdrop-blur-3xl rounded-2xl border-solid border-[1px]\">\n    <img src=\"/assets/img/logo-white.svg\" alt=\"\" class=\"m-auto mb-8 sm:w-60\">\n    <app-input class=\"block relative mb-8\" [label]=\"'E-mail Address'\" [type]=\"'text'\"></app-input>\n    <app-input class=\"block relative mb-8\" [label]=\"'Password'\" [type]=\"'password'\"></app-input>\n    <div class=\"form-group flex items-center mb-8\">\n      <input type=\"checkbox\" name=\"term\" id=\"term\" class=\" bg-transparent mr-1\">\n      <label for=\"term\" class=\"text-[11px] \">I agree to <a href=\"#\">Terms</a> and <a href=\"#\">Privacy Policy</a></label>\n    </div>\n\n    <app-btn class=\"block relative w-full text-center mb-4 text-gray-600\" [primary]=\"false\" [size]=\"'medium'\"></app-btn>\n    <button class=\"text-center block w-full bg-white h-10 text-sm sm:text-xl sm:h-16 rounded-full text-gray-600 mb-4\"> Sign In</button>\n    <a href=\"#\" class=\"text-sm block text-center mb-8\">Forgot Password</a>\n    <p class=\"text-[10px] text-center\">© 2021 Schlumberger Limited. All rights reserved.</p>\n  </div> -->\n  <!-- <app-login-form></app-login-form>\n  <app-reset-form></app-reset-form> -->\n  <app-authenticate-form></app-authenticate-form>\n</div>"
         },
         {
             "name": "InputComponent",
-            "id": "component-InputComponent-198ee9011dbeb8c6101fd27c3c0b755f",
-            "file": "src/app/feature/home/input/input.component.ts",
+            "id": "component-InputComponent-b7a6fcd326cb2012636bb52fd4e8d3ef",
+            "file": "src/app/moules/common/component/input/input.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
@@ -805,7 +929,18 @@
                 }
             ],
             "outputsClass": [],
-            "propertiesClass": [],
+            "propertiesClass": [
+                {
+                    "name": "passwordIcon",
+                    "defaultValue": "'showpass_icon'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 13
+                }
+            ],
             "methodsClass": [
                 {
                     "name": "ngOnInit",
@@ -813,7 +948,17 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 15,
+                    "line": 16,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "showPassword",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 19,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -825,11 +970,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-input',\n  templateUrl: './input.component.html',\n  styleUrls: ['./input.component.scss']\n})\nexport class InputComponent implements OnInit {\n\n  @Input() label: any;\n  @Input() active: any;\n  @Input() type: any;\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-input',\n  templateUrl: './input.component.html',\n  styleUrls: ['./input.component.scss']\n})\nexport class InputComponent implements OnInit {\n\n  @Input() label: any;\n  @Input() active: any;\n  @Input() type: any;\n  passwordIcon = 'showpass_icon';\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n  showPassword() {\n    if (this.type === 'password') {\n      this.type = 'text';\n      this.passwordIcon = 'hidepass_icon';\n    } else{\n      this.type = 'password';\n      this.passwordIcon = 'showpass_icon';\n    }\n  }\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".input{\n    &:focus,\n    &:valid{\n        ~ label  {\n            top: -20px;\n            font-size: 10px;\n        }\n    }\n}",
+                    "data": ".input{\n    &:focus,\n    &:valid{\n        ~ label  {\n            top: -20px;\n            font-size: 10px;\n        }\n        ~ .pass-icon{\n            display: block;\n        }\n    }\n}",
                     "styleUrl": "./input.component.scss"
                 }
             ],
@@ -840,12 +985,206 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "args": [],
-                "line": 12
+                "line": 13
             },
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"form-group w-full relative h-8\">\n    <input required type=\"{{type}}\" name=\"input\" id=\"name\" class=\"input placeholder-white absolute bottom-0 outline-none leading-9 text-white text-sm w-full left-0 border-b-[.5px] border-white border-solid bg-transparent\">\n    <label for=\"name\" class=\" h-6 text-base valid:-top-5 text-white absolute top-0 transition-all duration-700\">{{label}}</label>\n</div>\n<span class=\"text-xs text-white\" id=\"passwordHelp\">These passwords don’t match. <br> Please try again.</span>"
+            "templateData": "<div class=\"form-group w-full relative h-8\">\n    <input required type=\"{{type}}\" name=\"input\" id=\"name\" class=\"input placeholder-white absolute bottom-0 outline-none leading-9 text-white text-sm w-full left-0 border-b-[.5px] border-white border-solid bg-transparent\">\n    <label for=\"name\" class=\" h-6 text-base valid:-top-5 text-white absolute top-0 transition-all duration-700\">{{label}}</label>\n    <app-svg-icon (click)=\"showPassword()\" class=\"hidden pass-icon text-white text-2xl absolute right-2 bottom-2 cursor-pointer\" [iconHashTag]=\"'#showpass_icon'\"></app-svg-icon>\n</div>\n<!-- <span class=\"text-xs text-white\" id=\"passwordHelp\">These passwords don’t match. <br> Please try again.</span> -->"
+        },
+        {
+            "name": "ListComponent",
+            "id": "component-ListComponent-be052a6881939980b06fbcf6c3a7d548",
+            "file": "src/app/feature/dashboard/list/list.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-list",
+            "styleUrls": [
+                "./list.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./list.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-list',\n  templateUrl: './list.component.html',\n  styleUrls: ['./list.component.scss']\n})\nexport class ListComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./list.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"flex items-center justify-between mb-8\">\n    <app-search-bar class=\"\"></app-search-bar>\n    <app-option-picker class=\"\"></app-option-picker>\n    <app-team-badge class=\"\"></app-team-badge>\n</div>\n<div class=\"card-list\">\n    <p class=\" text-lg text-white font-bold text-shadow mb-4\">Waiting for HEK Oil’s Input</p>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n</div>\n<div class=\"card-list\">\n    <p class=\" text-lg text-white font-bold text-shadow mb-4\">Today</p>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n</div>\n<div class=\"card-list\">\n    <p class=\" text-lg text-white font-bold text-shadow mb-4\">Tomorrow</p>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n</div>"
+        },
+        {
+            "name": "LoginFormComponent",
+            "id": "component-LoginFormComponent-d38b39e3c3a252be63a9e35f6d7351a6",
+            "file": "src/app/moules/common/component/login-form/login-form.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-login-form",
+            "styleUrls": [
+                "./login-form.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./login-form.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-login-form',\n  templateUrl: './login-form.component.html',\n  styleUrls: ['./login-form.component.scss']\n})\nexport class LoginFormComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./login-form.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"text-white shadow-glassM bg-signin-modal absolute top-1/2 -translate-y-1/2 sm:right-40 lg:right-32 min-h-[423px] w-[calc(100%-48px)] sm:max-w-md mx-6 md:mx-0 p-8 backdrop-blur-3xl rounded-2xl border-solid border-[1px]\">\n  <img src=\"/assets/img/logo-white.svg\" alt=\"\" class=\"m-auto mb-8 sm:w-60\">\n  <app-input class=\"block relative mb-8\" [label]=\"'E-mail Address'\" [type]=\"'text'\"></app-input>\n  <app-input class=\"block relative mb-8\" [label]=\"'Password'\" [type]=\"'password'\"></app-input>\n  <app-input class=\"block relative mb-8\" [label]=\"'Confirm Password'\" [type]=\"'password'\"></app-input>\n  <div class=\"form-group flex items-center mb-8\">\n    <input type=\"checkbox\" name=\"term\" id=\"term\" class=\" bg-transparent mr-1\">\n    <label for=\"term\" class=\"text-[11px] \">I agree to <a href=\"#\">Terms</a> and <a href=\"#\">Privacy Policy</a></label>\n  </div>\n\n  <!-- <app-btn class=\"block relative w-full text-center mb-4 text-gray-600\" [primary]=\"false\" [size]=\"'medium'\"></app-btn> -->\n  <button class=\"text-center block w-full bg-white h-10 text-sm sm:text-xl sm:h-16 rounded-full text-gray-600 mb-4\"> Sign In</button>\n  <a href=\"#\" class=\"text-sm block text-center mb-8\">Forgot Password</a>\n  <p class=\"text-[10px] text-center\">© 2021 Schlumberger Limited. All rights reserved.</p>\n</div>"
+        },
+        {
+            "name": "NavbarComponent",
+            "id": "component-NavbarComponent-a7ba85133dc21f7ecf4e91a55725ec39",
+            "file": "src/app/moules/common/component/navbar/navbar.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-navbar",
+            "styleUrls": [
+                "./navbar.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./navbar.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "primary",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "any"
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-navbar',\n  templateUrl: './navbar.component.html',\n  styleUrls: ['./navbar.component.scss']\n})\nexport class NavbarComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n  @Input() primary: any;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./navbar.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<ul class=\"flex-center w-full\">\n    <li class=\"mr-2\">\n      <a [routerLink]=\"['/home']\" routerLinkActive=\"router-link-active\" \n      class=\"flex-center flex-col sm:flex-row px-2 text-xs sm:text-sm text-gray-500 hover:text-blue-500 active:font-bold\">\n        <app-svg-icon class=\"sm:mr-2 mb-2 sm:mb-0 leading-[1] text-[20px] relative top-[-2px]\" [iconHashTag]=\"'#home_icon'\"></app-svg-icon>\n        <span>Home</span>\n      </a>\n    </li>\n    <li class=\"mr-2\">\n      <a [routerLink]=\"['/home']\" routerLinkActive=\"router-link-active\" \n      class=\"flex-center flex-col sm:flex-row px-2 text-xs sm:text-sm text-gray-500 hover:text-blue-500 active:font-bold\">\n        <app-svg-icon class=\"sm:mr-2 mb-2 sm:mb-0 text-base leading-[1]\" [iconHashTag]=\"'#map_icon'\"></app-svg-icon>\n        <span>Map</span>\n      </a>\n    </li>\n    <li class=\"mr-2\">\n      <a [routerLink]=\"['/dashboard']\" routerLinkActive=\"router-link-active\" \n      class=\"flex-center flex-col sm:flex-row px-2 text-xs sm:text-sm text-gray-500 hover:text-blue-500 active:font-bold\">\n        <app-svg-icon class=\"sm:mr-2 mb-2 sm:mb-0 text-base leading-[1]\" [iconHashTag]=\"'#equipment_icon'\"></app-svg-icon>\n        <span>Equipment</span>\n      </a>\n    </li>\n    <li class=\"mr-2\">\n      <a [routerLink]=\"['/dashboard']\" routerLinkActive=\"router-link-active\" \n      class=\"flex-center flex-col sm:flex-row px-2 text-xs sm:text-sm text-gray-500 hover:text-blue-500 active:font-bold\">\n        <app-svg-icon class=\"sm:mr-2 mb-2 sm:mb-0 text-base leading-[1]\" [iconHashTag]=\"'#support_icon'\"></app-svg-icon>\n        <span>Support</span>\n      </a>\n    </li>\n    <li class=\"mr-2\">\n      <a [routerLink]=\"['/dashboard']\" routerLinkActive=\"router-link-active\" \n      class=\"flex-center flex-col sm:flex-row px-2 text-xs sm:text-sm text-gray-500 hover:text-blue-500 active:font-bold\">\n        <span class=\"block h-6 w-6 mb-2 sm:mb-0 sm:mr-2 rounded-full bg-blue-500 ring-white ring-1\"></span>\n        <span>Alan Johnson</span>\n        <app-svg-icon class=\"sm:ml-2 text-xs hidden sm:block text-black leading-[1]\" [iconHashTag]=\"'#dropdown_icon'\"></app-svg-icon>\n      </a>\n    </li>\n  </ul>"
         },
         {
             "name": "OptionPickerComponent",
@@ -900,7 +1239,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".active{\n    @apply bg-white px-4 py-[7px] rounded-full font-bold text-blue-500;\n}",
+                    "data": ".active{\n    @apply bg-white px-4 py-[7px] rounded-full font-bold text-blue-500 shadow-btn;\n}",
                     "styleUrl": "./option-picker.component.scss"
                 }
             ],
@@ -916,7 +1255,7 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"glass-card flex items-center justify-between p-1 bg-glass-75 rounded-[90px] backdrop-blur-3xl mt-9 w-[302px]\">\n    <span class=\"text-sm min-w-[90px] text-center\">Closed</span>\n    <span class=\"text-sm min-w-[105px] text-center active\">Scheduled</span>\n    <span class=\"text-sm min-w-[90px] text-center\">Planning</span>\n</div>\n\n\n<div class=\"glass-card flex items-center justify-between p-1 bg-glass-75 rounded-[90px] backdrop-blur-3xl mt-9 w-[200px]\">\n    <!-- <span class=\"text-sm min-w-[90px] text-center active\">Closed</span> -->\n    <span class=\"text-sm min-w-[100px] text-center\">Scheduled</span>\n    <span class=\"text-sm min-w-[90px] text-center active\">Planning</span>\n</div>"
+            "templateData": "<div class=\"glass-card flex items-center justify-between p-1 bg-glass-75 rounded-[90px] backdrop-blur-3xl cursor-pointer\">\n    <span class=\"text-sm min-w-[90px] text-center active\">Closed</span>\n    <span class=\"text-sm min-w-[105px] text-center\">Scheduled</span>\n    <span class=\"text-sm min-w-[90px] text-center\">Planning</span>\n</div>\n\n\n<!-- <div class=\"glass-card flex items-center justify-between p-1 bg-glass-75 rounded-[90px] backdrop-blur-3xl mt-9 w-[200px]\">\n    <span class=\"text-sm min-w-[90px] text-center active\">Closed</span>\n    <span class=\"text-sm min-w-[100px] text-center\">Scheduled</span>\n    <span class=\"text-sm min-w-[90px] text-center active\">Planning</span>\n</div> -->"
         },
         {
             "name": "PageComponent",
@@ -991,6 +1330,68 @@
             "stylesData": ""
         },
         {
+            "name": "ResetFormComponent",
+            "id": "component-ResetFormComponent-09c37d5eb6376fb035bb5b89446cb919",
+            "file": "src/app/moules/common/component/reset-form/reset-form.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-reset-form",
+            "styleUrls": [
+                "./reset-form.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./reset-form.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-reset-form',\n  templateUrl: './reset-form.component.html',\n  styleUrls: ['./reset-form.component.scss']\n})\nexport class ResetFormComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./reset-form.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div\n  class=\"text-white shadow-glassM bg-signin-modal absolute top-1/2 -translate-y-1/2 sm:right-40 lg:right-32 min-h-[423px] w-[calc(100%-48px)] sm:max-w-md mx-6 md:mx-0 p-8 backdrop-blur-3xl rounded-2xl border-solid border-[1px]\">\n  <img src=\"/assets/img/logo-white.svg\" alt=\"\" class=\"m-auto mb-8 sm:w-60\">\n  <div class=\"reset-text text-white mb-8\">\n    <h2 class=\" text-2xl mb-3\">Reset your password</h2>\n    <p class=\" text-sm\">Forgot your password? No problem! Please check that your email address is correct and we’ll send you a link to reset it right away</p>\n  </div>\n  <app-input class=\"block relative mb-8\" [label]=\"'E-mail Address'\" [type]=\"'text'\"></app-input>\n  <app-input class=\"block relative mb-8\" [label]=\"'E-mail Address'\" [type]=\"'text'\"></app-input>\n  <!-- <div class=\"form-group flex items-center mb-8\">\n    <input type=\"checkbox\" name=\"term\" id=\"term\" class=\" bg-transparent mr-1\">\n    <label for=\"term\" class=\"text-[11px] \">I agree to <a href=\"#\">Terms</a> and <a href=\"#\">Privacy Policy</a></label>\n  </div> -->\n\n  <!-- <app-btn class=\"block relative w-full text-center mb-4 text-gray-600\" [primary]=\"false\" [size]=\"'medium'\"></app-btn> -->\n  <button class=\"text-center block w-full bg-white h-10 text-sm sm:text-xl sm:h-16 rounded-full text-gray-600 mb-4\">\n    Continue</button>\n  <a href=\"#\" class=\"text-sm block text-center\">log in</a>\n</div>"
+        },
+        {
             "name": "SearchBarComponent",
             "id": "component-SearchBarComponent-e14f83bac2a97ff7fdc40551e7337633",
             "file": "src/app/moules/common/component/search-bar/search-bar.component.ts",
@@ -1059,7 +1460,160 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"relative w-96\">\n    <span class=\"absolute left-4 top-2 z-10\">IC</span>\n    <input type=\"text\" name=\"search\" id=\"search\" placeholder=\"Search Orders\" autocomplete=\"off\"\n        class=\"absolute left-0 z-0 w-full h-10 rounded-3xl bg-glass-75 backdrop-blur-3xl text-base text-gray-900 px-12 outline-none\">\n    <span class=\"absolute right-4 top-2 z-10\">IC</span>\n</div>"
+            "templateData": "<div class=\"relative w-96 h-10\">\n    <app-svg-icon class=\"absolute left-4 top-[6px] z-10\" [iconHashTag]=\"'#search_icon'\"></app-svg-icon>\n    <input type=\"text\" name=\"search\" id=\"search\" placeholder=\"Search Orders\" autocomplete=\"off\"\n        class=\"absolute left-0 z-0 w-full h-10 rounded-3xl bg-glass-75 backdrop-blur-3xl text-base text-gray-900 px-12 outline-none\">\n    <app-svg-icon class=\"absolute right-4 top-[6px] z-10\" [iconHashTag]=\"'#filter_icon'\"></app-svg-icon>\n</div>"
+        },
+        {
+            "name": "SidebarComponent",
+            "id": "component-SidebarComponent-6a913a1715984085104b1613c229e2c4",
+            "file": "src/app/feature/dashboard/sidebar/sidebar.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-sidebar",
+            "styleUrls": [
+                "./sidebar.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./sidebar.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-sidebar',\n  templateUrl: './sidebar.component.html',\n  styleUrls: ['./sidebar.component.scss']\n})\nexport class SidebarComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./sidebar.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<h2 class=\" text-3xl font-normal mb-5 mt-4\">Open Issues</h2>\n<div class=\"picker mb-5\">\n  <app-option-picker class=\"\"></app-option-picker>\n</div>\n<div class=\"map h-36 border mb-10\">\n\n</div>\n<div class=\"title flex justify-between items-center mb-5\">\n  <h3 class=\" text-lg font-bold\">Mos Eisley Field</h3>\n  <span class=\" text-xs text-blue-500 cursor-pointer\">View All</span>\n</div>\n<div class=\"small-cards mb-14\">\n  <app-glass-small-card class=\"block mb-4\"></app-glass-small-card>\n  <app-glass-small-card class=\"sm:w-[calc(100%-15px)]\" [third]=\"false\" [fourth]=\"true\"></app-glass-small-card>\n</div>\n<div class=\"ctas flex justify-between mt-7\">\n  <app-btn class=\"mb-4 mr-4\" [primary]=\"false\" [size]=\"'medium'\"></app-btn>\n  <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'medium'\"></app-btn>\n</div>"
+        },
+        {
+            "name": "SvgIconComponent",
+            "id": "component-SvgIconComponent-76dfbefea3c29d403560b281f171125b",
+            "file": "src/app/moules/svg-icon/svg-icon.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-svg-icon",
+            "styleUrls": [
+                "./svg-icon.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./svg-icon.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "iconHashTag",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "string | undefined"
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "svgHashTag",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 11
+                },
+                {
+                    "name": "svgIconPath",
+                    "defaultValue": "'/assets/icons/icon.svg'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 10
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 14,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-svg-icon',\n  templateUrl: './svg-icon.component.html',\n  styleUrls: ['./svg-icon.component.scss']\n})\nexport class SvgIconComponent implements OnInit {\n  @Input() iconHashTag: string | undefined;\n  svgIconPath = '/assets/icons/icon.svg';\n  svgHashTag = '';\n  constructor() { }\n\n  ngOnInit(): void {\n    this.svgHashTag = `${this.svgIconPath}${this.iconHashTag}`;\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".svg-icon {\n    display: inline-block;\n    width: 1em;\n    height: 1em;\n    stroke-width: 0;\n    stroke: currentColor;\n    fill: currentColor;\n    vertical-align: sub;\n    line-height: 1;\n  }",
+                    "styleUrl": "./svg-icon.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 11
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<svg class=\"svg-icon\">\n    <use attr.xlink:href=\"{{svgHashTag}}\"></use>\n</svg>"
         },
         {
             "name": "TeamBadgeComponent",
@@ -1130,7 +1684,7 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"glass-card flex items-center p-1 shadow-glassM bg-glass-75 rounded-full backdrop-blur-3xl mt-9 w-28\">\n    <span class=\"icon rounded-full h-8 w-8 mr-2 bg-blue-500\"></span>\n    <div class=\"w-16 px-2 py-1 flex bg-white rounded-full\">\n        <span class=\"text-sm mr-1\">2</span>\n        <div class=\"w-9 relative h-6\">\n            <span class=\"absolute block h-6 w-6 rounded-full bg-blue-500 left-3 top-0 ring-white ring-1\"></span>\n            <span class=\"absolute block h-6 w-6 rounded-full bg-blue-500 ring-white ring-1\"></span>\n        </div>\n    </div>\n</div>"
+            "templateData": "<div class=\"glass-card flex items-center p-1 shadow-glassM bg-glass-75 rounded-full backdrop-blur-3xl w-28\">\n    <span class=\"icon rounded-full h-8 w-8 mr-2 bg-blue-500\"></span>\n    <div class=\"w-16 px-2 py-1 flex bg-white rounded-full\">\n        <span class=\"text-sm mr-1\">2</span>\n        <div class=\"w-9 relative h-6\">\n            <span class=\"absolute block h-6 w-6 rounded-full bg-blue-500 left-3 top-0 ring-white ring-1\"></span>\n            <span class=\"absolute block h-6 w-6 rounded-full bg-blue-500 ring-white ring-1\"></span>\n        </div>\n    </div>\n</div>"
         },
         {
             "name": "TroubleshootCardComponent",
@@ -1207,13 +1761,13 @@
     "modules": [
         {
             "name": "AppModule",
-            "id": "module-AppModule-deb76390127ff6735f413e679ca2b0e6",
+            "id": "module-AppModule-0b8868b57dad7d377e85739bc934a8cb",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app.module.ts",
             "methods": [],
-            "sourceCode": "import { CommonsModule } from './moules/common/commons.module';\nimport { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\n// import { CardComponent } from './component/card/card.component';\n// import { BtnComponent } from './component/btn/btn.component';\n// import { GlassBigCardComponent } from './component/glass-big-card/glass-big-card.component';\n// import { GlassSmallCardComponent } from './component/glass-small-card/glass-small-card.component';\n// import { TroubleshootCardComponent } from './component/troubleshoot-card/troubleshoot-card.component';\n// import { TeamBadgeComponent } from './component/team-badge/team-badge.component';\n// import { OptionPickerComponent } from './component/option-picker/option-picker.component';\n// import { SearchBarComponent } from './component/search-bar/search-bar.component';\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    // CardComponent,\n    // BtnComponent,\n    // GlassBigCardComponent,\n    // GlassSmallCardComponent,\n    // TroubleshootCardComponent,\n    // TeamBadgeComponent,\n    // OptionPickerComponent,\n    // SearchBarComponent\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule,\n    CommonsModule,\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
+            "sourceCode": "import { SvgIconModule } from './moules/svg-icon/svg-icon.module';\nimport { CommonsModule } from './moules/common/commons.module';\nimport { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\n\n@NgModule({\n  declarations: [\n    AppComponent,\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule,\n    CommonsModule,\n    SvgIconModule,\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -1235,6 +1789,9 @@
                         },
                         {
                             "name": "CommonsModule"
+                        },
+                        {
+                            "name": "SvgIconModule"
                         }
                     ]
                 },
@@ -1258,13 +1815,13 @@
         },
         {
             "name": "AppRoutingModule",
-            "id": "module-AppRoutingModule-113d0bb61a89050b373bd951e3710de2",
+            "id": "module-AppRoutingModule-f81bd6485e6f33c271d3871b2fda2cb5",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app-routing.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\n\nconst routes: Routes = [\n  {\n    path: 'home',\n    pathMatch: 'full',\n    loadChildren: () => \"import('./feature/home/home.module').then(m => m.HomeModule)\",\n  },\n];\n\n@NgModule({\n  imports: [RouterModule.forRoot(routes)],\n  exports: [RouterModule]\n})\nexport class AppRoutingModule { }\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\n\nconst routes: Routes = [\n  {\n    path: 'home',\n    pathMatch: 'full',\n    loadChildren: () => \"import('./feature/home/home.module').then(m => m.HomeModule)\",\n  },\n  {\n    path: 'dashboard',\n    pathMatch: 'full',\n    loadChildren: () => \"import('./feature/dashboard/dashboard.module').then(m => m.DashboardModule)\",\n  },\n];\n\n@NgModule({\n  imports: [RouterModule.forRoot(routes)],\n  exports: [RouterModule]\n})\nexport class AppRoutingModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -1294,13 +1851,13 @@
         },
         {
             "name": "CommonsModule",
-            "id": "module-CommonsModule-77c47e31bae147450551d88667a807c7",
+            "id": "module-CommonsModule-e3f45767fd7282fba376e16a0e426739",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/moules/common/commons.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { CardComponent } from './component/card/card.component';\nimport { BtnComponent } from './component/btn/btn.component';\nimport { GlassBigCardComponent } from './component/glass-big-card/glass-big-card.component';\nimport { GlassSmallCardComponent } from './component/glass-small-card/glass-small-card.component';\nimport { TroubleshootCardComponent } from './component/troubleshoot-card/troubleshoot-card.component';\nimport { TeamBadgeComponent } from './component/team-badge/team-badge.component';\nimport { OptionPickerComponent } from './component/option-picker/option-picker.component';\nimport { SearchBarComponent } from './component/search-bar/search-bar.component';\n\n\n\n@NgModule({\n  declarations: [\n    CardComponent,\n    BtnComponent,\n    GlassBigCardComponent,\n    GlassSmallCardComponent,\n    TroubleshootCardComponent,\n    TeamBadgeComponent,\n    OptionPickerComponent,\n    SearchBarComponent\n  ],\n  imports: [\n    CommonModule\n  ],\n  exports: [\n    CardComponent,\n    BtnComponent,\n    GlassBigCardComponent,\n    GlassSmallCardComponent,\n    TroubleshootCardComponent,\n    TeamBadgeComponent,\n    OptionPickerComponent,\n    SearchBarComponent\n  ]\n})\nexport class CommonsModule { }\n",
+            "sourceCode": "import { RouterModule } from '@angular/router';\nimport { SvgIconModule } from './../svg-icon/svg-icon.module';\nimport { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { CardComponent } from './component/card/card.component';\nimport { BtnComponent } from './component/btn/btn.component';\nimport { GlassBigCardComponent } from './component/glass-big-card/glass-big-card.component';\nimport { GlassSmallCardComponent } from './component/glass-small-card/glass-small-card.component';\nimport { TroubleshootCardComponent } from './component/troubleshoot-card/troubleshoot-card.component';\nimport { TeamBadgeComponent } from './component/team-badge/team-badge.component';\nimport { OptionPickerComponent } from './component/option-picker/option-picker.component';\nimport { SearchBarComponent } from './component/search-bar/search-bar.component';\nimport { NavbarComponent } from './component/navbar/navbar.component';\nimport { LoginFormComponent } from './component/login-form/login-form.component';\nimport { ResetFormComponent } from './component/reset-form/reset-form.component';\nimport { AuthenticateFormComponent } from './component/authenticate-form/authenticate-form.component';\nimport { InputComponent } from './component/input/input.component';\n\n\n\n@NgModule({\n  declarations: [\n    CardComponent,\n    BtnComponent,\n    GlassBigCardComponent,\n    GlassSmallCardComponent,\n    TroubleshootCardComponent,\n    TeamBadgeComponent,\n    OptionPickerComponent,\n    SearchBarComponent,\n    NavbarComponent,\n    LoginFormComponent,\n    ResetFormComponent,\n    AuthenticateFormComponent,\n    InputComponent,\n  ],\n  imports: [\n    CommonModule,\n    SvgIconModule,\n    RouterModule,\n  ],\n  exports: [\n    CardComponent,\n    BtnComponent,\n    GlassBigCardComponent,\n    GlassSmallCardComponent,\n    TroubleshootCardComponent,\n    TeamBadgeComponent,\n    OptionPickerComponent,\n    SearchBarComponent,\n    NavbarComponent,\n    LoginFormComponent,\n    ResetFormComponent,\n    AuthenticateFormComponent,\n    InputComponent,\n  ]\n})\nexport class CommonsModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -1309,6 +1866,9 @@
                 {
                     "type": "declarations",
                     "elements": [
+                        {
+                            "name": "AuthenticateFormComponent"
+                        },
                         {
                             "name": "BtnComponent"
                         },
@@ -1322,7 +1882,19 @@
                             "name": "GlassSmallCardComponent"
                         },
                         {
+                            "name": "InputComponent"
+                        },
+                        {
+                            "name": "LoginFormComponent"
+                        },
+                        {
+                            "name": "NavbarComponent"
+                        },
+                        {
                             "name": "OptionPickerComponent"
+                        },
+                        {
+                            "name": "ResetFormComponent"
                         },
                         {
                             "name": "SearchBarComponent"
@@ -1337,11 +1909,18 @@
                 },
                 {
                     "type": "imports",
-                    "elements": []
+                    "elements": [
+                        {
+                            "name": "SvgIconModule"
+                        }
+                    ]
                 },
                 {
                     "type": "exports",
                     "elements": [
+                        {
+                            "name": "AuthenticateFormComponent"
+                        },
                         {
                             "name": "BtnComponent"
                         },
@@ -1355,7 +1934,19 @@
                             "name": "GlassSmallCardComponent"
                         },
                         {
+                            "name": "InputComponent"
+                        },
+                        {
+                            "name": "LoginFormComponent"
+                        },
+                        {
+                            "name": "NavbarComponent"
+                        },
+                        {
                             "name": "OptionPickerComponent"
+                        },
+                        {
+                            "name": "ResetFormComponent"
                         },
                         {
                             "name": "SearchBarComponent"
@@ -1379,14 +1970,103 @@
             ]
         },
         {
+            "name": "DashboardModule",
+            "id": "module-DashboardModule-8ebd0bdd670dfd868a23557833c25b0d",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/feature/dashboard/dashboard.module.ts",
+            "methods": [],
+            "sourceCode": "import { CommonsModule } from './../../moules/common/commons.module';\nimport { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\nimport { DashboardRoutingModule } from './dashboard-routing.module';\nimport { DashboardComponent } from './dashboard.component';\nimport { SidebarComponent } from './sidebar/sidebar.component';\nimport { ListComponent } from './list/list.component';\n\n\n@NgModule({\n  declarations: [\n    DashboardComponent,\n    SidebarComponent,\n    ListComponent\n  ],\n  imports: [\n    CommonModule,\n    DashboardRoutingModule,\n    CommonsModule,\n  ]\n})\nexport class DashboardModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "DashboardComponent"
+                        },
+                        {
+                            "name": "ListComponent"
+                        },
+                        {
+                            "name": "SidebarComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "CommonsModule"
+                        },
+                        {
+                            "name": "DashboardRoutingModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "DashboardRoutingModule",
+            "id": "module-DashboardRoutingModule-4fa92d586f6c1a5c3b8f2d5a32f8d135",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/feature/dashboard/dashboard-routing.module.ts",
+            "methods": [],
+            "sourceCode": "import { DashboardComponent } from './dashboard.component';\nimport { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\n\nconst routes: Routes = [\n  {path: '', component: DashboardComponent}\n];\n\n@NgModule({\n  imports: [RouterModule.forChild(routes)],\n  exports: [RouterModule]\n})\nexport class DashboardRoutingModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
             "name": "HomeModule",
-            "id": "module-HomeModule-a4f63c7eeb3b8d4fa66803fe33d8f049",
+            "id": "module-HomeModule-db17cabcf267e61e512b34d627281a35",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/feature/home/home.module.ts",
             "methods": [],
-            "sourceCode": "import { CommonsModule } from './../../moules/common/commons.module';\nimport { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\nimport { HomeRoutingModule } from './home-routing.module';\nimport { HomeComponent } from './home.component';\nimport { InputComponent } from './input/input.component';\n\n\n@NgModule({\n  declarations: [\n    HomeComponent,\n    InputComponent,\n  ],\n  imports: [\n    CommonModule,\n    HomeRoutingModule,\n    CommonsModule,\n  ]\n})\nexport class HomeModule { }\n",
+            "sourceCode": "import { SvgIconModule } from './../../moules/svg-icon/svg-icon.module';\nimport { CommonsModule } from './../../moules/common/commons.module';\nimport { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\nimport { HomeRoutingModule } from './home-routing.module';\nimport { HomeComponent } from './home.component';\n\n\n@NgModule({\n  declarations: [\n    HomeComponent,\n  ],\n  imports: [\n    CommonModule,\n    HomeRoutingModule,\n    CommonsModule,\n    SvgIconModule,\n  ]\n})\nexport class HomeModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -1397,9 +2077,6 @@
                     "elements": [
                         {
                             "name": "HomeComponent"
-                        },
-                        {
-                            "name": "InputComponent"
                         }
                     ]
                 },
@@ -1411,6 +2088,9 @@
                         },
                         {
                             "name": "HomeRoutingModule"
+                        },
+                        {
+                            "name": "SvgIconModule"
                         }
                     ]
                 },
@@ -1463,6 +2143,50 @@
                     "elements": []
                 }
             ]
+        },
+        {
+            "name": "SvgIconModule",
+            "id": "module-SvgIconModule-059e8d9255c853afe154d6d5c80fcc45",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/moules/svg-icon/svg-icon.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { SvgIconComponent } from './svg-icon.component';\n\n\n\n@NgModule({\n  declarations: [\n    SvgIconComponent\n  ],\n  imports: [\n    CommonModule\n  ],\n  exports: [\n    SvgIconComponent,\n  ]\n})\nexport class SvgIconModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "SvgIconComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "SvgIconComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
         }
     ],
     "miscellaneous": {
@@ -1482,6 +2206,16 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/moules/common/component/card/Card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "DesktopNavbar",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/moules/common/component/navbar/NavBar.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1521,6 +2255,16 @@
                 "name": "FirstVarient",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/app/moules/common/component/authenticate-form/AuthenticateForm.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "FirstVarient",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/app/moules/common/component/glass-big-card/BigCard.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -1541,7 +2285,27 @@
                 "name": "FirstVarient",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/moules/common/component/team-badge/TeamBadge.stories.ts",
+                "file": "src/app/moules/common/component/input/Input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "FirstVarient",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/moules/common/component/login-form/LoginForm.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "FirstVarient",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/moules/common/component/reset-form/ResetForm.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1552,6 +2316,16 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/moules/common/component/search-bar/SearchBar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "FirstVarient",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/moules/common/component/team-badge/TeamBadge.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1662,6 +2436,16 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/moules/common/component/btn/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "MobileNavbar",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/moules/common/component/navbar/NavBar.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1790,11 +2574,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/moules/common/component/glass-big-card/BigCard.stories.ts",
+                "file": "src/app/moules/common/component/authenticate-form/AuthenticateForm.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<GlassBigCardComponent>",
-                "defaultValue": "(args: GlassBigCardComponent) => ({\n  props: args,\n})"
+                "type": "Story<AuthenticateFormComponent>",
+                "defaultValue": "(args: AuthenticateFormComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/moules/common/component/btn/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<BtnComponent>",
+                "defaultValue": "(args: BtnComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -1810,11 +2604,11 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/moules/common/component/option-picker/OptionPicker.stories.ts",
+                "file": "src/app/moules/common/component/glass-big-card/BigCard.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<OptionPickerComponent>",
-                "defaultValue": "(args: OptionPickerComponent) => ({\n  props: args,\n})"
+                "type": "Story<GlassBigCardComponent>",
+                "defaultValue": "(args: GlassBigCardComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -1830,11 +2624,51 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/moules/common/component/team-badge/TeamBadge.stories.ts",
+                "file": "src/app/moules/common/component/input/Input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<TeamBadgeComponent>",
-                "defaultValue": "(args: TeamBadgeComponent) => ({\n  props: args,\n})"
+                "type": "Story<InputComponent>",
+                "defaultValue": "(args: InputComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/moules/common/component/login-form/LoginForm.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<LoginFormComponent>",
+                "defaultValue": "(args: LoginFormComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/moules/common/component/navbar/NavBar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<NavbarComponent>",
+                "defaultValue": "(args: NavbarComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/moules/common/component/option-picker/OptionPicker.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<OptionPickerComponent>",
+                "defaultValue": "(args: OptionPickerComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/moules/common/component/reset-form/ResetForm.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ResetFormComponent>",
+                "defaultValue": "(args: ResetFormComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -1850,21 +2684,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/moules/common/component/troubleshoot-card/Troubleshoot.stories.ts",
+                "file": "src/app/moules/common/component/team-badge/TeamBadge.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<TroubleshootCardComponent>",
-                "defaultValue": "(args: TroubleshootCardComponent) => ({\n  props: args,\n})"
+                "type": "Story<TeamBadgeComponent>",
+                "defaultValue": "(args: TeamBadgeComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/moules/common/component/btn/Button.stories.ts",
+                "file": "src/app/moules/common/component/troubleshoot-card/Troubleshoot.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<BtnComponent>",
-                "defaultValue": "(args: BtnComponent) => ({\n  props: args,\n})"
+                "type": "Story<TroubleshootCardComponent>",
+                "defaultValue": "(args: TroubleshootCardComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "ThirdVarient",
@@ -2004,6 +2838,38 @@
                     "defaultValue": "Template.bind({})"
                 }
             ],
+            "src/app/moules/common/component/navbar/NavBar.stories.ts": [
+                {
+                    "name": "DesktopNavbar",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/moules/common/component/navbar/NavBar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "MobileNavbar",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/moules/common/component/navbar/NavBar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/moules/common/component/navbar/NavBar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<NavbarComponent>",
+                    "defaultValue": "(args: NavbarComponent) => ({\n  props: args,\n})"
+                }
+            ],
             "src/app/moules/common/component/btn/Button.stories.ts": [
                 {
                     "name": "Disabled",
@@ -2120,6 +2986,28 @@
                     "defaultValue": "{\n  production: false\n}"
                 }
             ],
+            "src/app/moules/common/component/authenticate-form/AuthenticateForm.stories.ts": [
+                {
+                    "name": "FirstVarient",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/moules/common/component/authenticate-form/AuthenticateForm.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/moules/common/component/authenticate-form/AuthenticateForm.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<AuthenticateFormComponent>",
+                    "defaultValue": "(args: AuthenticateFormComponent) => ({\n  props: args,\n})"
+                }
+            ],
             "src/app/moules/common/component/glass-big-card/BigCard.stories.ts": [
                 {
                     "name": "FirstVarient",
@@ -2194,12 +3082,12 @@
                     "defaultValue": "(args: GlassSmallCardComponent) => ({\n  props: args,\n})"
                 }
             ],
-            "src/app/moules/common/component/team-badge/TeamBadge.stories.ts": [
+            "src/app/moules/common/component/input/Input.stories.ts": [
                 {
                     "name": "FirstVarient",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/moules/common/component/team-badge/TeamBadge.stories.ts",
+                    "file": "src/app/moules/common/component/input/Input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -2209,11 +3097,55 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/moules/common/component/team-badge/TeamBadge.stories.ts",
+                    "file": "src/app/moules/common/component/input/Input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Story<TeamBadgeComponent>",
-                    "defaultValue": "(args: TeamBadgeComponent) => ({\n  props: args,\n})"
+                    "type": "Story<InputComponent>",
+                    "defaultValue": "(args: InputComponent) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/app/moules/common/component/login-form/LoginForm.stories.ts": [
+                {
+                    "name": "FirstVarient",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/moules/common/component/login-form/LoginForm.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/moules/common/component/login-form/LoginForm.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<LoginFormComponent>",
+                    "defaultValue": "(args: LoginFormComponent) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/app/moules/common/component/reset-form/ResetForm.stories.ts": [
+                {
+                    "name": "FirstVarient",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/moules/common/component/reset-form/ResetForm.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/moules/common/component/reset-form/ResetForm.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ResetFormComponent>",
+                    "defaultValue": "(args: ResetFormComponent) => ({\n  props: args,\n})"
                 }
             ],
             "src/app/moules/common/component/search-bar/SearchBar.stories.ts": [
@@ -2236,6 +3168,28 @@
                     "deprecationMessage": "",
                     "type": "Story<SearchBarComponent>",
                     "defaultValue": "(args: SearchBarComponent) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/app/moules/common/component/team-badge/TeamBadge.stories.ts": [
+                {
+                    "name": "FirstVarient",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/moules/common/component/team-badge/TeamBadge.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/moules/common/component/team-badge/TeamBadge.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<TeamBadgeComponent>",
+                    "defaultValue": "(args: TeamBadgeComponent) => ({\n  props: args,\n})"
                 }
             ],
             "src/app/moules/common/component/troubleshoot-card/Troubleshoot.stories.ts": [
@@ -2437,6 +3391,31 @@
                                 "module": "HomeModule"
                             }
                         ]
+                    },
+                    {
+                        "path": "dashboard",
+                        "pathMatch": "full",
+                        "loadChildren": "./feature/dashboard/dashboard.module#DashboardModule",
+                        "children": [
+                            {
+                                "kind": "module",
+                                "children": [
+                                    {
+                                        "name": "routes",
+                                        "filename": "src/app/feature/dashboard/dashboard-routing.module.ts",
+                                        "module": "DashboardRoutingModule",
+                                        "children": [
+                                            {
+                                                "path": "",
+                                                "component": "DashboardComponent"
+                                            }
+                                        ],
+                                        "kind": "module"
+                                    }
+                                ],
+                                "module": "DashboardModule"
+                            }
+                        ]
                     }
                 ],
                 "kind": "module"
@@ -2444,7 +3423,7 @@
         ]
     },
     "coverage": {
-        "count": 2,
+        "count": 1,
         "status": "low",
         "files": [
             {
@@ -2452,6 +3431,33 @@
                 "type": "component",
                 "linktype": "component",
                 "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/feature/dashboard/dashboard.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "DashboardComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/feature/dashboard/list/list.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ListComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/feature/dashboard/sidebar/sidebar.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "SidebarComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/3",
                 "status": "low"
@@ -2466,12 +3472,32 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/feature/home/input/input.component.ts",
+                "filePath": "src/app/moules/common/component/authenticate-form/AuthenticateForm.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "FirstVarient",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/moules/common/component/authenticate-form/AuthenticateForm.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/moules/common/component/authenticate-form/authenticate-form.component.ts",
                 "type": "component",
                 "linktype": "component",
-                "name": "InputComponent",
+                "name": "AuthenticateFormComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/6",
+                "coverageCount": "0/3",
                 "status": "low"
             },
             {
@@ -2731,6 +3757,103 @@
                 "status": "low"
             },
             {
+                "filePath": "src/app/moules/common/component/input/Input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "FirstVarient",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/moules/common/component/input/Input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/moules/common/component/input/input.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "InputComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/8",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/moules/common/component/login-form/LoginForm.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "FirstVarient",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/moules/common/component/login-form/LoginForm.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/moules/common/component/login-form/login-form.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "LoginFormComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/moules/common/component/navbar/NavBar.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "DesktopNavbar",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/moules/common/component/navbar/NavBar.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "MobileNavbar",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/moules/common/component/navbar/NavBar.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/moules/common/component/navbar/navbar.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "NavbarComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
                 "filePath": "src/app/moules/common/component/option-picker/OptionPicker.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
@@ -2757,6 +3880,35 @@
                 "name": "OptionPickerComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/moules/common/component/reset-form/ResetForm.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "FirstVarient",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/moules/common/component/reset-form/ResetForm.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/moules/common/component/reset-form/reset-form.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ResetFormComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
                 "status": "low"
             },
             {
@@ -2844,6 +3996,15 @@
                 "name": "TroubleshootCardComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/moules/svg-icon/svg-icon.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "SvgIconComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
                 "status": "low"
             },
             {

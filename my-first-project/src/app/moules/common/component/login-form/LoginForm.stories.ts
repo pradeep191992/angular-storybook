@@ -1,9 +1,9 @@
+import { LoginFormComponent } from './login-form.component';
 import { Story, Meta } from '@storybook/angular/types-6-0';
-import { GlassSmallCardComponent } from './glass-small-card.component';
 
 export default {
-  title: 'Common/Cards/Small Card',
-  component: GlassSmallCardComponent,
+  title: 'Common/Forms/Login Form',
+  component: LoginFormComponent,
   argTypes: {
     // backgroundColor: { control: 'color' },
     propertyB: {
@@ -13,14 +13,11 @@ export default {
   },
 } as Meta;
 
-const Template: Story<GlassSmallCardComponent> = (args: GlassSmallCardComponent) => ({
+const Template: Story<LoginFormComponent> = (args: LoginFormComponent) => ({
   props: args,
 });
 
 export const FirstVarient = Template.bind({});
 FirstVarient.args = {
-  first: false,
-  second: true,
-  third: false,
-  fourth: true,
+  // first: true,
 };
