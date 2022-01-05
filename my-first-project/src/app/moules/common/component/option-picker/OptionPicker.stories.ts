@@ -1,10 +1,14 @@
 import { OptionPickerComponent } from './option-picker.component';
 
 import { Story, Meta } from '@storybook/angular/types-6-0';
+import { componentWrapperDecorator, moduleMetadata } from '@storybook/angular';
 
 export default {
   title: 'Common/Option Picker',
   component: OptionPickerComponent,
+  decorators: [
+    componentWrapperDecorator((story: any) => `<div style="padding:20px;height: 100vh;background-color: #0F2D60;">${story}</div>`),
+  ],
   argTypes: {
     // backgroundColor: { control: 'color' },
     propertyB: {

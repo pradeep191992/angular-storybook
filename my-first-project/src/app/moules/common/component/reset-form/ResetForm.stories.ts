@@ -1,7 +1,7 @@
 import { InputComponent } from './../input/input.component';
 import { ResetFormComponent } from './reset-form.component';
 import { Story, Meta } from '@storybook/angular/types-6-0';
-import { moduleMetadata } from '@storybook/angular';
+import { componentWrapperDecorator, moduleMetadata } from '@storybook/angular';
 
 export default {
   title: 'Common/Forms/Reset Form',
@@ -10,6 +10,7 @@ export default {
     moduleMetadata({
       declarations: [InputComponent],
     }),
+    componentWrapperDecorator((story: any) => `<div style="padding:20px;height: 100vh;background-color: #0F2D60;">${story}</div>`),
   ],
   argTypes: {
     // backgroundColor: { control: 'color' },

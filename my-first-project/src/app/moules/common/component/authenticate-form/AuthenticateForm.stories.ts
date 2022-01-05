@@ -1,9 +1,13 @@
 import { AuthenticateFormComponent } from './authenticate-form.component';
 import { Story, Meta } from '@storybook/angular/types-6-0';
+import { componentWrapperDecorator } from '@storybook/angular';
 
 export default {
   title: 'Common/Forms/Authenticate Form',
   component: AuthenticateFormComponent,
+  decorators: [
+    componentWrapperDecorator((story: any) => `<div style="height: 100vh;padding:20px; background-color: #0F2D60;">${story}</div>`),
+  ],
   argTypes: {
     // backgroundColor: { control: 'color' },
     propertyB: {

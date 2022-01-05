@@ -1,10 +1,14 @@
 import { TroubleshootCardComponent } from './troubleshoot-card.component';
 
 import { Story, Meta } from '@storybook/angular/types-6-0';
+import { componentWrapperDecorator } from '@storybook/angular';
 
 export default {
-  title: 'Common/Troubleshoot Card',
-  component: TroubleshootCardComponent,
+  title: 'Common/Cards/Troubleshoot Card',
+  component: TroubleshootCardComponent,  
+  decorators: [
+    componentWrapperDecorator((story: any) => `<div style="padding:20px;height: 100vh; background-color: #0F2D60;">${story}</div>`),
+  ],
   argTypes: {
     // backgroundColor: { control: 'color' },
     propertyB: {
