@@ -66,7 +66,7 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<header class=\"fixed top-0 z-20 left-0 w-full h-16 bg-white shadow-modal p-3 sm:p-6\">\n  <nav class=\"flex-center justify-between h-full\">\n    <a [routerLink]=\"['/']\" routerLinkActive=\"router-link-active\" class=\"hidden sm:block\">\n      <img src=\"/assets/img/logo-black.svg\" alt=\"\" class=\"block\">\n    </a>\n    <div class=\"flex-center\">\n      <app-navbar></app-navbar>\n      <p class=\"flex-center text-xs text-blue-500 px-3 ring-1 h-6 rounded-full hidden sm:flex\">\n        <app-svg-icon class=\"mr-1 leading-[1]\" [iconHashTag]=\"'#bell_icon'\"></app-svg-icon>\n        <span class=\"text-gray-600\">0</span>\n      </p>\n\n    </div>\n  </nav>\n</header>\n<div class=\"pt-16\"></div>\n<main class=\"main max-w-7xl m-auto px-4 font-arial\">\n  <section>\n    <!-- <article class=\"flex flex-wrap justify-between\">\n      <app-card class=\"sm:w-[calc(50%-15px)] lg:w-[calc(33.33%-15px)]\" *ngFor=\"let item of cardArray\"></app-card>\n    </article> \n    \n    <article class=\"flex justify-between p-10\">\n      <div class=\"btn-group flex items-center justify-center flex-wrap flex-col\">\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'xsmall'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'small'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'medium'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'large'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'xlarge'\" [disabled]=\"true\"></app-btn>\n      </div>\n      <div class=\"btn-group flex items-center justify-center flex-wrap flex-col\">\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'xsmall'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'small'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'medium'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'large'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'xlarge'\"></app-btn>\n      </div>\n    </article> \n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-search-bar class=\"sm:w-[calc(100%-15px)]\"></app-search-bar>\n    </article>\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-option-picker class=\"sm:w-[calc(100%-15px)]\"></app-option-picker>\n    </article>\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-team-badge class=\"sm:w-[calc(100%-15px)]\"></app-team-badge>\n    </article>\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-troubleshoot-card class=\"sm:w-[calc(100%-15px)]\"></app-troubleshoot-card>\n    </article>\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-glass-big-card class=\"sm:w-[calc(100%-15px)]\"></app-glass-big-card>\n    </article>\n\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-glass-small-card class=\"sm:w-[calc(100%-15px)]\"></app-glass-small-card>\n    </article>-->\n    <!-- <div class=\"h-32 w-32 red text-6xl text-orange-600\">\n      <h2>Header</h2>\n\n    </div>\n      <app-btn class=\"mb-4 mr-4\" [primary]=\"false\" [size]=\"'small'\"></app-btn> -->\n  </section>\n</main>\n\n<router-outlet></router-outlet>\n"
+            "templateData": "<header class=\"fixed top-0 z-20 left-0 w-full h-16 bg-white shadow-modal p-3 sm:p-6\">\n  <nav class=\"flex-center justify-between h-full\">\n    <a [routerLink]=\"['/']\" routerLinkActive=\"router-link-active\" class=\"hidden sm:block\">\n      <img src=\"/assets/img/logo-black.svg\" alt=\"\" class=\"block\">\n    </a>\n    <div class=\"flex-center\">\n      <app-navbar></app-navbar>\n      <p class=\"flex-center text-xs text-blue-500 px-3 ring-1 h-6 rounded-full hidden sm:flex\">\n        <app-svg-icon class=\"mr-1 leading-[1]\" [iconHashTag]=\"'#bell_icon'\"></app-svg-icon>\n        <span class=\"text-gray-600\">0</span>\n      </p>\n\n    </div>\n  </nav>\n</header>\n<div class=\"pt-16\"></div>\n<app-sticky-stack></app-sticky-stack>\n<main class=\"main max-w-7xl m-auto px-4 font-arial\">\n  <section>\n    <!-- <article class=\"flex flex-wrap justify-between\">\n      <app-card class=\"sm:w-[calc(50%-15px)] lg:w-[calc(33.33%-15px)]\" *ngFor=\"let item of cardArray\"></app-card>\n    </article> \n    \n    <article class=\"flex justify-between p-10\">\n      <div class=\"btn-group flex items-center justify-center flex-wrap flex-col\">\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'xsmall'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'small'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'medium'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'large'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'xlarge'\" [disabled]=\"true\"></app-btn>\n      </div>\n      <div class=\"btn-group flex items-center justify-center flex-wrap flex-col\">\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'xsmall'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'small'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'medium'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'large'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'xlarge'\"></app-btn>\n      </div>\n    </article> \n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-search-bar class=\"sm:w-[calc(100%-15px)]\"></app-search-bar>\n    </article>\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-option-picker class=\"sm:w-[calc(100%-15px)]\"></app-option-picker>\n    </article>\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-team-badge class=\"sm:w-[calc(100%-15px)]\"></app-team-badge>\n    </article>\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-troubleshoot-card class=\"sm:w-[calc(100%-15px)]\"></app-troubleshoot-card>\n    </article>\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-glass-big-card class=\"sm:w-[calc(100%-15px)]\"></app-glass-big-card>\n    </article>\n\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-glass-small-card class=\"sm:w-[calc(100%-15px)]\"></app-glass-small-card>\n    </article>-->\n    <!-- <div class=\"h-32 w-32 red text-6xl text-orange-600\">\n      <h2>Header</h2>\n\n    </div>\n      <app-btn class=\"mb-4 mr-4\" [primary]=\"false\" [size]=\"'small'\"></app-btn> -->\n  </section>\n</main>\n\n<router-outlet></router-outlet>\n"
         },
         {
             "name": "AuthenticateFormComponent",
@@ -561,7 +561,7 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"main\">\n  <picture class=\"fixed w-full h-full left-0 top-0 z-0\">\n    <source media=\"(max-width:650px)\" srcset=\"/assets/img/mobile-login.jpg\">\n    <source media=\"(min-width:651px)\" srcset=\"/assets/img/desktop-login.jpg\">\n    <img class=\"absolute w-full h-full left-0 top-0 object-cover object-center\" src=\"/assets/img/desktop-login.jpg\"\n      alt=\"Flowers\">\n  </picture>\n  <div class=\"relative grid gap-4 p-6 grid-cols-[464px,1fr] grid-rows-[220px,1fr] z-10 h-screen\">\n    <app-sidebar class=\"sidebar shadow-glassM bg-glass-85 backdrop-blur-3xl rounded-2xl p-4 h-full row-span-2 sticky top-16\"></app-sidebar>\n    <div class=\"header shadow-glassM bg-signin-modal p-6 backdrop-blur-3xl rounded-2xl col-start-2\">\n      <div class=\"topbar flex items-center justify-between text-white text-shadow\">\n        <div class=\"left\">\n          <h1 class=\" text-xl font-bold mb-1\">Field Production - Actual vs. Potential</h1>\n          <p class=\"text-xs\">Powered by LiftIQ</p>\n        </div>\n        <div class=\"right flex-center\">\n          <h2 class=\" text-3xl font-normal\">15%</h2>\n          <p class=\"text-xs self-end ml-1\">Current Difference</p>\n        </div>\n      </div>\n    </div>\n    <app-list class=\"dashboard shadow-glassM bg-signin-modal p-6 backdrop-blur-3xl rounded-2xl row-start-2 col-start-2\"></app-list>\n  </div>\n</div>"
+            "templateData": "<div class=\"main\">\n  <picture class=\"fixed w-full h-full left-0 top-0 z-0\">\n    <source media=\"(max-width:650px)\" srcset=\"/assets/img/mobile-login.jpeg\">\n    <source media=\"(min-width:651px)\" srcset=\"/assets/img/ipad-login.jpeg\">\n    <source media=\"(min-width:1024px)\" srcset=\"/assets/img/desktop-login.jpeg\">\n    <img class=\"absolute w-full h-full left-0 top-0 object-cover object-center\" src=\"/assets/img/desktop-login.jpeg\"\n      alt=\"Flowers\">\n  </picture>\n  <div class=\"relative grid gap-4 p-6 grid-cols-[464px,1fr] grid-rows-[220px,1fr] z-10 h-screen\">\n    <app-sidebar class=\"sidebar shadow-glassM bg-glass-85 backdrop-blur-3xl rounded-2xl p-4 h-full row-span-2 sticky top-16\"></app-sidebar>\n    <div class=\"header shadow-glassM bg-signin-modal p-6 backdrop-blur-3xl rounded-2xl col-start-2\">\n      <div class=\"topbar flex items-center justify-between text-white text-shadow\">\n        <div class=\"left\">\n          <h1 class=\" text-xl font-bold mb-1\">Field Production - Actual vs. Potential</h1>\n          <p class=\"text-xs\">Powered by LiftIQ</p>\n        </div>\n        <div class=\"right flex-center\">\n          <h2 class=\" text-3xl font-normal\">15%</h2>\n          <p class=\"text-xs self-end ml-1\">Current Difference</p>\n        </div>\n      </div>\n    </div>\n    <app-list class=\"dashboard shadow-glassM bg-signin-modal p-6 backdrop-blur-3xl rounded-2xl row-start-2 col-start-2\"></app-list>\n  </div>\n</div>"
         },
         {
             "name": "GlassBigCardComponent",
@@ -885,7 +885,7 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"main\">\n  <picture class=\"absolute w-full h-full left-0 top-0\">\n    <source media=\"(max-width:650px)\" srcset=\"/assets/img/mobile-login.jpg\">\n    <source media=\"(min-width:651px)\" srcset=\"/assets/img/desktop-login.jpg\">\n    <img class=\"absolute w-full h-full left-0 top-0 object-cover object-center\" src=\"/assets/img/desktop-login.jpg\"\n      alt=\"Flowers\">\n  </picture>\n  <!-- <div\n    class=\"text-white shadow-glassM bg-signin-modal absolute top-1/2 -translate-y-1/2 sm:right-40 lg:right-32 min-h-[423px] w-[calc(100%-48px)] sm:max-w-md mx-6 md:mx-0 p-8 backdrop-blur-3xl rounded-2xl border-solid border-[1px]\">\n    <img src=\"/assets/img/logo-white.svg\" alt=\"\" class=\"m-auto mb-8 sm:w-60\">\n    <app-input class=\"block relative mb-8\" [label]=\"'E-mail Address'\" [type]=\"'text'\"></app-input>\n    <app-input class=\"block relative mb-8\" [label]=\"'Password'\" [type]=\"'password'\"></app-input>\n    <div class=\"form-group flex items-center mb-8\">\n      <input type=\"checkbox\" name=\"term\" id=\"term\" class=\" bg-transparent mr-1\">\n      <label for=\"term\" class=\"text-[11px] \">I agree to <a href=\"#\">Terms</a> and <a href=\"#\">Privacy Policy</a></label>\n    </div>\n\n    <app-btn class=\"block relative w-full text-center mb-4 text-gray-600\" [primary]=\"false\" [size]=\"'medium'\"></app-btn>\n    <button class=\"text-center block w-full bg-white h-10 text-sm sm:text-xl sm:h-16 rounded-full text-gray-600 mb-4\"> Sign In</button>\n    <a href=\"#\" class=\"text-sm block text-center mb-8\">Forgot Password</a>\n    <p class=\"text-[10px] text-center\">© 2021 Schlumberger Limited. All rights reserved.</p>\n  </div> -->\n  <app-login-form></app-login-form>\n  <!-- <app-reset-form></app-reset-form> -->\n  <!-- <app-authenticate-form></app-authenticate-form> -->\n</div>"
+            "templateData": "<div class=\"main\">\n  <picture class=\"fixed w-full h-full left-0 top-0 z-0\">\n    <source media=\"(max-width:650px)\" srcset=\"/assets/img/mobile-login.jpeg\">\n    <source media=\"(min-width:651px)\" srcset=\"/assets/img/ipad-login.jpeg\">\n    <source media=\"(min-width:1024px)\" srcset=\"/assets/img/desktop-login.jpeg\">\n    <img class=\"absolute w-full h-full left-0 top-0 object-cover object-center\" src=\"/assets/img/desktop-login.jpeg\"\n      alt=\"Flowers\">\n  </picture>\n  <!-- <div\n    class=\"text-white shadow-glassM bg-signin-modal absolute top-1/2 -translate-y-1/2 sm:right-40 lg:right-32 min-h-[423px] w-[calc(100%-48px)] sm:max-w-md mx-6 md:mx-0 p-8 backdrop-blur-3xl rounded-2xl border-solid border-[1px]\">\n    <img src=\"/assets/img/logo-white.svg\" alt=\"\" class=\"m-auto mb-8 sm:w-60\">\n    <app-input class=\"block relative mb-8\" [label]=\"'E-mail Address'\" [type]=\"'text'\"></app-input>\n    <app-input class=\"block relative mb-8\" [label]=\"'Password'\" [type]=\"'password'\"></app-input>\n    <div class=\"form-group flex items-center mb-8\">\n      <input type=\"checkbox\" name=\"term\" id=\"term\" class=\" bg-transparent mr-1\">\n      <label for=\"term\" class=\"text-[11px] \">I agree to <a href=\"#\">Terms</a> and <a href=\"#\">Privacy Policy</a></label>\n    </div>\n\n    <app-btn class=\"block relative w-full text-center mb-4 text-gray-600\" [primary]=\"false\" [size]=\"'medium'\"></app-btn>\n    <button class=\"text-center block w-full bg-white h-10 text-sm sm:text-xl sm:h-16 rounded-full text-gray-600 mb-4\"> Sign In</button>\n    <a href=\"#\" class=\"text-sm block text-center mb-8\">Forgot Password</a>\n    <p class=\"text-[10px] text-center\">© 2021 Schlumberger Limited. All rights reserved.</p>\n  </div> -->\n  <app-login-form></app-login-form>\n  <!-- <app-reset-form></app-reset-form> -->\n  <!-- <app-authenticate-form></app-authenticate-form> -->\n</div>"
         },
         {
             "name": "InputComponent",
@@ -1070,7 +1070,7 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"flex items-center justify-between mb-8\">\n    <app-search-bar class=\"\"></app-search-bar>\n    <app-option-picker class=\"\"></app-option-picker>\n    <app-team-badge class=\"\"></app-team-badge>\n</div>\n<div class=\"card-list\">\n    <p class=\" text-lg text-white font-bold text-shadow mb-4\">Waiting for HEK Oil’s Input</p>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n</div>\n<div class=\"card-list\">\n    <p class=\" text-lg text-white font-bold text-shadow mb-4\">Today</p>\n    <app-glass-big-card class=\"block mb-6\" *ngFor=\"let item of cardArray\"></app-glass-big-card>\n</div>\n<div class=\"card-list\">\n    <p class=\" text-lg text-white font-bold text-shadow mb-4\">Tomorrow</p>\n    <app-glass-big-card class=\"block mb-6\" *ngFor=\"let item of cardArray\"></app-glass-big-card>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n    <app-glass-big-card class=\"block mb-6\" ></app-glass-big-card>\n</div>"
+            "templateData": "<div class=\"flex items-center justify-between mb-8\">\n    <app-search-bar class=\"\"></app-search-bar>\n    <app-option-picker class=\"\"></app-option-picker>\n    <app-team-badge class=\"\"></app-team-badge>\n</div>\n<div class=\"card-list bg-transparent\">\n    <p class=\" text-lg text-white font-bold text-shadow mb-4\">Waiting for HEK Oil’s Input</p>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n</div>\n<div class=\"card-list bg-transparent\">\n    <p class=\" text-lg text-white font-bold text-shadow mb-4\">Today</p>\n    <app-glass-big-card class=\"block mb-6\" *ngFor=\"let item of cardArray\"></app-glass-big-card>\n</div>\n<div class=\"card-list bg-transparent\">\n    <p class=\" text-lg text-white font-bold text-shadow mb-4\">Tomorrow</p>\n    <app-glass-big-card class=\"block mb-6\" *ngFor=\"let item of cardArray\"></app-glass-big-card>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n    <app-glass-big-card class=\"block mb-6\"></app-glass-big-card>\n    <app-glass-big-card class=\"block mb-6\" ></app-glass-big-card>\n</div>"
         },
         {
             "name": "LoginFormComponent",
@@ -1140,7 +1140,7 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"text-white shadow-glassM bg-signin-modal absolute top-1/2 -translate-y-1/2 sm:right-40 lg:right-32 min-h-[423px] w-[calc(100%-48px)] sm:max-w-md mx-6 md:mx-0 p-8 backdrop-blur-3xl rounded-2xl border-solid border-[1px]\">\n  <img src=\"/assets/img/logo-white.svg\" alt=\"\" class=\"m-auto mb-8 sm:w-60\">\n  <app-input class=\"block relative mb-8\" [ngClass]=\"{'opacity-50': primary}\" [label]=\"'E-mail Address'\" [type]=\"'text'\"></app-input>\n  <app-input class=\"block relative mb-8\" [label]=\"'Password'\" [type]=\"'password'\"></app-input>\n  <app-input class=\"block relative mb-8\" [label]=\"'Confirm Password'\" [type]=\"'password'\"></app-input>\n  <div class=\"form-group flex items-center mb-8\">\n    <input type=\"checkbox\" name=\"term\" id=\"term\" class=\" bg-transparent mr-1\">\n    <label for=\"term\" class=\"text-[11px] \">I agree to <a href=\"#\">Terms</a> and <a href=\"#\">Privacy Policy</a></label>\n  </div>\n\n  <app-btn class=\"block relative w-full text-center mb-4 text-gray-600\" [primary]=\"false\" [size]=\"'medium'\"></app-btn>\n  <!-- <button class=\"text-center block w-full bg-white h-10 text-sm sm:text-xl sm:h-16 rounded-full text-gray-600 mb-4\"> Sign In</button> -->\n  <a href=\"#\" class=\"text-sm block text-center mb-8\">Forgot Password</a>\n  <p class=\"text-[10px] text-center\">© 2021 Schlumberger Limited. All rights reserved.</p>\n</div>"
+            "templateData": "<div class=\"text-white shadow-glassM bg-signin-modal absolute top-1/2 -translate-y-1/2 sm:right-40 lg:right-32 min-h-[423px] w-[calc(100%-48px)] sm:max-w-md mx-6 md:mx-0 p-8 backdrop-blur-3xl rounded-2xl border-solid border-[1px]\">\n  <img src=\"/assets/img/logo-white.svg\" alt=\"\" class=\"m-auto mb-8 sm:w-60\">\n  <app-input class=\"block relative mb-8\" [label]=\"'E-mail Address'\" [type]=\"'text'\"></app-input>\n  <app-input class=\"block relative mb-8\" [label]=\"'Password'\" [type]=\"'password'\"></app-input>\n  <app-input class=\"block relative mb-8\" [label]=\"'Confirm Password'\" [type]=\"'password'\"></app-input>\n  <div class=\"form-group flex items-center mb-8\">\n    <input type=\"checkbox\" name=\"term\" id=\"term\" class=\" bg-transparent mr-1\">\n    <label for=\"term\" class=\"text-[11px] \">I agree to <a href=\"#\">Terms</a> and <a href=\"#\">Privacy Policy</a></label>\n  </div>\n\n  <!-- <div class=\"flex items-center\">\n    <input id=\"filter-mobile-color-0\" name=\"color[]\" value=\"white\" type=\"checkbox\" class=\"h-4 w-4 border-gray-300 rounded text-indigo-600 focus:ring-indigo-500\">\n    <label for=\"filter-mobile-color-0\" class=\"ml-3 min-w-0 flex-1 text-gray-500\">\n      White\n    </label>\n  </div> -->\n  <!-- <app-btn class=\"block relative w-full text-center mb-4 text-gray-600\" [primary]=\"false\" [size]=\"'medium'\"></app-btn> -->\n  <button class=\"text-center block w-full bg-white h-10 text-sm sm:text-xl sm:h-16 rounded-full text-gray-600 mb-4\"> Sign In</button>\n  <a href=\"#\" class=\"text-sm block text-center mb-8\">Forgot Password</a>\n  <p class=\"text-[10px] text-center\">© 2021 Schlumberger Limited. All rights reserved.</p>\n</div>"
         },
         {
             "name": "NavbarComponent",
@@ -1551,6 +1551,68 @@
             "templateData": "<h2 class=\" text-3xl font-normal mb-5 mt-4\">Open Issues</h2>\n<div class=\"picker mb-5\">\n  <app-option-picker class=\"\"></app-option-picker>\n</div>\n<div class=\"map h-36 border mb-10\">\n\n</div>\n<div class=\"title flex justify-between items-center mb-5\">\n  <h3 class=\" text-lg font-bold\">Mos Eisley Field</h3>\n  <span class=\" text-xs text-blue-500 cursor-pointer\">View All</span>\n</div>\n<div class=\"small-cards mb-14\">\n  <app-glass-small-card class=\"block mb-4\"></app-glass-small-card>\n  <app-glass-small-card class=\"sm:w-[calc(100%-15px)]\" [third]=\"false\" [fourth]=\"true\"></app-glass-small-card>\n</div>\n<div class=\"ctas flex justify-between mt-7\">\n  <app-btn class=\"mb-4 mr-4\" [primary]=\"false\" [size]=\"'medium'\"></app-btn>\n  <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'medium'\"></app-btn>\n</div>"
         },
         {
+            "name": "StickyStackComponent",
+            "id": "component-StickyStackComponent-c65de8d2f2f7cc215363e768328aa6ee",
+            "file": "src/app/moules/common/component/sticky-stack/sticky-stack.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-sticky-stack",
+            "styleUrls": [
+                "./sticky-stack.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./sticky-stack.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-sticky-stack',\n  templateUrl: './sticky-stack.component.html',\n  styleUrls: ['./sticky-stack.component.scss']\n})\nexport class StickyStackComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./sticky-stack.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"fixed w-40 h-12 px-2 bg-white-text-900 shadow-btn right-4 bottom-4 rounded-full z-20 flex-center text-blue-600 text-2xl\">\n    <span class=\"icon rounded-full h-8 w-8 mr-3 bg-blue-500\"></span>\n    <app-svg-icon class=\"block mr-3\" [iconHashTag]=\"'#sticky_phone_icon'\"></app-svg-icon>\n    <app-svg-icon class=\"block mr-3\" [iconHashTag]=\"'#sticky_msg_icon'\"></app-svg-icon>\n    <app-svg-icon class=\"\" [iconHashTag]=\"'#sticky_time_icon'\"></app-svg-icon>\n</div>"
+        },
+        {
             "name": "SvgIconComponent",
             "id": "component-SvgIconComponent-76dfbefea3c29d403560b281f171125b",
             "file": "src/app/moules/svg-icon/svg-icon.component.ts",
@@ -1877,13 +1939,13 @@
         },
         {
             "name": "CommonsModule",
-            "id": "module-CommonsModule-e3f45767fd7282fba376e16a0e426739",
+            "id": "module-CommonsModule-4202e3a57349708c596bc0ada16e8fad",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/moules/common/commons.module.ts",
             "methods": [],
-            "sourceCode": "import { RouterModule } from '@angular/router';\nimport { SvgIconModule } from './../svg-icon/svg-icon.module';\nimport { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { CardComponent } from './component/card/card.component';\nimport { BtnComponent } from './component/btn/btn.component';\nimport { GlassBigCardComponent } from './component/glass-big-card/glass-big-card.component';\nimport { GlassSmallCardComponent } from './component/glass-small-card/glass-small-card.component';\nimport { TroubleshootCardComponent } from './component/troubleshoot-card/troubleshoot-card.component';\nimport { TeamBadgeComponent } from './component/team-badge/team-badge.component';\nimport { OptionPickerComponent } from './component/option-picker/option-picker.component';\nimport { SearchBarComponent } from './component/search-bar/search-bar.component';\nimport { NavbarComponent } from './component/navbar/navbar.component';\nimport { LoginFormComponent } from './component/login-form/login-form.component';\nimport { ResetFormComponent } from './component/reset-form/reset-form.component';\nimport { AuthenticateFormComponent } from './component/authenticate-form/authenticate-form.component';\nimport { InputComponent } from './component/input/input.component';\n\n\n\n@NgModule({\n  declarations: [\n    CardComponent,\n    BtnComponent,\n    GlassBigCardComponent,\n    GlassSmallCardComponent,\n    TroubleshootCardComponent,\n    TeamBadgeComponent,\n    OptionPickerComponent,\n    SearchBarComponent,\n    NavbarComponent,\n    LoginFormComponent,\n    ResetFormComponent,\n    AuthenticateFormComponent,\n    InputComponent,\n  ],\n  imports: [\n    CommonModule,\n    SvgIconModule,\n    RouterModule,\n  ],\n  exports: [\n    CardComponent,\n    BtnComponent,\n    GlassBigCardComponent,\n    GlassSmallCardComponent,\n    TroubleshootCardComponent,\n    TeamBadgeComponent,\n    OptionPickerComponent,\n    SearchBarComponent,\n    NavbarComponent,\n    LoginFormComponent,\n    ResetFormComponent,\n    AuthenticateFormComponent,\n    InputComponent,\n  ]\n})\nexport class CommonsModule { }\n",
+            "sourceCode": "import { RouterModule } from '@angular/router';\nimport { SvgIconModule } from './../svg-icon/svg-icon.module';\nimport { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { CardComponent } from './component/card/card.component';\nimport { BtnComponent } from './component/btn/btn.component';\nimport { GlassBigCardComponent } from './component/glass-big-card/glass-big-card.component';\nimport { GlassSmallCardComponent } from './component/glass-small-card/glass-small-card.component';\nimport { TroubleshootCardComponent } from './component/troubleshoot-card/troubleshoot-card.component';\nimport { TeamBadgeComponent } from './component/team-badge/team-badge.component';\nimport { OptionPickerComponent } from './component/option-picker/option-picker.component';\nimport { SearchBarComponent } from './component/search-bar/search-bar.component';\nimport { NavbarComponent } from './component/navbar/navbar.component';\nimport { LoginFormComponent } from './component/login-form/login-form.component';\nimport { ResetFormComponent } from './component/reset-form/reset-form.component';\nimport { AuthenticateFormComponent } from './component/authenticate-form/authenticate-form.component';\nimport { InputComponent } from './component/input/input.component';\nimport { StickyStackComponent } from './component/sticky-stack/sticky-stack.component';\n\n\n\n@NgModule({\n  declarations: [\n    CardComponent,\n    BtnComponent,\n    GlassBigCardComponent,\n    GlassSmallCardComponent,\n    TroubleshootCardComponent,\n    TeamBadgeComponent,\n    OptionPickerComponent,\n    SearchBarComponent,\n    NavbarComponent,\n    LoginFormComponent,\n    ResetFormComponent,\n    AuthenticateFormComponent,\n    InputComponent,\n    StickyStackComponent,\n  ],\n  imports: [\n    CommonModule,\n    SvgIconModule,\n    RouterModule,\n  ],\n  exports: [\n    CardComponent,\n    BtnComponent,\n    GlassBigCardComponent,\n    GlassSmallCardComponent,\n    TroubleshootCardComponent,\n    TeamBadgeComponent,\n    OptionPickerComponent,\n    SearchBarComponent,\n    NavbarComponent,\n    LoginFormComponent,\n    ResetFormComponent,\n    AuthenticateFormComponent,\n    InputComponent,\n    StickyStackComponent,\n  ]\n})\nexport class CommonsModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -1924,6 +1986,9 @@
                         },
                         {
                             "name": "SearchBarComponent"
+                        },
+                        {
+                            "name": "StickyStackComponent"
                         },
                         {
                             "name": "TeamBadgeComponent"
@@ -1976,6 +2041,9 @@
                         },
                         {
                             "name": "SearchBarComponent"
+                        },
+                        {
+                            "name": "StickyStackComponent"
                         },
                         {
                             "name": "TeamBadgeComponent"
@@ -2351,6 +2419,16 @@
                 "name": "FirstVarient",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/app/moules/common/component/sticky-stack/StickyStack.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "FirstVarient",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/app/moules/common/component/team-badge/TeamBadge.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -2570,21 +2648,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Button1.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<Button>",
-                "defaultValue": "(args: Button) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/Header.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<Header>",
                 "defaultValue": "(args: Header) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button1.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<Button>",
+                "defaultValue": "(args: Button) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -2705,6 +2783,16 @@
                 "deprecationMessage": "",
                 "type": "Story<SearchBarComponent>",
                 "defaultValue": "(args: SearchBarComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/moules/common/component/sticky-stack/StickyStack.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<StickyStackComponent>",
+                "defaultValue": "(args: StickyStackComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -3194,6 +3282,28 @@
                     "deprecationMessage": "",
                     "type": "Story<SearchBarComponent>",
                     "defaultValue": "(args: SearchBarComponent) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/app/moules/common/component/sticky-stack/StickyStack.stories.ts": [
+                {
+                    "name": "FirstVarient",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/moules/common/component/sticky-stack/StickyStack.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/moules/common/component/sticky-stack/StickyStack.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<StickyStackComponent>",
+                    "defaultValue": "(args: StickyStackComponent) => ({\n  props: args,\n})"
                 }
             ],
             "src/app/moules/common/component/team-badge/TeamBadge.stories.ts": [
@@ -3964,6 +4074,35 @@
                 "name": "SearchBarComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/moules/common/component/sticky-stack/StickyStack.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "FirstVarient",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/moules/common/component/sticky-stack/StickyStack.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/moules/common/component/sticky-stack/sticky-stack.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "StickyStackComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
                 "status": "low"
             },
             {

@@ -9,4 +9,13 @@
             display: block;
         }
     }
+    &::-webkit-autofill,
+    &::-webkit-contacts-auto-fill-button,
+    &::-webkit-credentials-auto-fill-button{
+        visibility: hidden;
+        // display: none;
+        // pointer-events: none;
+        // position: absolute;
+        // right: 0;
+    }
 }
