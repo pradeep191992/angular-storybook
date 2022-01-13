@@ -1,4 +1,4 @@
-<header class="fixed top-0 z-20 left-0 w-full h-16 bg-white shadow-modal p-3 sm:p-6">
+<!-- <header class="fixed top-0 z-20 left-0 w-full h-16 bg-white shadow-modal p-3 sm:p-6">
   <nav class="flex-center justify-between h-full">
     <a [routerLink]="['/']" routerLinkActive="router-link-active" class="hidden sm:block">
       <img src="/assets/img/logo-black.svg" alt="" class="block">
@@ -12,10 +12,19 @@
 
     </div>
   </nav>
-</header>
+</header> -->
 <div class="pt-16"></div>
-<app-sticky-stack></app-sticky-stack>
+<!-- <app-sticky-stack></app-sticky-stack> -->
 <main class="main max-w-7xl m-auto px-4 font-arial">
+
+  <picture class="fixed w-full h-full left-0 top-0 z-0">
+    <source media="(max-width:650px)" srcset="/assets/img/mobile-login.jpeg">
+    <source media="(min-width:651px)" srcset="/assets/img/ipad-login.jpeg">
+    <source media="(min-width:1024px)" srcset="/assets/img/desktop-login.jpeg">
+    <img class="absolute w-full h-full left-0 top-0 object-cover object-center" src="/assets/img/desktop-login.jpeg"
+      alt="Flowers">
+  </picture>
+  
   <section>
     <!-- <article class="flex flex-wrap justify-between">
       <app-card class="sm:w-[calc(50%-15px)] lg:w-[calc(33.33%-15px)]" *ngFor="let item of cardArray"></app-card>

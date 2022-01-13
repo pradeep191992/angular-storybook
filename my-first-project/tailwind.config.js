@@ -10,6 +10,9 @@ module.exports = {
       'arial': 'Arial, sans-serif',
     },
     extend: {
+      backdropBlur: {
+        '75': '75px',
+      },
       minWidth: {
         '200': '200px',
         '300': '300px',
@@ -45,6 +48,7 @@ module.exports = {
         'linear-glass85': 'linear-gradient(89.52deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.255) 100%)',
         'linear-glass15': 'linear-gradient(45deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.0375) 100%)',
         'signin-modal': 'linear-gradient(85.1deg, rgba(179, 179, 179, 0.15) 0%, rgba(255, 255, 255, 0.0375) 100%)',
+        'modal-border': 'linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%)',
       },
       colors: {
         'slb-black70': 'rgba(0, 0, 0, 0.7)',
