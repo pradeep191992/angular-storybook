@@ -17,6 +17,7 @@ import { AuthenticateFormComponent } from './component/authenticate-form/authent
 import { InputComponent } from './component/input/input.component';
 import { StickyStackComponent } from './component/sticky-stack/sticky-stack.component';
 import { AlertModalComponent } from './component/alert-modal/alert-modal.component';
+import { CheckboxComponent } from './component/checkbox/checkbox.component';
 
 
 
@@ -37,6 +38,7 @@ import { AlertModalComponent } from './component/alert-modal/alert-modal.compone
     InputComponent,
     StickyStackComponent,
     AlertModalComponent,
+    CheckboxComponent,
   ],
   imports: [
     CommonModule,
@@ -59,6 +61,7 @@ import { AlertModalComponent } from './component/alert-modal/alert-modal.compone
     InputComponent,
     StickyStackComponent,
     AlertModalComponent,
+    CheckboxComponent,
   ]
 })
 export class CommonsModule { }

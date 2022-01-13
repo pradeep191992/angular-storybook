@@ -5,8 +5,8 @@
   <app-input class="block relative mb-8" [label]="'Password'" [type]="'password'"></app-input>
   <app-input class="block relative mb-8" [label]="'Confirm Password'" [type]="'password'"></app-input>
   <div class="form-group flex items-center mb-8">
-    <input type="checkbox" name="term" id="term" class=" bg-transparent ltr:mr-1 rtl:ml-1">
-    <label for="term" class="text-[11px] ">I agree to <a href="#">Terms</a> and <a href="#">Privacy Policy</a></label>
+    <app-checkbox [forLabele]="'terms'"></app-checkbox>
+    <label for="terms" class="text-[11px] ">I agree to <a href="#">Terms</a> and <a href="#">Privacy Policy</a></label>
   </div>
 
   <!-- <app-btn class="block relative w-full text-center mb-4 text-gray-600" [primary]="false" [size]="'medium'"></app-btn> -->
