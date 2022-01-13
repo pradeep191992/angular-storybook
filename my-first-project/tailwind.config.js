@@ -51,7 +51,7 @@ module.exports = {
         'modal-border': 'linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%)',
       },
       colors: {
-        'slb-black70': 'rgba(0, 0, 0, 0.7)',
+        'slb-black-70': 'rgba(0, 0, 0, 0.7)',
         'gray': {
           50: '#FAFAFA',
           100: '#F3F3F3',

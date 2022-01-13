@@ -16,6 +16,7 @@ import { ResetFormComponent } from './component/reset-form/reset-form.component'
 import { AuthenticateFormComponent } from './component/authenticate-form/authenticate-form.component';
 import { InputComponent } from './component/input/input.component';
 import { StickyStackComponent } from './component/sticky-stack/sticky-stack.component';
+import { AlertModalComponent } from './component/alert-modal/alert-modal.component';
 
 
 
@@ -35,6 +36,7 @@ import { StickyStackComponent } from './component/sticky-stack/sticky-stack.comp
     AuthenticateFormComponent,
     InputComponent,
     StickyStackComponent,
+    AlertModalComponent,
   ],
   imports: [
     CommonModule,
@@ -56,6 +58,7 @@ import { StickyStackComponent } from './component/sticky-stack/sticky-stack.comp
     AuthenticateFormComponent,
     InputComponent,
     StickyStackComponent,
+    AlertModalComponent,
   ]
 })
 export class CommonsModule { }
