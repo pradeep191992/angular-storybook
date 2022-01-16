@@ -1,0 +1,5 @@
+<div class="relative inline-block text-white rounded-full pl-3 pr-2 py-1 {{isClose ? 'bg-blue-600' : 'bg-gray-300'}}">
+  <span class="mr-2 text-sm">Artificial Lift</span>
+  <app-svg-icon *ngIf="isClose" class="leading-[1] cursor-pointer" [iconHashTag]="'#cross_icon'"></app-svg-icon>
+  <app-svg-icon *ngIf="!isClose" class="leading-[1] cursor-pointer" [iconHashTag]="'#adding_icon'"></app-svg-icon>
+</div>

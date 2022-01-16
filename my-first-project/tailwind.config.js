@@ -30,6 +30,7 @@ module.exports = {
         recom: '4px 4px 24px rgba(0, 0, 0, 0.1)',
         inset: 'inset 4px 4px 8px rgba(0, 0, 0, 0.25)',
         btnS: '0px 4px 8px rgba(0, 0, 0, 0.25)',
+        base: '0px 1px 2px rgba(0, 0, 0, 0.06), 0px 1px 3px rgba(0, 0, 0, 0.1);',
       },
       backgroundColor: {
         glass: {

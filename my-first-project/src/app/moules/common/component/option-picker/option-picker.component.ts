@@ -12,4 +12,6 @@ export class OptionPickerComponent implements OnInit {
   ngOnInit(): void {
   }
   @Input() primary = true;
+
+  @Input() className: any;
 }

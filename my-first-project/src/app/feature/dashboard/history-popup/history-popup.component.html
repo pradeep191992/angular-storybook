@@ -1,0 +1,49 @@
+<div class="fixed h-full top-0 right-0 w-[630px] bg-gray-50 z-50 shadow-base pt-7 px-6">
+  <div class="his-header relative flex justify-between items-center pr-11">
+    <h2 class="text-black text-2xl">Boba Fett Well History</h2>
+    <p>
+      <span class=" text-blue-600 text-xs">View Field History</span>
+      <app-svg-icon class="leading-[1] text-3xl text-black absolute right-0 top-0 cursor-pointer" [iconHashTag]="'#cross_icon'"></app-svg-icon>
+    </p>
+  </div>
+  <div class="flex items-center justify-between my-4">
+    <app-search-bar class="" [className]="'w-56 history'"></app-search-bar>
+    <app-option-picker class="" [className]="'bg-gray-100'"></app-option-picker>
+  </div>
+  <div class="tags mb-3 whitespace-nowrap overflow-x-scroll">
+    <app-pills class="mr-4" [isClose]="true"></app-pills>
+    <app-pills class="mr-4" [isClose]="false"></app-pills>
+    <app-pills class="mr-4" [isClose]="false"></app-pills>
+    <app-pills class="mr-4" [isClose]="false"></app-pills>
+    <app-pills class="mr-4" [isClose]="false"></app-pills>
+    <app-pills class="mr-4" [isClose]="false"></app-pills>
+    <app-pills class="mr-4" [isClose]="false"></app-pills>
+    <app-pills class="mr-4" [isClose]="false"></app-pills>
+  </div>
+  <div class="flex justify-between items-center text-gray-400 text-xs sm:px-14 pt-3 mb-4">
+    <span>Date and Item</span>
+    <span>Linked Original / Latest Item State</span>
+  </div>
+  <div class="list pl-14 pr-3 overflow-y-auto overscroll-contain max-h-[calc(100%-200px)]">
+    <app-history-card class="block relative mb-4" [warning]="false"></app-history-card>
+    <app-history-card class="block relative mb-4" [warning]="true"></app-history-card>
+    <app-history-card class="block relative mb-4" [warning]="false"></app-history-card>
+    <app-history-card class="block relative mb-4" [warning]="true"></app-history-card>
+    <app-history-card class="block relative mb-4" [warning]="true"></app-history-card>
+    <app-history-card class="block relative mb-4" [warning]="false"></app-history-card>
+    <app-history-card class="block relative mb-4" [warning]="true"></app-history-card>
+    <app-history-card class="block relative mb-4" [warning]="false"></app-history-card>
+    <app-history-card class="block relative mb-4" [warning]="true"></app-history-card>
+    <app-history-card class="block relative mb-4" [warning]="false"></app-history-card>
+    <app-history-card class="block relative mb-4" [warning]="true"></app-history-card>
+    <app-history-card class="block relative mb-4" [warning]="true"></app-history-card>
+    <app-history-card class="block relative mb-4" [warning]="false"></app-history-card>
+    <app-history-card class="block relative mb-4" [warning]="true"></app-history-card>
+    <app-history-card class="block relative mb-4" [warning]="false"></app-history-card>
+    <app-history-card class="block relative mb-4" [warning]="true"></app-history-card>
+    <app-history-card class="block relative mb-4" [warning]="true"></app-history-card>
+    <app-history-card class="block relative mb-4" [warning]="false"></app-history-card>
+    <app-history-card class="block relative mb-4" [warning]="true"></app-history-card>
+    <app-history-card class="block relative mb-4" [warning]="true"></app-history-card>
+  </div>
+</div>

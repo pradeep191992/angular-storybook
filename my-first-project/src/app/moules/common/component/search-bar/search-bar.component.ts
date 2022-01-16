@@ -12,4 +12,5 @@ export class SearchBarComponent implements OnInit {
   ngOnInit(): void {
   }
   @Input() primary = true;
+  @Input() className: any;
 }

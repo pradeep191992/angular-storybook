@@ -16,5 +16,6 @@ export class GlassSmallCardComponent implements OnInit {
   @Input() second = false;
   @Input() third = true;
   @Input() fourth = false;
+  @Input() className: any;
   
 }

@@ -18,6 +18,8 @@ import { InputComponent } from './component/input/input.component';
 import { StickyStackComponent } from './component/sticky-stack/sticky-stack.component';
 import { AlertModalComponent } from './component/alert-modal/alert-modal.component';
 import { CheckboxComponent } from './component/checkbox/checkbox.component';
+import { HistoryCardComponent } from './component/history-card/history-card.component';
+import { PillsComponent } from './component/pills/pills.component';
 
 
 
@@ -39,6 +41,8 @@ import { CheckboxComponent } from './component/checkbox/checkbox.component';
     StickyStackComponent,
     AlertModalComponent,
     CheckboxComponent,
+    HistoryCardComponent,
+    PillsComponent,
   ],
   imports: [
     CommonModule,
@@ -62,6 +66,8 @@ import { CheckboxComponent } from './component/checkbox/checkbox.component';
     StickyStackComponent,
     AlertModalComponent,
     CheckboxComponent,
+    HistoryCardComponent,
+    PillsComponent,
   ]
 })
 export class CommonsModule { }
