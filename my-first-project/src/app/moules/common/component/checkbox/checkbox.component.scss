@@ -1,6 +1,6 @@
 .checkbox:checked ~ .cs-box {
   @apply bg-white;
-  // .checked-icon {
-  //   @apply block;
-  // }
+  .checked-icon {
+    @apply block;
+  }
 }

@@ -2,6 +2,7 @@ module.exports = {
   purge: [
     './src/**/*.html',
     './src/**/*.js',
+    './src/**/*.ts',
   ],
   mode: 'jit',
   darkMode: false, // or 'media' or 'class'

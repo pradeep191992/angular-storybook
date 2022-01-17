@@ -1,0 +1,22 @@
+<div class="panel bg-gray-100 shadow-modal w-96 rounded-lg absolute top-6 {{classes}} z-20 px-4 py-6 transition-all">
+  <div class="panel-header flex items-center mb-4">
+    <h2 class="text-gray-text-1000 text-2xl font-bold mr-auto">Notifications</h2>
+    <p *ngIf="isVisible" class=" ">All</p>
+    <p class="{{isVisible ? 'text-lg text-gray-500 font-normal' : 'border border-solid border-blue-600 text-xs'}} drop-shadow-md font-bold text-gray-600 leading-8 rounded-full pl-3 pr-2 mr-4 flex-center cursor-pointer">
+      <span>Open Actions</span>
+      <span class="bg-blue-600 text-white rounded-full flex-center ml-2 {{isVisible ? 'w-6 h-6 text-xs' : 'w-4 h-4'}}">5</span>
+    </p>
+    <app-svg-icon class="icon text-gray-text-1000" [iconHashTag]="'#threedot_icon'"></app-svg-icon>
+    <app-svg-icon (click)="showModal()" *ngIf="isVisible" class="icon  text-gray-500 text-2xl ml-9 cursor-pointer" [iconHashTag]="'#cross_icon'"></app-svg-icon>
+  </div>
+  <div class="panel-body">
+    <app-notification-card class="block mb-2" [isShowing]="isVisible"></app-notification-card>
+    <app-notification-card class="block mb-2" [isShowing]="isVisible"></app-notification-card>
+    <app-notification-card class="block mb-2" [isShowing]="isVisible"></app-notification-card>
+    <app-notification-card class="block mb-2" [isShowing]="isVisible"></app-notification-card>
+  </div>
+  <p class="flex-center mt-4">
+    <span (click)="showModal()" class="text-blue-600 text-sm">See All</span>
+  </p>
+</div>
+<span *ngIf="isVisible" class="bg-gray-text-700 fixed top-0 left-0 w-full h-full z-[11] block"></span>

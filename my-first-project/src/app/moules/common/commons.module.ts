@@ -20,6 +20,8 @@ import { AlertModalComponent } from './component/alert-modal/alert-modal.compone
 import { CheckboxComponent } from './component/checkbox/checkbox.component';
 import { HistoryCardComponent } from './component/history-card/history-card.component';
 import { PillsComponent } from './component/pills/pills.component';
+import { NotificationCardComponent } from './component/notification-card/notification-card.component';
+import { NotificationPanelComponent } from './component/notification-panel/notification-panel.component';
 
 
 
@@ -43,6 +45,8 @@ import { PillsComponent } from './component/pills/pills.component';
     CheckboxComponent,
     HistoryCardComponent,
     PillsComponent,
+    NotificationCardComponent,
+    NotificationPanelComponent,
   ],
   imports: [
     CommonModule,
@@ -68,6 +72,8 @@ import { PillsComponent } from './component/pills/pills.component';
     CheckboxComponent,
     HistoryCardComponent,
     PillsComponent,
+    NotificationCardComponent,
+    NotificationPanelComponent,
   ]
 })
 export class CommonsModule { }
