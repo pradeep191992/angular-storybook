@@ -1,4 +1,4 @@
-<div class="main relative">
+<!-- <div class="main relative">
   <div class="relative grid gap-4 p-6 grid-cols-[464px,1fr] lg:grid-cols-[calc(33%-.5rem),calc(66%-.5rem)] grid-rows-[220px,1fr] z-10 h-screen">
     <app-sidebar class="sidebar glass-effect bg-glass-85 p-4 h-full row-span-2"></app-sidebar>
     <div class="header p-6 col-start-2 glass-effect glass-border">
@@ -15,7 +15,28 @@
     </div>
     <app-list class="dashboard glass-effect glass-border p-6 row-start-2 col-start-2"></app-list>
   </div>
-<!-- <app-notification-panel></app-notification-panel> -->
-</div>
+<app-notification-panel></app-notification-panel>
+</div> -->
 
 <!-- <app-history-popup></app-history-popup> -->
+
+<div class="main relative">
+  <div class="relative grid gap-4 m-6 grid-cols-[464px,1fr] lg:grid-cols-[calc(33%-.25rem),calc(66%-.25rem)] z-10 max-h-[calc(100vh-110px)]">
+    <app-sidebar class="sidebar glass-effect bg-glass-85 p-4 h-full"></app-sidebar>
+    <div>
+      <div class="header p-6 glass-effect glass-border mb-4 h-60">
+        <div class="topbar flex items-center justify-between text-white text-shadow">
+          <div class="left">
+            <h1 class=" text-xl font-bold mb-1">Field Production - Actual vs. Potential</h1>
+            <p class="text-xs">Powered by LiftIQ</p>
+          </div>
+          <div class="right flex-center">
+            <h2 class=" text-3xl font-normal">15%</h2>
+            <p class="text-xs self-end ml-1">Current Difference</p>
+          </div>
+        </div>
+      </div>
+      <app-list class="dashboard glass-effect glass-border p-6 block"></app-list>
+    </div>
+  </div><app-notification-panel></app-notification-panel>
+</div>

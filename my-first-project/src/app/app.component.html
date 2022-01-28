@@ -1,7 +1,8 @@
 <header class="fixed top-0 z-20 left-0 w-full h-16 bg-white shadow-modal p-3 sm:p-6">
   <nav class="flex-center justify-between h-full">
     <a [routerLink]="['/']" routerLinkActive="router-link-active" class="hidden sm:block">
-      <img src="/assets/img/logo-black.svg" alt="" class="block">
+      <!-- <img src="/assets/img/logo-black.svg" alt="" class="block"> -->
+      <app-svg-icon class="mr-1 leading-[1] text-[8rem]" [iconHashTag]="'#logo_icon'"></app-svg-icon>
     </a>
     <div class="flex-center">
       <app-navbar></app-navbar>

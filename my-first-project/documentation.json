@@ -2929,27 +2929,7 @@
                 "name": "FirstVarient",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/moules/common/component/login-form/LoginForm.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "FirstVarient",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/moules/common/component/glass-big-card/BigCard.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "FirstVarient",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/moules/common/component/reset-form/ResetForm.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2979,6 +2959,26 @@
                 "name": "FirstVarient",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/app/moules/common/component/login-form/LoginForm.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "FirstVarient",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/moules/common/component/reset-form/ResetForm.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "FirstVarient",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/app/moules/common/component/search-bar/SearchBar.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -2989,7 +2989,7 @@
                 "name": "FirstVarient",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/moules/common/component/troubleshoot-card/Troubleshoot.stories.ts",
+                "file": "src/app/moules/common/component/sticky-stack/StickyStack.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -3009,7 +3009,7 @@
                 "name": "FirstVarient",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/moules/common/component/sticky-stack/StickyStack.stories.ts",
+                "file": "src/app/moules/common/component/troubleshoot-card/Troubleshoot.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -3218,16 +3218,6 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Button1.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<Button>",
-                "defaultValue": "(args: Button) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/Header.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -3238,11 +3228,31 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/stories/Button1.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<Button>",
+                "defaultValue": "(args: Button) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/stories/Page.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<Page>",
                 "defaultValue": "(args: Page) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/moules/common/component/authenticate-form/AuthenticateForm.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<AuthenticateFormComponent>",
+                "defaultValue": "(args: AuthenticateFormComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -3268,51 +3278,11 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/moules/common/component/authenticate-form/AuthenticateForm.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<AuthenticateFormComponent>",
-                "defaultValue": "(args: AuthenticateFormComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/moules/common/component/login-form/LoginForm.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<LoginFormComponent>",
-                "defaultValue": "(args: LoginFormComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/moules/common/component/glass-big-card/BigCard.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<GlassBigCardComponent>",
                 "defaultValue": "(args: GlassBigCardComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/moules/common/component/reset-form/ResetForm.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<ResetFormComponent>",
-                "defaultValue": "(args: ResetFormComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/moules/common/component/option-picker/OptionPicker.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<OptionPickerComponent>",
-                "defaultValue": "(args: OptionPickerComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -3338,31 +3308,51 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/app/moules/common/component/login-form/LoginForm.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<LoginFormComponent>",
+                "defaultValue": "(args: LoginFormComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/moules/common/component/navbar/NavBar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<NavbarComponent>",
+                "defaultValue": "(args: NavbarComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/moules/common/component/option-picker/OptionPicker.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<OptionPickerComponent>",
+                "defaultValue": "(args: OptionPickerComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/moules/common/component/reset-form/ResetForm.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ResetFormComponent>",
+                "defaultValue": "(args: ResetFormComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/app/moules/common/component/search-bar/SearchBar.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<SearchBarComponent>",
                 "defaultValue": "(args: SearchBarComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/moules/common/component/troubleshoot-card/Troubleshoot.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<TroubleshootCardComponent>",
-                "defaultValue": "(args: TroubleshootCardComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/moules/common/component/team-badge/TeamBadge.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<TeamBadgeComponent>",
-                "defaultValue": "(args: TeamBadgeComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -3378,11 +3368,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/moules/common/component/navbar/NavBar.stories.ts",
+                "file": "src/app/moules/common/component/team-badge/TeamBadge.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<NavbarComponent>",
-                "defaultValue": "(args: NavbarComponent) => ({\n  props: args,\n})"
+                "type": "Story<TeamBadgeComponent>",
+                "defaultValue": "(args: TeamBadgeComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/moules/common/component/troubleshoot-card/Troubleshoot.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<TroubleshootCardComponent>",
+                "defaultValue": "(args: TroubleshootCardComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "ThirdVarient",
@@ -3692,28 +3692,6 @@
                     "defaultValue": "(args: AuthenticateFormComponent) => ({\n  props: args,\n})"
                 }
             ],
-            "src/app/moules/common/component/login-form/LoginForm.stories.ts": [
-                {
-                    "name": "FirstVarient",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/moules/common/component/login-form/LoginForm.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/moules/common/component/login-form/LoginForm.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<LoginFormComponent>",
-                    "defaultValue": "(args: LoginFormComponent) => ({\n  props: args,\n})"
-                }
-            ],
             "src/app/moules/common/component/glass-big-card/BigCard.stories.ts": [
                 {
                     "name": "FirstVarient",
@@ -3766,28 +3744,6 @@
                     "defaultValue": "Template.bind({})"
                 }
             ],
-            "src/app/moules/common/component/reset-form/ResetForm.stories.ts": [
-                {
-                    "name": "FirstVarient",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/moules/common/component/reset-form/ResetForm.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/moules/common/component/reset-form/ResetForm.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<ResetFormComponent>",
-                    "defaultValue": "(args: ResetFormComponent) => ({\n  props: args,\n})"
-                }
-            ],
             "src/app/moules/common/component/glass-small-card/SmallCard.stories.ts": [
                 {
                     "name": "FirstVarient",
@@ -3832,6 +3788,50 @@
                     "defaultValue": "(args: InputComponent) => ({\n  props: args,\n})"
                 }
             ],
+            "src/app/moules/common/component/login-form/LoginForm.stories.ts": [
+                {
+                    "name": "FirstVarient",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/moules/common/component/login-form/LoginForm.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/moules/common/component/login-form/LoginForm.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<LoginFormComponent>",
+                    "defaultValue": "(args: LoginFormComponent) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/app/moules/common/component/reset-form/ResetForm.stories.ts": [
+                {
+                    "name": "FirstVarient",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/moules/common/component/reset-form/ResetForm.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/moules/common/component/reset-form/ResetForm.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ResetFormComponent>",
+                    "defaultValue": "(args: ResetFormComponent) => ({\n  props: args,\n})"
+                }
+            ],
             "src/app/moules/common/component/search-bar/SearchBar.stories.ts": [
                 {
                     "name": "FirstVarient",
@@ -3854,12 +3854,12 @@
                     "defaultValue": "(args: SearchBarComponent) => ({\n  props: args,\n})"
                 }
             ],
-            "src/app/moules/common/component/troubleshoot-card/Troubleshoot.stories.ts": [
+            "src/app/moules/common/component/sticky-stack/StickyStack.stories.ts": [
                 {
                     "name": "FirstVarient",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/moules/common/component/troubleshoot-card/Troubleshoot.stories.ts",
+                    "file": "src/app/moules/common/component/sticky-stack/StickyStack.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -3869,11 +3869,11 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/moules/common/component/troubleshoot-card/Troubleshoot.stories.ts",
+                    "file": "src/app/moules/common/component/sticky-stack/StickyStack.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Story<TroubleshootCardComponent>",
-                    "defaultValue": "(args: TroubleshootCardComponent) => ({\n  props: args,\n})"
+                    "type": "Story<StickyStackComponent>",
+                    "defaultValue": "(args: StickyStackComponent) => ({\n  props: args,\n})"
                 }
             ],
             "src/app/moules/common/component/team-badge/TeamBadge.stories.ts": [
@@ -3898,12 +3898,12 @@
                     "defaultValue": "(args: TeamBadgeComponent) => ({\n  props: args,\n})"
                 }
             ],
-            "src/app/moules/common/component/sticky-stack/StickyStack.stories.ts": [
+            "src/app/moules/common/component/troubleshoot-card/Troubleshoot.stories.ts": [
                 {
                     "name": "FirstVarient",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/moules/common/component/sticky-stack/StickyStack.stories.ts",
+                    "file": "src/app/moules/common/component/troubleshoot-card/Troubleshoot.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -3913,11 +3913,11 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/moules/common/component/sticky-stack/StickyStack.stories.ts",
+                    "file": "src/app/moules/common/component/troubleshoot-card/Troubleshoot.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Story<StickyStackComponent>",
-                    "defaultValue": "(args: StickyStackComponent) => ({\n  props: args,\n})"
+                    "type": "Story<TroubleshootCardComponent>",
+                    "defaultValue": "(args: TroubleshootCardComponent) => ({\n  props: args,\n})"
                 }
             ],
             "src/stories/Button1.stories.ts": [
