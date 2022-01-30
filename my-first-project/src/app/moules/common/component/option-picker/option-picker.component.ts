@@ -14,4 +14,13 @@ export class OptionPickerComponent implements OnInit {
   @Input() primary = true;
 
   @Input() className: any;
+
+  addingEffect(event: any) {
+    const item = document.body.querySelectorAll('.pick-item');
+    item.forEach(ele => {
+      ele.classList.remove('active');
+      event.target.classList.add('active');
+    })
+  }
+
 }

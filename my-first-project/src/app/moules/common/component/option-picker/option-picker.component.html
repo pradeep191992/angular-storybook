@@ -1,7 +1,10 @@
-<div class="glass-card flex items-center justify-between p-1 bg-glass-75 rounded-[90px] backdrop-blur-3xl cursor-pointer {{className}}">
-    <span class="text-sm min-w-[90px] text-center active">Closed</span>
-    <span class="text-sm min-w-[105px] text-center">Scheduled</span>
-    <span class="text-sm min-w-[90px] text-center">Planning</span>
+<div class="glass-card flex items-center justify-between p-1 bg-glass-75 rounded-[90px] backdrop-blur-3xl cursor-pointer h-[42px] {{className}}">
+    <span class="pick-item flex-center active" (click)="addingEffect($event)">Operations</span>
+    <span class="pick-item flex-center" (click)="addingEffect($event)">Open</span>
+    <span class="pick-item flex-center" (click)="addingEffect($event)">Quotes</span>
+    <span class="pick-item flex-center" (click)="addingEffect($event)">Closed</span>
+    <span class="pick-item flex-center" (click)="addingEffect($event)">Closed</span>
+    <span class="indicate"></span>
 </div>
 
 

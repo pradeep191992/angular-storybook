@@ -1,3 +1,30 @@
-.active{
-    @apply bg-white px-4 py-[7px] rounded-full font-bold text-blue-500 shadow-btn;
+.indicate{
+    @apply bg-white rounded-full shadow-btn absolute h-[34px] top-1 left-1 min-w-[80px];
+    z-index: -1;
+    transition: 300ms ease;
+}
+.pick-item{
+    @apply px-3 min-w-[80px] text-sm text-center text-gray-600 h-full;
+    &.active{
+        @apply text-blue-600 font-bold;
+    }
+    &:nth-child(1){
+        @apply min-w-[98px];
+        &.active ~ .indicate{
+            @apply min-w-[98px];
+            transform: translateX(80px * 0);
+        }
+    }
+    &:nth-child(2).active ~ .indicate{
+        transform: translateX(80px * 1 + 18px);
+    }
+    &:nth-child(3).active ~ .indicate{
+        transform: translateX(80px * 2 + 18px);
+    }
+    &:nth-child(4).active ~ .indicate{
+        transform: translateX(80px * 3 + 18px);
+    }
+    &:nth-child(5).active ~ .indicate{
+        transform: translateX(80px * 4 + 18px);
+    }
 }
