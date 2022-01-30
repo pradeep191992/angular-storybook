@@ -128,7 +128,7 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<header class=\"fixed top-0 z-20 left-0 w-full h-16 bg-white shadow-modal p-3 sm:p-6\">\n  <nav class=\"flex-center justify-between h-full\">\n    <a [routerLink]=\"['/']\" routerLinkActive=\"router-link-active\" class=\"hidden sm:block\">\n      <img src=\"/assets/img/logo-black.svg\" alt=\"\" class=\"block\">\n    </a>\n    <div class=\"flex-center\">\n      <app-navbar></app-navbar>\n      <p class=\"flex-center text-xs text-blue-500 px-3 ring-1 h-6 rounded-full hidden sm:flex\">\n        <app-svg-icon class=\"mr-1 leading-[1]\" [iconHashTag]=\"'#bell_icon'\"></app-svg-icon>\n        <span class=\"text-gray-600\">0</span>\n      </p>\n\n    </div>\n  </nav>\n</header>\n<div class=\"pt-16\"></div>\n<!-- <app-sticky-stack></app-sticky-stack> -->\n<main class=\"main max-w-7xl m-auto px-4 font-arial\">\n\n  <picture class=\"fixed w-full h-full left-0 top-0 z-0\">\n    <source media=\"(max-width:650px)\" srcset=\"/assets/img/mobile-login.jpeg\">\n    <source media=\"(min-width:651px)\" srcset=\"/assets/img/ipad-login.jpeg\">\n    <source media=\"(min-width:1024px)\" srcset=\"/assets/img/desktop-login.jpeg\">\n    <img class=\"absolute w-full h-full left-0 top-0 object-cover object-center\" src=\"/assets/img/desktop-login.jpeg\"\n      alt=\"Flowers\">\n  </picture>\n  <!-- <app-alert-modal></app-alert-modal> -->\n  <section>\n    <!-- <article class=\"flex flex-wrap justify-between\">\n      <app-card class=\"sm:w-[calc(50%-15px)] lg:w-[calc(33.33%-15px)]\" *ngFor=\"let item of cardArray\"></app-card>\n    </article> \n    \n    <article class=\"flex justify-between p-10\">\n      <div class=\"btn-group flex items-center justify-center flex-wrap flex-col\">\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'xsmall'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'small'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'medium'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'large'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'xlarge'\" [disabled]=\"true\"></app-btn>\n      </div>\n      <div class=\"btn-group flex items-center justify-center flex-wrap flex-col\">\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'xsmall'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'small'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'medium'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'large'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'xlarge'\"></app-btn>\n      </div>\n    </article> \n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-search-bar class=\"sm:w-[calc(100%-15px)]\"></app-search-bar>\n    </article>\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-option-picker class=\"sm:w-[calc(100%-15px)]\"></app-option-picker>\n    </article>\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-team-badge class=\"sm:w-[calc(100%-15px)]\"></app-team-badge>\n    </article>\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-troubleshoot-card class=\"sm:w-[calc(100%-15px)]\"></app-troubleshoot-card>\n    </article>\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-glass-big-card class=\"sm:w-[calc(100%-15px)]\"></app-glass-big-card>\n    </article>\n\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-glass-small-card class=\"sm:w-[calc(100%-15px)]\"></app-glass-small-card>\n    </article>-->\n    <!-- <div class=\"h-32 w-32 red text-6xl text-orange-600\">\n      <h2>Header</h2>\n\n    </div>\n      <app-btn class=\"mb-4 mr-4\" [primary]=\"false\" [size]=\"'small'\"></app-btn> -->\n\n      <!-- <div class=\"mt-20 w-96 h-96 relative z-20\">\n        <button type=\"button\" class=\"btn-blue slb-btn-white slb-btn w-full\">Button fill</button>\n        <div class=\"mb-4\"></div>\n        <button type=\"button\" class=\"slb-btn slb-blue-outline w-full\"> Button borded</button>\n        <div class=\"mb-4\"></div>\n        <button type=\"button\" class=\"btn-smalls slb-btn-blue slb-btn\">Primary fill small</button>\n        <div class=\"mb-4\"></div>\n        <button type=\"button\" class=\"slb-btn slb-white-outline\">Primary bordered small</button>\n      \n        <div class=\"mb-4\"></div>\n        <button type=\"button\" class=\"slb-btn slb-btn-blue slb-btn-xsm\">Button</button>\n        <div class=\"mb-4\"></div>\n        <button type=\"button\" class=\"slb-btn slb-btn-blue slb-btn-sm\">Button</button>\n        <div class=\"mb-4\"></div>\n        <button type=\"button\" class=\"slb-btn slb-btn-blue slb-btn-md\">Button</button>\n        <div class=\"mb-4\"></div>\n        <button type=\"button\" class=\"slb-btn slb-btn-blue slb-btn-lg\">Button</button>\n        <div class=\"mb-4\"></div>\n        <button type=\"button\" class=\"slb-btn slb-btn-blue slb-btn-xlg\">Button</button>\n      </div> -->\n  </section>\n</main>\n\n<router-outlet></router-outlet>\n"
+            "templateData": "<header class=\"fixed top-0 z-20 left-0 w-full h-16 bg-white shadow-modal p-3 sm:p-6\">\n  <nav class=\"flex-center justify-between h-full\">\n    <a [routerLink]=\"['/']\" routerLinkActive=\"router-link-active\" class=\"hidden sm:block\">\n      <!-- <img src=\"/assets/img/logo-black.svg\" alt=\"\" class=\"block\"> -->\n      <app-svg-icon class=\"mr-1 leading-[1] text-[8rem]\" [iconHashTag]=\"'#logo_icon'\"></app-svg-icon>\n    </a>\n    <div class=\"flex-center\">\n      <app-navbar></app-navbar>\n      <p class=\"flex-center text-xs text-blue-500 px-3 ring-1 h-6 rounded-full hidden sm:flex\">\n        <app-svg-icon class=\"mr-1 leading-[1]\" [iconHashTag]=\"'#bell_icon'\"></app-svg-icon>\n        <span class=\"text-gray-600\">0</span>\n      </p>\n\n    </div>\n  </nav>\n</header>\n<div class=\"pt-16\"></div>\n<!-- <app-sticky-stack></app-sticky-stack> -->\n<main class=\"main max-w-7xl m-auto px-4 font-arial\">\n\n  <picture class=\"fixed w-full h-full left-0 top-0 z-0\">\n    <source media=\"(max-width:650px)\" srcset=\"/assets/img/mobile-login.jpeg\">\n    <source media=\"(min-width:651px)\" srcset=\"/assets/img/ipad-login.jpeg\">\n    <source media=\"(min-width:1024px)\" srcset=\"/assets/img/desktop-login.jpeg\">\n    <img class=\"absolute w-full h-full left-0 top-0 object-cover object-center\" src=\"/assets/img/desktop-login.jpeg\"\n      alt=\"Flowers\">\n  </picture>\n  <!-- <app-alert-modal></app-alert-modal> -->\n  <section>\n    <!-- <article class=\"flex flex-wrap justify-between\">\n      <app-card class=\"sm:w-[calc(50%-15px)] lg:w-[calc(33.33%-15px)]\" *ngFor=\"let item of cardArray\"></app-card>\n    </article> \n    \n    <article class=\"flex justify-between p-10\">\n      <div class=\"btn-group flex items-center justify-center flex-wrap flex-col\">\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'xsmall'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'small'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'medium'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'large'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"true\" [size]=\"'xlarge'\" [disabled]=\"true\"></app-btn>\n      </div>\n      <div class=\"btn-group flex items-center justify-center flex-wrap flex-col\">\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'xsmall'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'small'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'medium'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'large'\"></app-btn>\n        <app-btn class=\" mb-4\" [primary]=\"false\" [size]=\"'xlarge'\"></app-btn>\n      </div>\n    </article> \n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-search-bar class=\"sm:w-[calc(100%-15px)]\"></app-search-bar>\n    </article>\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-option-picker class=\"sm:w-[calc(100%-15px)]\"></app-option-picker>\n    </article>\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-team-badge class=\"sm:w-[calc(100%-15px)]\"></app-team-badge>\n    </article>\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-troubleshoot-card class=\"sm:w-[calc(100%-15px)]\"></app-troubleshoot-card>\n    </article>\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-glass-big-card class=\"sm:w-[calc(100%-15px)]\"></app-glass-big-card>\n    </article>\n\n    <article class=\"flex flex-wrap justify-between bg-blue-900 p-10\">\n      <app-glass-small-card class=\"sm:w-[calc(100%-15px)]\"></app-glass-small-card>\n    </article>-->\n    <!-- <div class=\"h-32 w-32 red text-6xl text-orange-600\">\n      <h2>Header</h2>\n\n    </div>\n      <app-btn class=\"mb-4 mr-4\" [primary]=\"false\" [size]=\"'small'\"></app-btn> -->\n\n      <!-- <div class=\"mt-20 w-96 h-96 relative z-20\">\n        <button type=\"button\" class=\"btn-blue slb-btn-white slb-btn w-full\">Button fill</button>\n        <div class=\"mb-4\"></div>\n        <button type=\"button\" class=\"slb-btn slb-blue-outline w-full\"> Button borded</button>\n        <div class=\"mb-4\"></div>\n        <button type=\"button\" class=\"btn-smalls slb-btn-blue slb-btn\">Primary fill small</button>\n        <div class=\"mb-4\"></div>\n        <button type=\"button\" class=\"slb-btn slb-white-outline\">Primary bordered small</button>\n      \n        <div class=\"mb-4\"></div>\n        <button type=\"button\" class=\"slb-btn slb-btn-blue slb-btn-xsm\">Button</button>\n        <div class=\"mb-4\"></div>\n        <button type=\"button\" class=\"slb-btn slb-btn-blue slb-btn-sm\">Button</button>\n        <div class=\"mb-4\"></div>\n        <button type=\"button\" class=\"slb-btn slb-btn-blue slb-btn-md\">Button</button>\n        <div class=\"mb-4\"></div>\n        <button type=\"button\" class=\"slb-btn slb-btn-blue slb-btn-lg\">Button</button>\n        <div class=\"mb-4\"></div>\n        <button type=\"button\" class=\"slb-btn slb-btn-blue slb-btn-xlg\">Button</button>\n      </div> -->\n  </section>\n</main>\n\n<router-outlet></router-outlet>\n"
         },
         {
             "name": "AuthenticateFormComponent",
@@ -693,7 +693,7 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"main relative\">\n  <div class=\"relative grid gap-4 p-6 grid-cols-[464px,1fr] lg:grid-cols-[calc(33%-.5rem),calc(66%-.5rem)] grid-rows-[220px,1fr] z-10 h-screen\">\n    <app-sidebar class=\"sidebar glass-effect bg-glass-85 p-4 h-full row-span-2\"></app-sidebar>\n    <div class=\"header p-6 col-start-2 glass-effect glass-border\">\n      <div class=\"topbar flex items-center justify-between text-white text-shadow\">\n        <div class=\"left\">\n          <h1 class=\" text-xl font-bold mb-1\">Field Production - Actual vs. Potential</h1>\n          <p class=\"text-xs\">Powered by LiftIQ</p>\n        </div>\n        <div class=\"right flex-center\">\n          <h2 class=\" text-3xl font-normal\">15%</h2>\n          <p class=\"text-xs self-end ml-1\">Current Difference</p>\n        </div>\n      </div>\n    </div>\n    <app-list class=\"dashboard glass-effect glass-border p-6 row-start-2 col-start-2\"></app-list>\n  </div>\n<!-- <app-notification-panel></app-notification-panel> -->\n</div>\n\n<!-- <app-history-popup></app-history-popup> -->"
+            "templateData": "<!-- <div class=\"main relative\">\n  <div class=\"relative grid gap-4 p-6 grid-cols-[464px,1fr] lg:grid-cols-[calc(33%-.5rem),calc(66%-.5rem)] grid-rows-[220px,1fr] z-10 h-screen\">\n    <app-sidebar class=\"sidebar glass-effect bg-glass-85 p-4 h-full row-span-2\"></app-sidebar>\n    <div class=\"header p-6 col-start-2 glass-effect glass-border\">\n      <div class=\"topbar flex items-center justify-between text-white text-shadow\">\n        <div class=\"left\">\n          <h1 class=\" text-xl font-bold mb-1\">Field Production - Actual vs. Potential</h1>\n          <p class=\"text-xs\">Powered by LiftIQ</p>\n        </div>\n        <div class=\"right flex-center\">\n          <h2 class=\" text-3xl font-normal\">15%</h2>\n          <p class=\"text-xs self-end ml-1\">Current Difference</p>\n        </div>\n      </div>\n    </div>\n    <app-list class=\"dashboard glass-effect glass-border p-6 row-start-2 col-start-2\"></app-list>\n  </div>\n<app-notification-panel></app-notification-panel>\n</div> -->\n\n<!-- <app-history-popup></app-history-popup> -->\n\n<div class=\"main relative\">\n  <div class=\"relative grid gap-4 m-6 grid-cols-[464px,1fr] lg:grid-cols-[calc(33%-.25rem),calc(66%-.25rem)] z-10 max-h-[calc(100vh-110px)]\">\n    <app-sidebar class=\"sidebar glass-effect bg-glass-85 p-4 h-full\"></app-sidebar>\n    <div>\n      <div class=\"header p-6 glass-effect glass-border mb-4 h-60\">\n        <div class=\"topbar flex items-center justify-between text-white text-shadow\">\n          <div class=\"left\">\n            <h1 class=\" text-xl font-bold mb-1\">Field Production - Actual vs. Potential</h1>\n            <p class=\"text-xs\">Powered by LiftIQ</p>\n          </div>\n          <div class=\"right flex-center\">\n            <h2 class=\" text-3xl font-normal\">15%</h2>\n            <p class=\"text-xs self-end ml-1\">Current Difference</p>\n          </div>\n        </div>\n      </div>\n      <app-list class=\"dashboard glass-effect glass-border p-6 block\"></app-list>\n    </div>\n  <!-- </div><app-notification-panel></app-notification-panel> -->\n</div>"
         },
         {
             "name": "GlassBigCardComponent",
@@ -1657,7 +1657,7 @@
         },
         {
             "name": "OptionPickerComponent",
-            "id": "component-OptionPickerComponent-2809a708a34936705aff8030a3f1129a",
+            "id": "component-OptionPickerComponent-0e508fad8c1d76e9738f6706e819a46f",
             "file": "src/app/moules/common/component/option-picker/option-picker.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1694,6 +1694,34 @@
             "propertiesClass": [],
             "methodsClass": [
                 {
+                    "name": "addingEffect",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 18,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
                     "name": "ngOnInit",
                     "args": [],
                     "optional": false,
@@ -1711,11 +1739,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-option-picker',\n  templateUrl: './option-picker.component.html',\n  styleUrls: ['./option-picker.component.scss']\n})\nexport class OptionPickerComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n  @Input() primary = true;\n\n  @Input() className: any;\n}\n",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-option-picker',\n  templateUrl: './option-picker.component.html',\n  styleUrls: ['./option-picker.component.scss']\n})\nexport class OptionPickerComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n  @Input() primary = true;\n\n  @Input() className: any;\n\n  addingEffect(event: any) {\n    const item = document.body.querySelectorAll('.pick-item');\n    item.forEach(ele => {\n      ele.classList.remove('active');\n      event.target.classList.add('active');\n    })\n  }\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".active{\n    @apply bg-white px-4 py-[7px] rounded-full font-bold text-blue-500 shadow-btn;\n}",
+                    "data": ".indicate{\n    @apply bg-white rounded-full shadow-btn absolute h-[34px] top-1 left-1 min-w-[80px];\n    z-index: -1;\n    transition: 300ms ease;\n}\n.pick-item{\n    @apply px-3 min-w-[80px] text-sm text-center text-gray-600 h-full;\n    &.active{\n        @apply text-blue-600 font-bold;\n    }\n    &:nth-child(1){\n        @apply min-w-[98px];\n        &.active ~ .indicate{\n            @apply min-w-[98px];\n            transform: translateX(80px * 0);\n        }\n    }\n    &:nth-child(2).active ~ .indicate{\n        transform: translateX(80px * 1 + 18px);\n    }\n    &:nth-child(3).active ~ .indicate{\n        transform: translateX(80px * 2 + 18px);\n    }\n    &:nth-child(4).active ~ .indicate{\n        transform: translateX(80px * 3 + 18px);\n    }\n    &:nth-child(5).active ~ .indicate{\n        transform: translateX(80px * 4 + 18px);\n    }\n}",
                     "styleUrl": "./option-picker.component.scss"
                 }
             ],
@@ -1731,7 +1759,7 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"glass-card flex items-center justify-between p-1 bg-glass-75 rounded-[90px] backdrop-blur-3xl cursor-pointer {{className}}\">\n    <span class=\"text-sm min-w-[90px] text-center active\">Closed</span>\n    <span class=\"text-sm min-w-[105px] text-center\">Scheduled</span>\n    <span class=\"text-sm min-w-[90px] text-center\">Planning</span>\n</div>\n\n\n<!-- <div class=\"glass-card flex items-center justify-between p-1 bg-glass-75 rounded-[90px] backdrop-blur-3xl mt-9 w-[200px]\">\n    <span class=\"text-sm min-w-[90px] text-center active\">Closed</span>\n    <span class=\"text-sm min-w-[100px] text-center\">Scheduled</span>\n    <span class=\"text-sm min-w-[90px] text-center active\">Planning</span>\n</div> -->"
+            "templateData": "<div class=\"glass-card flex items-center justify-between p-1 bg-glass-75 rounded-[90px] backdrop-blur-3xl cursor-pointer h-[42px] {{className}}\">\n    <span class=\"pick-item flex-center active\" (click)=\"addingEffect($event)\">Operations</span>\n    <span class=\"pick-item flex-center\" (click)=\"addingEffect($event)\">Open</span>\n    <span class=\"pick-item flex-center\" (click)=\"addingEffect($event)\">Quotes</span>\n    <span class=\"pick-item flex-center\" (click)=\"addingEffect($event)\">Closed</span>\n    <span class=\"pick-item flex-center\" (click)=\"addingEffect($event)\">Closed</span>\n    <span class=\"indicate\"></span>\n</div>\n\n\n<!-- <div class=\"glass-card flex items-center justify-between p-1 bg-glass-75 rounded-[90px] backdrop-blur-3xl mt-9 w-[200px]\">\n    <span class=\"text-sm min-w-[90px] text-center active\">Closed</span>\n    <span class=\"text-sm min-w-[100px] text-center\">Scheduled</span>\n    <span class=\"text-sm min-w-[90px] text-center active\">Planning</span>\n</div> -->"
         },
         {
             "name": "PageComponent",
@@ -2919,7 +2947,7 @@
                 "name": "FirstVarient",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/moules/common/component/authenticate-form/AuthenticateForm.stories.ts",
+                "file": "src/app/moules/common/component/glass-big-card/BigCard.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2929,7 +2957,7 @@
                 "name": "FirstVarient",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/moules/common/component/glass-big-card/BigCard.stories.ts",
+                "file": "src/app/moules/common/component/authenticate-form/AuthenticateForm.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2989,16 +3017,6 @@
                 "name": "FirstVarient",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/moules/common/component/sticky-stack/StickyStack.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "FirstVarient",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/moules/common/component/team-badge/TeamBadge.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -3010,6 +3028,16 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/moules/common/component/troubleshoot-card/Troubleshoot.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "FirstVarient",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/moules/common/component/sticky-stack/StickyStack.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -3218,16 +3246,6 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Header.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<Header>",
-                "defaultValue": "(args: Header) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/Button1.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -3238,21 +3256,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Page.stories.ts",
+                "file": "src/stories/Header.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<Page>",
-                "defaultValue": "(args: Page) => ({\n  props: args,\n})"
+                "type": "Story<Header>",
+                "defaultValue": "(args: Header) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/moules/common/component/authenticate-form/AuthenticateForm.stories.ts",
+                "file": "src/stories/Page.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<AuthenticateFormComponent>",
-                "defaultValue": "(args: AuthenticateFormComponent) => ({\n  props: args,\n})"
+                "type": "Story<Page>",
+                "defaultValue": "(args: Page) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -3283,6 +3301,16 @@
                 "deprecationMessage": "",
                 "type": "Story<GlassBigCardComponent>",
                 "defaultValue": "(args: GlassBigCardComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/moules/common/component/authenticate-form/AuthenticateForm.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<AuthenticateFormComponent>",
+                "defaultValue": "(args: AuthenticateFormComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -3358,16 +3386,6 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/moules/common/component/sticky-stack/StickyStack.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<StickyStackComponent>",
-                "defaultValue": "(args: StickyStackComponent) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/moules/common/component/team-badge/TeamBadge.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -3383,6 +3401,16 @@
                 "deprecationMessage": "",
                 "type": "Story<TroubleshootCardComponent>",
                 "defaultValue": "(args: TroubleshootCardComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/moules/common/component/sticky-stack/StickyStack.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<StickyStackComponent>",
+                "defaultValue": "(args: StickyStackComponent) => ({\n  props: args,\n})"
             },
             {
                 "name": "ThirdVarient",
@@ -3670,28 +3698,6 @@
                     "defaultValue": "{\n  production: false\n}"
                 }
             ],
-            "src/app/moules/common/component/authenticate-form/AuthenticateForm.stories.ts": [
-                {
-                    "name": "FirstVarient",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/moules/common/component/authenticate-form/AuthenticateForm.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/moules/common/component/authenticate-form/AuthenticateForm.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<AuthenticateFormComponent>",
-                    "defaultValue": "(args: AuthenticateFormComponent) => ({\n  props: args,\n})"
-                }
-            ],
             "src/app/moules/common/component/glass-big-card/BigCard.stories.ts": [
                 {
                     "name": "FirstVarient",
@@ -3742,6 +3748,28 @@
                     "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "Template.bind({})"
+                }
+            ],
+            "src/app/moules/common/component/authenticate-form/AuthenticateForm.stories.ts": [
+                {
+                    "name": "FirstVarient",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/moules/common/component/authenticate-form/AuthenticateForm.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/moules/common/component/authenticate-form/AuthenticateForm.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<AuthenticateFormComponent>",
+                    "defaultValue": "(args: AuthenticateFormComponent) => ({\n  props: args,\n})"
                 }
             ],
             "src/app/moules/common/component/glass-small-card/SmallCard.stories.ts": [
@@ -3854,28 +3882,6 @@
                     "defaultValue": "(args: SearchBarComponent) => ({\n  props: args,\n})"
                 }
             ],
-            "src/app/moules/common/component/sticky-stack/StickyStack.stories.ts": [
-                {
-                    "name": "FirstVarient",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/moules/common/component/sticky-stack/StickyStack.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/moules/common/component/sticky-stack/StickyStack.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<StickyStackComponent>",
-                    "defaultValue": "(args: StickyStackComponent) => ({\n  props: args,\n})"
-                }
-            ],
             "src/app/moules/common/component/team-badge/TeamBadge.stories.ts": [
                 {
                     "name": "FirstVarient",
@@ -3918,6 +3924,28 @@
                     "deprecationMessage": "",
                     "type": "Story<TroubleshootCardComponent>",
                     "defaultValue": "(args: TroubleshootCardComponent) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/app/moules/common/component/sticky-stack/StickyStack.stories.ts": [
+                {
+                    "name": "FirstVarient",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/moules/common/component/sticky-stack/StickyStack.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/moules/common/component/sticky-stack/StickyStack.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<StickyStackComponent>",
+                    "defaultValue": "(args: StickyStackComponent) => ({\n  props: args,\n})"
                 }
             ],
             "src/stories/Button1.stories.ts": [
@@ -4639,7 +4667,7 @@
                 "linktype": "component",
                 "name": "OptionPickerComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/5",
+                "coverageCount": "0/6",
                 "status": "low"
             },
             {
